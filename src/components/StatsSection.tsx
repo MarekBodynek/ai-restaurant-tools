@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import { motion } from "framer-motion";
 import { AnimatedSection } from "./AnimatedSection";
 
 function useCountUp(end: number, duration: number = 2000) {
@@ -67,14 +68,24 @@ function StatItem({
 
   return (
     <AnimatedSection delay={index * 0.1}>
-      <div ref={ref} className="text-center">
-        <div className="text-3xl mb-2">{stat.icon}</div>
+      <motion.div
+        ref={ref}
+        className="text-center"
+        whileHover={{ scale: 1.05 }}
+        transition={{ type: "spring", stiffness: 300, damping: 20 }}
+      >
+        <motion.div
+          className="text-3xl mb-2"
+          whileHover={{ scale: 1.2, rotate: 10 }}
+        >
+          {stat.icon}
+        </motion.div>
         <div className="text-3xl sm:text-4xl font-bold text-navy-800">
           {count}
           {stat.suffix}
         </div>
         <div className="text-sm text-stone-500 mt-1">{stat.label}</div>
-      </div>
+      </motion.div>
     </AnimatedSection>
   );
 }

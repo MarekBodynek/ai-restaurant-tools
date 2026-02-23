@@ -5,6 +5,7 @@ import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import { tools, getCategories } from "@/lib/tools";
 import { Tool } from "@/lib/types";
+import { AnimatedSection } from "./AnimatedSection";
 
 export function ToolsGrid() {
   const [search, setSearch] = useState("");
@@ -32,18 +33,20 @@ export function ToolsGrid() {
     <section id="tools" className="section-padding">
       <div className="container-wide mx-auto">
         {/* Section header */}
-        <div className="text-center mb-10">
-          <span className="text-sm font-semibold text-orange-500 uppercase tracking-wider">
-            Complete Directory
-          </span>
-          <h2 className="text-3xl sm:text-4xl font-bold text-navy-800 mt-3 mb-4">
-            All AI Tools
-          </h2>
-          <p className="text-stone-500 max-w-2xl mx-auto">
-            Browse our full collection of AI-powered restaurant tools.
-            Search by name or filter by category.
-          </p>
-        </div>
+        <AnimatedSection>
+          <div className="text-center mb-10">
+            <span className="text-sm font-semibold text-orange-500 uppercase tracking-wider">
+              Complete Directory
+            </span>
+            <h2 className="text-3xl sm:text-4xl font-bold text-navy-800 mt-3 mb-4">
+              All AI Tools
+            </h2>
+            <p className="text-stone-500 max-w-2xl mx-auto">
+              Browse our full collection of AI-powered restaurant tools. Search
+              by name or filter by category.
+            </p>
+          </div>
+        </AnimatedSection>
 
         {/* Search */}
         <div className="max-w-xl mx-auto mb-8">
@@ -115,7 +118,9 @@ export function ToolsGrid() {
         {filtered.length === 0 && (
           <div className="text-center py-16">
             <div className="text-4xl mb-4">🔍</div>
-            <p className="text-stone-500 text-lg">No tools found matching your search.</p>
+            <p className="text-stone-500 text-lg">
+              No tools found matching your search.
+            </p>
             <button
               onClick={() => {
                 setSearch("");
@@ -140,33 +145,54 @@ function ToolCard({ tool }: { tool: Tool }) {
       animate={{ opacity: 1, scale: 1 }}
       exit={{ opacity: 0, scale: 0.95 }}
       transition={{ duration: 0.3 }}
+      whileHover={{ scale: 1.02, y: -4 }}
     >
       <Link
         href={`/tools/${tool.slug}`}
-        className="group block h-full p-6 bg-white rounded-2xl border border-stone-100 hover:border-orange-200 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
+        className="group block h-full p-6 rounded-2xl border border-white/20 bg-white/60 backdrop-blur-lg shadow-sm hover:shadow-xl hover:shadow-orange-500/5 hover:border-orange-200/50 transition-all duration-300 relative overflow-hidden"
       >
-        <div className="flex items-start gap-4 mb-4">
-          <span className="flex-shrink-0 w-12 h-12 rounded-xl bg-stone-50 flex items-center justify-center text-2xl border border-stone-100 group-hover:border-orange-200 transition-colors">
-            {tool.icon}
-          </span>
-          <div className="flex-1 min-w-0">
-            <h3 className="font-semibold text-navy-800 group-hover:text-orange-500 transition-colors truncate">
-              {tool.name}
-            </h3>
-            <span className="text-xs text-stone-400">{tool.category}</span>
+        {/* Hover glow */}
+        <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none bg-gradient-to-br from-orange-500/5 via-transparent to-amber-500/5" />
+
+        <div className="relative">
+          <div className="flex items-start gap-4 mb-4">
+            <motion.span
+              whileHover={{ rotate: 10, scale: 1.1 }}
+              className="flex-shrink-0 w-12 h-12 rounded-xl bg-gradient-to-br from-stone-50 to-stone-100 flex items-center justify-center text-2xl border border-stone-100 group-hover:border-orange-200 group-hover:shadow-md group-hover:shadow-orange-500/10 transition-all"
+            >
+              {tool.icon}
+            </motion.span>
+            <div className="flex-1 min-w-0">
+              <h3 className="font-semibold text-navy-800 group-hover:text-orange-500 transition-colors truncate">
+                {tool.name}
+              </h3>
+              <span className="text-xs text-stone-400">{tool.category}</span>
+            </div>
           </div>
-        </div>
-        <p className="text-sm text-stone-500 leading-relaxed mb-4 line-clamp-2">
-          {tool.description}
-        </p>
-        <div className="flex items-center justify-between pt-3 border-t border-stone-50">
-          <span className="text-sm font-medium text-orange-500">{tool.price}</span>
-          <span className="text-xs text-stone-400 group-hover:text-orange-400 transition-colors flex items-center gap-1">
-            View details
-            <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
-              <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
-            </svg>
-          </span>
+          <p className="text-sm text-stone-500 leading-relaxed mb-4 line-clamp-2">
+            {tool.description}
+          </p>
+          <div className="flex items-center justify-between pt-3 border-t border-stone-100/80">
+            <span className="text-sm font-medium text-orange-500">
+              {tool.price}
+            </span>
+            <span className="text-xs text-stone-400 group-hover:text-orange-400 transition-colors flex items-center gap-1">
+              View details
+              <svg
+                className="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                strokeWidth="2"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M9 5l7 7-7 7"
+                />
+              </svg>
+            </span>
+          </div>
         </div>
       </Link>
     </motion.div>

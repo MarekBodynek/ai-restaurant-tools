@@ -1,5 +1,6 @@
 "use client";
 
+import { motion } from "framer-motion";
 import { AnimatedSection } from "./AnimatedSection";
 
 export function NewsletterSection() {
@@ -31,8 +32,8 @@ export function NewsletterSection() {
                 Get the Latest AI Restaurant Tools
               </h2>
               <p className="text-stone-400 max-w-xl mx-auto mb-8">
-                We review and add new tools every week. Subscribe to get
-                the best picks delivered to your inbox — no spam, ever.
+                We review and add new tools every week. Subscribe to get the
+                best picks delivered to your inbox — no spam, ever.
               </p>
 
               {/* Form */}
@@ -45,12 +46,14 @@ export function NewsletterSection() {
                   placeholder="your@email.com"
                   className="w-full sm:flex-1 px-5 py-4 rounded-xl bg-white/5 border border-white/10 text-white placeholder-stone-500 focus:outline-none focus:ring-2 focus:ring-orange-500/30 focus:border-orange-400 text-sm transition-all"
                 />
-                <button
+                <motion.button
                   type="submit"
+                  whileHover={{ scale: 1.03 }}
+                  whileTap={{ scale: 0.98 }}
                   className="w-full sm:w-auto px-8 py-4 bg-orange-500 hover:bg-orange-600 text-white font-semibold rounded-xl transition-all hover:shadow-lg hover:shadow-orange-500/25 text-sm whitespace-nowrap"
                 >
                   Subscribe Free
-                </button>
+                </motion.button>
               </form>
               <p className="text-xs text-stone-500 mt-4">
                 Join 2,000+ restaurant owners. Unsubscribe anytime.
