@@ -1,0 +1,434 @@
+[
+  {
+    "name": "Tidio",
+    "slug": "tidio",
+    "category": "Chatbots",
+    "description": "AI chatbot handling reservations, menu questions, and order tracking. Multi-channel: Facebook, WhatsApp, website.",
+    "price": "From",
+    "icon": "\ud83d\udcac"
+  },
+  {
+    "name": "Chatfuel",
+    "slug": "chatfuel",
+    "category": "Chatbots",
+    "description": "No-code chatbot builder for automating Facebook and Instagram customer interactions.",
+    "price": "From",
+    "icon": "\ud83e\udd16"
+  },
+  {
+    "name": "ManyChat",
+    "slug": "manychat",
+    "category": "Chatbots",
+    "description": "Automation platform for restaurant marketing via Instagram, Facebook Messenger, and SMS.",
+    "price": "Free / $15/mo",
+    "icon": "\ud83d\udcf1"
+  },
+  {
+    "name": "Intercom",
+    "slug": "intercom",
+    "category": "Chatbots",
+    "description": "Customer messaging with AI chatbot Fin that handles restaurant inquiries 24/7.",
+    "price": "From",
+    "icon": "\ud83d\udca1"
+  },
+  {
+    "name": "Drift",
+    "slug": "drift",
+    "category": "Chatbots",
+    "description": "Conversational AI for restaurant chains and hospitality groups to engage website visitors.",
+    "price": "Custom pricing",
+    "icon": "\u26a1"
+  },
+  {
+    "name": "Ada",
+    "slug": "ada",
+    "category": "Chatbots",
+    "description": "AI-first customer service automation for restaurant groups handling high volumes of inquiries.",
+    "price": "Custom pricing",
+    "icon": "\ud83e\udde0"
+  },
+  {
+    "name": "Landbot",
+    "slug": "landbot",
+    "category": "Chatbots",
+    "description": "Visual chatbot builder for conversational restaurant experiences on web and WhatsApp.",
+    "price": "From",
+    "icon": "\ud83c\udf10"
+  },
+  {
+    "name": "OpenTable",
+    "slug": "opentable",
+    "category": "Reservations",
+    "description": "Industry-leading AI-powered reservation and guest management. 60,000+ restaurants worldwide.",
+    "price": "From",
+    "icon": "\ud83d\udcc5"
+  },
+  {
+    "name": "Resy",
+    "slug": "resy",
+    "category": "Reservations",
+    "description": "Premium reservation platform with AI demand forecasting and dynamic pricing for fine dining.",
+    "price": "From",
+    "icon": "\ud83c\udf1f"
+  },
+  {
+    "name": "Yelp Guest Manager",
+    "slug": "yelp-guest-manager",
+    "category": "Reservations",
+    "description": "AI-powered front-of-house combining Yelp's review platform with reservation and waitlist tools.",
+    "price": "From",
+    "icon": "\u2b50"
+  },
+  {
+    "name": "SevenRooms",
+    "slug": "sevenrooms",
+    "category": "Reservations",
+    "description": "Guest experience platform using AI to personalize dining and maximize revenue.",
+    "price": "Custom pricing",
+    "icon": "\ud83c\udfc6"
+  },
+  {
+    "name": "Eat App",
+    "slug": "eat-app",
+    "category": "Reservations",
+    "description": "Reservation system with AI table management and guest CRM. Free tier available.",
+    "price": "Free / Paid",
+    "icon": "\ud83c\udf74"
+  },
+  {
+    "name": "Tock",
+    "slug": "tock",
+    "category": "Reservations",
+    "description": "Reservation, takeout, and event platform with prepaid dining and dynamic pricing.",
+    "price": "From",
+    "icon": "\ud83c\udfab"
+  },
+  {
+    "name": "Tablein",
+    "slug": "tablein",
+    "category": "Reservations",
+    "description": "Simple reservation system with AI no-show prediction and automated reminders.",
+    "price": "From",
+    "icon": "\ud83d\udccb"
+  },
+  {
+    "name": "MenuDrive",
+    "slug": "menudrive",
+    "category": "Menu AI",
+    "description": "AI-powered online ordering that optimizes menu layout and suggests upsells based on behavior.",
+    "price": "From",
+    "icon": "\ud83c\udf7d\ufe0f"
+  },
+  {
+    "name": "Tastewise",
+    "slug": "tastewise",
+    "category": "Menu AI",
+    "description": "AI food intelligence analyzing billions of data points to identify menu trends and preferences.",
+    "price": "Custom pricing",
+    "icon": "\ud83d\udd2e"
+  },
+  {
+    "name": "Galley Solutions",
+    "slug": "galley-solutions",
+    "category": "Menu AI",
+    "description": "AI food operations for recipe management, menu planning, and nutritional analysis.",
+    "price": "Custom pricing",
+    "icon": "\ud83d\udc68\u200d\ud83c\udf73"
+  },
+  {
+    "name": "Nutritics",
+    "slug": "nutritics",
+    "category": "Menu AI",
+    "description": "AI nutrition analysis for allergens, calories, and nutritional information.",
+    "price": "From",
+    "icon": "\ud83e\udd57"
+  },
+  {
+    "name": "Spoonshot",
+    "slug": "spoonshot",
+    "category": "Menu AI",
+    "description": "AI predicting food trends 12-18 months ahead using NLP analysis of millions of sources.",
+    "price": "Custom pricing",
+    "icon": "\ud83d\udd2c"
+  },
+  {
+    "name": "CookRight",
+    "slug": "cookright",
+    "category": "Menu AI",
+    "description": "AI recipe scaling and consistency tool ensuring dishes taste the same across all locations.",
+    "price": "From",
+    "icon": "\ud83d\udccf"
+  },
+  {
+    "name": "MenuCalc",
+    "slug": "menucalc",
+    "category": "Menu AI",
+    "description": "Recipe costing and nutrition analysis to optimize food costs and menu pricing.",
+    "price": "From",
+    "icon": "\ud83e\uddee"
+  },
+  {
+    "name": "BlueCart",
+    "slug": "bluecart",
+    "category": "Inventory",
+    "description": "AI procurement and inventory predicting ordering needs and reducing waste.",
+    "price": "From",
+    "icon": "\ud83d\udce6"
+  },
+  {
+    "name": "MarketMan",
+    "slug": "marketman",
+    "category": "Inventory",
+    "description": "Restaurant inventory and supply chain with AI-driven purchasing recommendations.",
+    "price": "From",
+    "icon": "\ud83d\udcca"
+  },
+  {
+    "name": "Lightspeed Restaurant",
+    "slug": "lightspeed",
+    "category": "Inventory",
+    "description": "All-in-one POS with AI inventory tracking, menu management, and analytics.",
+    "price": "From",
+    "icon": "\u26a1"
+  },
+  {
+    "name": "xtraCHEF",
+    "slug": "xtrachef",
+    "category": "Inventory",
+    "description": "AI invoice processing and food cost management using computer vision.",
+    "price": "Custom pricing",
+    "icon": "\ud83e\uddfe"
+  },
+  {
+    "name": "Winnow",
+    "slug": "winnow",
+    "category": "Inventory",
+    "description": "AI food waste management using computer vision cameras to identify and track kitchen waste.",
+    "price": "Custom pricing",
+    "icon": "\u267b\ufe0f"
+  },
+  {
+    "name": "Apicbase",
+    "slug": "apicbase",
+    "category": "Inventory",
+    "description": "Food management with AI inventory counts, procurement, and HACCP compliance.",
+    "price": "From",
+    "icon": "\ud83d\udccb"
+  },
+  {
+    "name": "Posist",
+    "slug": "posist",
+    "category": "Inventory",
+    "description": "Cloud-based restaurant platform with AI inventory, recipe management, and supply chain.",
+    "price": "Custom pricing",
+    "icon": "\u2601\ufe0f"
+  },
+  {
+    "name": "Popmenu",
+    "slug": "popmenu",
+    "category": "Marketing",
+    "description": "AI restaurant marketing with smart website builder, online ordering, and automated campaigns.",
+    "price": "Custom pricing",
+    "icon": "\ud83d\udce2"
+  },
+  {
+    "name": "Ovation",
+    "slug": "ovation",
+    "category": "Marketing",
+    "description": "AI guest feedback turning negative experiences into positive reviews and insights.",
+    "price": "From",
+    "icon": "\ud83c\udf1f"
+  },
+  {
+    "name": "Marqii",
+    "slug": "marqii",
+    "category": "Marketing",
+    "description": "AI menu and listing management ensuring accuracy across all platforms.",
+    "price": "From",
+    "icon": "\ud83d\udccd"
+  },
+  {
+    "name": "Owner.com",
+    "slug": "owner-com",
+    "category": "Marketing",
+    "description": "AI marketing platform: websites, ordering, and automated email campaigns.",
+    "price": "Custom pricing",
+    "icon": "\ud83c\udfe0"
+  },
+  {
+    "name": "Yext",
+    "slug": "yext",
+    "category": "Marketing",
+    "description": "AI digital presence managing listings, reviews, and local SEO across 200+ publishers.",
+    "price": "From",
+    "icon": "\ud83d\udd0e"
+  },
+  {
+    "name": "Reputation.com",
+    "slug": "reputation",
+    "category": "Marketing",
+    "description": "AI reputation management analyzing reviews, surveys, and social sentiment.",
+    "price": "Custom pricing",
+    "icon": "\u2b50"
+  },
+  {
+    "name": "Mailchimp",
+    "slug": "mailchimp",
+    "category": "Marketing",
+    "description": "AI email marketing with restaurant templates, segmentation, and send-time optimization.",
+    "price": "Free / $13/mo",
+    "icon": "\u2709\ufe0f"
+  },
+  {
+    "name": "Toast",
+    "slug": "toast",
+    "category": "POS",
+    "description": "Restaurant-specific POS with AI analytics, online ordering, and workforce management.",
+    "price": "Free / Paid",
+    "icon": "\ud83d\udcb3"
+  },
+  {
+    "name": "Square for Restaurants",
+    "slug": "square-restaurants",
+    "category": "POS",
+    "description": "AI-enhanced POS with restaurant management, online ordering, and loyalty programs.",
+    "price": "Free / Paid",
+    "icon": "\u2b1b"
+  },
+  {
+    "name": "Clover",
+    "slug": "clover",
+    "category": "POS",
+    "description": "Smart POS with AI reporting and restaurant-specific apps for table management.",
+    "price": "From",
+    "icon": "\ud83c\udf40"
+  },
+  {
+    "name": "7shifts",
+    "slug": "7shifts",
+    "category": "POS",
+    "description": "AI workforce management with demand-based scheduling, tip pooling, and labor compliance.",
+    "price": "Free / Paid",
+    "icon": "\ud83d\udcc5"
+  },
+  {
+    "name": "Lineup.ai",
+    "slug": "lineup-ai",
+    "category": "POS",
+    "description": "AI sales forecasting predicting daily revenue, guest counts, and ideal staffing.",
+    "price": "From",
+    "icon": "\ud83d\udcc8"
+  },
+  {
+    "name": "CrunchTime",
+    "slug": "crunchtime",
+    "category": "POS",
+    "description": "AI operations platform for inventory, labor, and food safety across multi-unit brands.",
+    "price": "Custom pricing",
+    "icon": "\u23f1\ufe0f"
+  },
+  {
+    "name": "Olo",
+    "slug": "olo",
+    "category": "Delivery",
+    "description": "Enterprise online ordering with AI demand forecasting and kitchen display systems.",
+    "price": "Custom pricing",
+    "icon": "\ud83d\udef5"
+  },
+  {
+    "name": "ChowNow",
+    "slug": "chownow",
+    "category": "Delivery",
+    "description": "Commission-free online ordering with AI marketing tools to drive direct orders.",
+    "price": "Custom pricing",
+    "icon": "\ud83c\udf54"
+  },
+  {
+    "name": "Bbot",
+    "slug": "bbot",
+    "category": "Delivery",
+    "description": "AI order-and-pay for dine-in, pickup, and delivery with smart upselling.",
+    "price": "Custom pricing",
+    "icon": "\ud83d\udcf2"
+  },
+  {
+    "name": "Ordermark",
+    "slug": "ordermark",
+    "category": "Delivery",
+    "description": "AI consolidating all delivery app orders into one tablet with smart routing.",
+    "price": "Custom pricing",
+    "icon": "\ud83d\udd04"
+  },
+  {
+    "name": "Flipdish",
+    "slug": "flipdish",
+    "category": "Delivery",
+    "description": "White-label ordering with AI customer insights and automated loyalty campaigns.",
+    "price": "Custom pricing",
+    "icon": "\ud83d\udc1f"
+  },
+  {
+    "name": "Miso Robotics",
+    "slug": "miso-robotics",
+    "category": "Kitchen",
+    "description": "AI kitchen robots \u2014 Flippy for automated frying/grilling with computer vision QC.",
+    "price": "Custom pricing",
+    "icon": "\ud83e\udd16"
+  },
+  {
+    "name": "Nala Robotics",
+    "slug": "nala-robotics",
+    "category": "Kitchen",
+    "description": "AI multi-cuisine robotic chef cooking dishes with consistent quality.",
+    "price": "Custom pricing",
+    "icon": "\ud83e\uddbe"
+  },
+  {
+    "name": "ComplianceMate",
+    "slug": "compliancemate",
+    "category": "Kitchen",
+    "description": "AI food safety monitoring with IoT sensors for temperatures and HACCP compliance.",
+    "price": "Custom pricing",
+    "icon": "\ud83c\udf21\ufe0f"
+  },
+  {
+    "name": "FreshCheq",
+    "slug": "freshcheq",
+    "category": "Kitchen",
+    "description": "Digital food safety checklists with AI anomaly detection for temperature logs.",
+    "price": "From",
+    "icon": "\u2705"
+  },
+  {
+    "name": "Tenzo",
+    "slug": "tenzo",
+    "category": "Analytics",
+    "description": "AI analytics with demand forecasting, labor optimization, and actionable insights.",
+    "price": "Custom pricing",
+    "icon": "\ud83d\udcca"
+  },
+  {
+    "name": "PeachWorks",
+    "slug": "peachworks",
+    "category": "Analytics",
+    "description": "Restaurant BI with AI forecasting, labor scheduling, and inventory analytics.",
+    "price": "Custom pricing",
+    "icon": "\ud83c\udf51"
+  },
+  {
+    "name": "Avero",
+    "slug": "avero",
+    "category": "Analytics",
+    "description": "AI restaurant intelligence connecting POS data to actionable revenue and labor insights.",
+    "price": "Custom pricing",
+    "icon": "\ud83c\udfaf"
+  },
+  {
+    "name": "Delaget",
+    "slug": "delaget",
+    "category": "Analytics",
+    "description": "AI above-store reporting and analytics for QSR and fast-casual chains.",
+    "price": "Custom pricing",
+    "icon": "\ud83d\udcc9"
+  }
+]
