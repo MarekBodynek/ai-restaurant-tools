@@ -9,7 +9,7 @@ export function HeroSection() {
     <section className="relative min-h-[85vh] flex items-center justify-center overflow-hidden">
       {/* Background image */}
       <Image
-        src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1920&q=80"
+        src="/hero-restaurant.png"
         alt="Restaurant"
         fill
         className="object-cover"
