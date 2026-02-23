@@ -78,7 +78,7 @@ export function ToolsGrid() {
         <div className="flex flex-wrap items-center justify-center gap-2 mb-10">
           <button
             onClick={() => setActiveCategory("All")}
-            className={`px-4 py-2 rounded-lg text-sm font-medium transition-all ${
+            className={`px-4 py-2.5 rounded-lg text-sm font-medium transition-all min-h-[44px] ${
               activeCategory === "All"
                 ? "bg-navy-800 text-white shadow-lg"
                 : "bg-stone-100 text-stone-600 hover:bg-stone-200"
@@ -90,7 +90,7 @@ export function ToolsGrid() {
             <button
               key={cat.name}
               onClick={() => setActiveCategory(cat.name)}
-              className={`px-4 py-2 rounded-lg text-sm font-medium transition-all ${
+              className={`px-4 py-2.5 rounded-lg text-sm font-medium transition-all min-h-[44px] ${
                 activeCategory === cat.name
                   ? "bg-navy-800 text-white shadow-lg"
                   : "bg-stone-100 text-stone-600 hover:bg-stone-200"
@@ -145,11 +145,11 @@ function ToolCard({ tool }: { tool: Tool }) {
       animate={{ opacity: 1, scale: 1 }}
       exit={{ opacity: 0, scale: 0.95 }}
       transition={{ duration: 0.3 }}
-      className="hover:-translate-y-1 transition-transform duration-300"
+      className="hover:-translate-y-1 transition-transform duration-300 h-full"
     >
       <Link
         href={`/tools/${tool.slug}`}
-        className="group block h-full p-6 rounded-2xl border border-white/20 bg-white/60 backdrop-blur-lg shadow-sm hover:shadow-xl hover:shadow-orange-500/5 hover:border-orange-200/50 transition-all duration-300 relative overflow-hidden"
+        className="group block h-full p-5 sm:p-6 rounded-2xl border border-white/20 bg-white/60 backdrop-blur-lg shadow-sm hover:shadow-xl hover:shadow-orange-500/5 hover:border-orange-200/50 transition-all duration-300 relative overflow-hidden min-h-[220px]"
       >
         {/* Hover glow */}
         <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none bg-gradient-to-br from-orange-500/5 via-transparent to-amber-500/5" />

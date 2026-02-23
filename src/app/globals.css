@@ -35,6 +35,21 @@ body {
   background: var(--background);
 }
 
+.hero-parallax-layer {
+  transform: translate3d(0, -2%, 0) scale(1.08);
+  animation: heroParallax 18s ease-in-out infinite alternate;
+  will-change: transform;
+}
+
+@keyframes heroParallax {
+  from {
+    transform: translate3d(0, -3%, 0) scale(1.08);
+  }
+  to {
+    transform: translate3d(0, 2%, 0) scale(1.1);
+  }
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;

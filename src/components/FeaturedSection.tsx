@@ -1,7 +1,6 @@
 "use client";
 
 import Link from "next/link";
-import { motion } from "framer-motion";
 import { getFeaturedTools } from "@/lib/tools";
 import { AnimatedSection, StaggerContainer, StaggerItem } from "./AnimatedSection";
 
@@ -13,7 +12,6 @@ export function FeaturedSection() {
   return (
     <section id="featured" className="section-padding">
       <div className="container-wide mx-auto">
-        {/* Section header */}
         <AnimatedSection>
           <div className="text-center mb-14">
             <span className="text-sm font-semibold text-orange-500 uppercase tracking-wider">
@@ -29,29 +27,20 @@ export function FeaturedSection() {
           </div>
         </AnimatedSection>
 
-        {/* Featured cards */}
         <StaggerContainer className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {featured.map((tool, i) => (
             <StaggerItem key={tool.slug}>
-              <motion.div
-                whileHover={{ y: -8, scale: 1.02 }}
-                transition={{ type: "spring", stiffness: 300, damping: 20 }}
-              >
-                {/* Gradient border wrapper */}
-                <div className="p-[2px] rounded-2xl bg-gradient-to-br from-orange-500/60 via-amber-400/30 to-orange-600/60 hover:from-orange-500 hover:via-amber-400/60 hover:to-orange-600 transition-all duration-500 shadow-lg hover:shadow-2xl hover:shadow-orange-500/20">
+              <div className="transition-transform duration-300 hover:-translate-y-1">
+                <div className="p-[2px] rounded-2xl bg-gradient-to-br from-orange-500/60 via-amber-400/30 to-orange-700/60 hover:from-orange-500 hover:via-amber-400/60 hover:to-orange-700 transition-all duration-500 shadow-lg hover:shadow-2xl hover:shadow-orange-500/20">
                   <Link
                     href={`/tools/${tool.slug}`}
                     className="group relative block rounded-[14px] overflow-hidden"
                   >
-                    {/* Background */}
-                    <div className="absolute inset-0 bg-gradient-to-br from-navy-800 via-navy-700 to-navy-900" />
+                    <div className="absolute inset-0 bg-gradient-to-br from-[#1c1917] via-[#292524] to-[#171412]" />
 
-                    {/* Hover glow */}
                     <div className="absolute inset-0 bg-gradient-to-br from-orange-500/0 to-orange-500/0 group-hover:from-orange-500/10 group-hover:to-amber-500/5 transition-all duration-500" />
 
-                    {/* Content */}
                     <div className="relative p-8 sm:p-10 min-h-[320px] flex flex-col">
-                      {/* Badge */}
                       <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-orange-500/10 border border-orange-500/20 text-xs font-semibold text-orange-400 mb-6 w-fit">
                         <svg
                           className="w-3 h-3"
@@ -63,25 +52,19 @@ export function FeaturedSection() {
                         {badges[i]}
                       </span>
 
-                      {/* Icon */}
-                      <motion.div
-                        className="text-5xl mb-6"
-                        whileHover={{ scale: 1.2, rotate: 5 }}
-                      >
+                      <div className="text-5xl mb-6 transition-transform duration-300 group-hover:rotate-3 group-hover:scale-110">
                         {tool.icon}
-                      </motion.div>
+                      </div>
 
-                      {/* Info */}
-                      <h3 className="text-xl font-bold text-white mb-2 group-hover:text-orange-300 transition-colors">
+                      <h3 className="text-xl font-bold text-[#fefce8] mb-2 group-hover:text-orange-300 transition-colors">
                         {tool.name}
                       </h3>
-                      <p className="text-sm text-stone-400 mb-6 leading-relaxed flex-1">
+                      <p className="text-sm text-stone-300 mb-6 leading-relaxed flex-1">
                         {tool.description}
                       </p>
 
-                      {/* Category + Price */}
                       <div className="flex items-center justify-between">
-                        <span className="text-xs font-medium text-stone-500 bg-white/5 px-3 py-1 rounded-full border border-white/10">
+                        <span className="text-xs font-medium text-stone-400 bg-white/5 px-3 py-1 rounded-full border border-white/10">
                           {tool.category}
                         </span>
                         <span className="text-sm font-semibold text-orange-400">
@@ -89,7 +72,6 @@ export function FeaturedSection() {
                         </span>
                       </div>
 
-                      {/* Arrow */}
                       <div className="absolute top-8 right-8 w-10 h-10 rounded-full bg-white/5 flex items-center justify-center group-hover:bg-orange-500/20 transition-all">
                         <svg
                           className="w-5 h-5 text-stone-500 group-hover:text-orange-400 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all"
@@ -108,7 +90,7 @@ export function FeaturedSection() {
                     </div>
                   </Link>
                 </div>
-              </motion.div>
+              </div>
             </StaggerItem>
           ))}
         </StaggerContainer>

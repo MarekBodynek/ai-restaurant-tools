@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import { motion } from "framer-motion";
 import { AnimatedSection } from "./AnimatedSection";
 
 function useCountUp(end: number, duration: number = 2000) {
@@ -45,8 +44,8 @@ export function StatsSection() {
   return (
     <section className="relative -mt-16 z-10 px-4 sm:px-6 lg:px-8">
       <div className="container-wide mx-auto">
-        <div className="glass-card rounded-2xl p-8 sm:p-12">
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="glass-card rounded-2xl p-6 sm:p-12">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
             {stats.map((stat, i) => (
               <StatItem key={stat.label} stat={stat} index={i} />
             ))}
@@ -68,24 +67,16 @@ function StatItem({
 
   return (
     <AnimatedSection delay={index * 0.1}>
-      <motion.div
-        ref={ref}
-        className="text-center"
-        whileHover={{ scale: 1.05 }}
-        transition={{ type: "spring", stiffness: 300, damping: 20 }}
-      >
-        <motion.div
-          className="text-3xl mb-2"
-          whileHover={{ scale: 1.2, rotate: 10 }}
-        >
+      <div ref={ref} className="text-center transition-transform duration-300 hover:scale-105">
+        <div className="text-3xl mb-2 transition-transform duration-300 hover:rotate-6">
           {stat.icon}
-        </motion.div>
+        </div>
         <div className="text-3xl sm:text-4xl font-bold text-navy-800">
           {count}
           {stat.suffix}
         </div>
         <div className="text-sm text-stone-500 mt-1">{stat.label}</div>
-      </motion.div>
+      </div>
     </AnimatedSection>
   );
 }

@@ -1,6 +1,5 @@
 "use client";
 
-import { motion } from "framer-motion";
 import { AnimatedSection, StaggerContainer, StaggerItem } from "./AnimatedSection";
 
 const testimonials = [
@@ -31,7 +30,6 @@ export function TestimonialsSection() {
   return (
     <section className="section-padding bg-stone-50/80">
       <div className="container-wide mx-auto">
-        {/* Section header */}
         <AnimatedSection>
           <div className="text-center mb-14">
             <span className="text-sm font-semibold text-orange-500 uppercase tracking-wider">
@@ -50,12 +48,7 @@ export function TestimonialsSection() {
         <StaggerContainer className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {testimonials.map((t) => (
             <StaggerItem key={t.name}>
-              <motion.div
-                whileHover={{ y: -4, scale: 1.01 }}
-                transition={{ type: "spring", stiffness: 300, damping: 20 }}
-                className="h-full p-8 bg-white rounded-2xl border border-stone-100 shadow-sm hover:shadow-lg hover:border-orange-100 transition-all duration-300"
-              >
-                {/* Stars */}
+              <div className="h-full p-8 bg-white rounded-2xl border border-stone-100 shadow-sm hover:shadow-lg hover:border-orange-100 hover:-translate-y-1 transition-transform duration-300">
                 <div className="flex gap-1 mb-4">
                   {[...Array(5)].map((_, i) => (
                     <svg
@@ -69,14 +62,12 @@ export function TestimonialsSection() {
                   ))}
                 </div>
 
-                {/* Quote */}
                 <p className="text-stone-600 leading-relaxed mb-6 text-sm italic">
                   &ldquo;{t.quote}&rdquo;
                 </p>
 
-                {/* Author */}
                 <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 rounded-full bg-gradient-to-br from-orange-500 to-amber-500 flex items-center justify-center text-xs font-bold text-white">
+                  <div className="w-10 h-10 rounded-full bg-gradient-to-br from-orange-500 to-orange-700 flex items-center justify-center text-xs font-bold text-white">
                     {t.avatar}
                   </div>
                   <div>
@@ -86,7 +77,7 @@ export function TestimonialsSection() {
                     <p className="text-xs text-stone-400">{t.role}</p>
                   </div>
                 </div>
-              </motion.div>
+              </div>
             </StaggerItem>
           ))}
         </StaggerContainer>

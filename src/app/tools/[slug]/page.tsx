@@ -16,19 +16,34 @@ export function generateMetadata({ params }: Props): Metadata {
   const tool = getToolBySlug(params.slug);
   if (!tool) return {};
 
+  const seoDescription = `${tool.name} review for restaurants: ${tool.description} Compare features, pricing (${tool.price}), and best-fit use cases for ${tool.category.toLowerCase()} workflows.`;
+
   return {
     title: `${tool.name} — AI ${tool.category} Tool for Restaurants`,
-    description: tool.description,
+    description: seoDescription,
+    alternates: {
+      canonical: `/tools/${tool.slug}`,
+    },
     openGraph: {
       title: `${tool.name} — AI ${tool.category} Tool | RestaurantAI`,
-      description: tool.description,
+      description: seoDescription,
       type: "article",
+      url: `https://restaurantai.tools/tools/${tool.slug}`,
       siteName: "RestaurantAI",
+      images: [
+        {
+          url: "/og-image.png",
+          width: 1200,
+          height: 630,
+          alt: `${tool.name} AI tool for restaurants`,
+        },
+      ],
     },
     twitter: {
       card: "summary_large_image",
       title: `${tool.name} — AI ${tool.category} Tool`,
-      description: tool.description,
+      description: seoDescription,
+      images: ["/og-image.png"],
     },
   };
 }
