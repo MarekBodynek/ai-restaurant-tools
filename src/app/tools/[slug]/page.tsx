@@ -87,7 +87,7 @@ export default function ToolPage({ params }: Props) {
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
             {/* Main content */}
             <div className="lg:col-span-2">
-              <ToolDetailClient tool={tool} categoryColor={categoryInfo?.color || "from-gray-500 to-gray-600"} />
+              <ToolDetailClient tool={tool} categoryColor={categoryInfo?.color || "from-stone-500 to-stone-600"} />
             </div>
 
             {/* Sidebar */}
