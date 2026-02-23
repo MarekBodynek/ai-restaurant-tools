@@ -66,7 +66,7 @@ export default function ToolPage({ params }: Props) {
       <div className="pt-24 pb-16">
         {/* Breadcrumbs */}
         <div className="container-wide mx-auto px-4 sm:px-6 lg:px-8 mb-8">
-          <nav className="flex items-center gap-2 text-sm text-gray-400">
+          <nav className="flex items-center gap-2 text-sm text-stone-400">
             <Link href="/" className="hover:text-orange-500 transition-colors">
               Home
             </Link>
@@ -93,23 +93,23 @@ export default function ToolPage({ params }: Props) {
             {/* Sidebar */}
             <div className="space-y-6">
               {/* Quick info card */}
-              <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-6">
+              <div className="bg-white rounded-2xl border border-stone-100 shadow-sm p-6">
                 <h3 className="font-semibold text-navy-800 mb-4">Quick Info</h3>
                 <dl className="space-y-3">
-                  <div className="flex items-center justify-between py-2 border-b border-gray-50">
-                    <dt className="text-sm text-gray-500">Category</dt>
+                  <div className="flex items-center justify-between py-2 border-b border-stone-50">
+                    <dt className="text-sm text-stone-500">Category</dt>
                     <dd className="text-sm font-medium text-navy-800">
                       {tool.category}
                     </dd>
                   </div>
-                  <div className="flex items-center justify-between py-2 border-b border-gray-50">
-                    <dt className="text-sm text-gray-500">Pricing</dt>
+                  <div className="flex items-center justify-between py-2 border-b border-stone-50">
+                    <dt className="text-sm text-stone-500">Pricing</dt>
                     <dd className="text-sm font-medium text-orange-500">
                       {tool.price}
                     </dd>
                   </div>
                   <div className="flex items-center justify-between py-2">
-                    <dt className="text-sm text-gray-500">Type</dt>
+                    <dt className="text-sm text-stone-500">Type</dt>
                     <dd className="text-sm font-medium text-navy-800">
                       SaaS / Cloud
                     </dd>
@@ -122,7 +122,7 @@ export default function ToolPage({ params }: Props) {
                 <h3 className="font-semibold text-white mb-2">
                   Ready to try {tool.name}?
                 </h3>
-                <p className="text-sm text-gray-400 mb-4">
+                <p className="text-sm text-stone-400 mb-4">
                   Visit their website to learn more and get started.
                 </p>
                 <button className="w-full py-3 bg-orange-500 hover:bg-orange-600 text-white font-semibold rounded-xl transition-all hover:shadow-lg hover:shadow-orange-500/25 text-sm">
@@ -132,7 +132,7 @@ export default function ToolPage({ params }: Props) {
 
               {/* Related tools */}
               {related.length > 0 && (
-                <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-6">
+                <div className="bg-white rounded-2xl border border-stone-100 shadow-sm p-6">
                   <h3 className="font-semibold text-navy-800 mb-4">
                     Related Tools
                   </h3>
@@ -141,19 +141,19 @@ export default function ToolPage({ params }: Props) {
                       <Link
                         key={r.slug}
                         href={`/tools/${r.slug}`}
-                        className="flex items-center gap-3 p-3 rounded-xl hover:bg-gray-50 transition-colors group"
+                        className="flex items-center gap-3 p-3 rounded-xl hover:bg-stone-50 transition-colors group"
                       >
-                        <span className="w-10 h-10 rounded-lg bg-gray-50 border border-gray-100 flex items-center justify-center text-xl">
+                        <span className="w-10 h-10 rounded-lg bg-stone-50 border border-stone-100 flex items-center justify-center text-xl">
                           {r.icon}
                         </span>
                         <div className="flex-1 min-w-0">
                           <p className="text-sm font-medium text-navy-800 group-hover:text-orange-500 transition-colors truncate">
                             {r.name}
                           </p>
-                          <p className="text-xs text-gray-400">{r.price}</p>
+                          <p className="text-xs text-stone-400">{r.price}</p>
                         </div>
                         <svg
-                          className="w-4 h-4 text-gray-300 group-hover:text-orange-400 transition-colors flex-shrink-0"
+                          className="w-4 h-4 text-stone-300 group-hover:text-orange-400 transition-colors flex-shrink-0"
                           fill="none"
                           viewBox="0 0 24 24"
                           stroke="currentColor"
@@ -170,10 +170,10 @@ export default function ToolPage({ params }: Props) {
           </div>
 
           {/* Back link */}
-          <div className="mt-12 pt-8 border-t border-gray-100">
+          <div className="mt-12 pt-8 border-t border-stone-100">
             <Link
               href="/#tools"
-              className="inline-flex items-center gap-2 text-sm text-gray-500 hover:text-orange-500 transition-colors font-medium"
+              className="inline-flex items-center gap-2 text-sm text-stone-500 hover:text-orange-500 transition-colors font-medium"
             >
               <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />

@@ -8,7 +8,7 @@ export default function NotFound() {
         <h1 className="text-4xl font-bold text-navy-800 mb-4">
           Page Not Found
         </h1>
-        <p className="text-gray-500 mb-8 max-w-md mx-auto">
+        <p className="text-stone-500 mb-8 max-w-md mx-auto">
           Sorry, we couldn&apos;t find the page you&apos;re looking for.
           It might have been moved or doesn&apos;t exist.
         </p>

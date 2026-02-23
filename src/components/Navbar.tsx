@@ -23,19 +23,19 @@ export function Navbar() {
           <div className="hidden md:flex items-center gap-8">
             <Link
               href="/#tools"
-              className="text-sm text-gray-300 hover:text-white transition-colors"
+              className="text-sm text-stone-300 hover:text-white transition-colors"
             >
               Tools
             </Link>
             <Link
               href="/#categories"
-              className="text-sm text-gray-300 hover:text-white transition-colors"
+              className="text-sm text-stone-300 hover:text-white transition-colors"
             >
               Categories
             </Link>
             <Link
               href="/blog"
-              className="text-sm text-gray-300 hover:text-white transition-colors"
+              className="text-sm text-stone-300 hover:text-white transition-colors"
             >
               Blog
             </Link>
@@ -50,7 +50,7 @@ export function Navbar() {
           {/* Mobile menu button */}
           <button
             onClick={() => setMobileOpen(!mobileOpen)}
-            className="md:hidden p-2 text-gray-300 hover:text-white"
+            className="md:hidden p-2 text-stone-300 hover:text-white"
             aria-label="Toggle menu"
           >
             <svg
@@ -77,21 +77,21 @@ export function Navbar() {
               <Link
                 href="/#tools"
                 onClick={() => setMobileOpen(false)}
-                className="text-sm text-gray-300 hover:text-white py-2"
+                className="text-sm text-stone-300 hover:text-white py-2"
               >
                 Tools
               </Link>
               <Link
                 href="/#categories"
                 onClick={() => setMobileOpen(false)}
-                className="text-sm text-gray-300 hover:text-white py-2"
+                className="text-sm text-stone-300 hover:text-white py-2"
               >
                 Categories
               </Link>
               <Link
                 href="/blog"
                 onClick={() => setMobileOpen(false)}
-                className="text-sm text-gray-300 hover:text-white py-2"
+                className="text-sm text-stone-300 hover:text-white py-2"
               >
                 Blog
               </Link>

@@ -65,7 +65,7 @@ export default function BlogPage() {
           <h1 className="text-4xl sm:text-5xl font-bold text-navy-800 mt-3 mb-4">
             AI Restaurant Insights
           </h1>
-          <p className="text-gray-500 max-w-2xl mx-auto text-lg">
+          <p className="text-stone-500 max-w-2xl mx-auto text-lg">
             Expert guides, case studies, and industry analysis to help you navigate
             the world of AI in hospitality.
           </p>
@@ -78,7 +78,7 @@ export default function BlogPage() {
               <div
                 className="absolute inset-0"
                 style={{
-                  backgroundImage: `radial-gradient(circle at 30% 50%, rgba(249,115,22,0.2) 0%, transparent 50%)`,
+                  backgroundImage: `radial-gradient(circle at 30% 50%, rgba(217,119,6,0.2) 0%, transparent 50%)`,
                 }}
               />
             </div>
@@ -87,7 +87,7 @@ export default function BlogPage() {
               <h2 className="text-2xl font-bold text-white mb-3">
                 Blog Launching Soon
               </h2>
-              <p className="text-gray-400 max-w-md mx-auto mb-6">
+              <p className="text-stone-400 max-w-md mx-auto mb-6">
                 We&apos;re working on in-depth articles about AI in the restaurant
                 industry. Subscribe to be notified when we publish.
               </p>
@@ -106,11 +106,11 @@ export default function BlogPage() {
           {placeholderPosts.map((post) => (
             <article
               key={post.title}
-              className="group p-6 bg-white rounded-2xl border border-gray-100 shadow-sm opacity-75"
+              className="group p-6 bg-white rounded-2xl border border-stone-100 shadow-sm opacity-75"
             >
               {/* Placeholder image */}
-              <div className="w-full h-40 rounded-xl bg-gray-100 mb-5 flex items-center justify-center">
-                <svg className="w-10 h-10 text-gray-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.5">
+              <div className="w-full h-40 rounded-xl bg-stone-100 mb-5 flex items-center justify-center">
+                <svg className="w-10 h-10 text-stone-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.5">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 15.75l5.159-5.159a2.25 2.25 0 013.182 0l5.159 5.159m-1.5-1.5l1.409-1.409a2.25 2.25 0 013.182 0l2.909 2.909M3.75 21h16.5A2.25 2.25 0 0022.5 18.75V5.25A2.25 2.25 0 0020.25 3H3.75A2.25 2.25 0 001.5 5.25v13.5A2.25 2.25 0 003.75 21z" />
                 </svg>
               </div>
@@ -119,13 +119,13 @@ export default function BlogPage() {
                 <span className="text-xs font-medium text-orange-500 bg-orange-50 px-2.5 py-1 rounded-full">
                   {post.category}
                 </span>
-                <span className="text-xs text-gray-400">{post.date}</span>
+                <span className="text-xs text-stone-400">{post.date}</span>
               </div>
 
               <h3 className="font-semibold text-navy-800 mb-2 leading-snug">
                 {post.title}
               </h3>
-              <p className="text-sm text-gray-500 leading-relaxed">
+              <p className="text-sm text-stone-500 leading-relaxed">
                 {post.excerpt}
               </p>
             </article>
@@ -133,10 +133,10 @@ export default function BlogPage() {
         </div>
 
         {/* Back link */}
-        <div className="mt-12 pt-8 border-t border-gray-100">
+        <div className="mt-12 pt-8 border-t border-stone-100">
           <Link
             href="/"
-            className="inline-flex items-center gap-2 text-sm text-gray-500 hover:text-orange-500 transition-colors font-medium"
+            className="inline-flex items-center gap-2 text-sm text-stone-500 hover:text-orange-500 transition-colors font-medium"
           >
             <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
               <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />

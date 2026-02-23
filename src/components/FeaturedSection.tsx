@@ -20,7 +20,7 @@ export function FeaturedSection() {
           <h2 className="text-3xl sm:text-4xl font-bold text-navy-800 mt-3 mb-4">
             Top Picks for Your Restaurant
           </h2>
-          <p className="text-gray-500 max-w-2xl mx-auto">
+          <p className="text-stone-500 max-w-2xl mx-auto">
             Hand-picked by our team — the AI tools that deliver the most
             impact for restaurant owners.
           </p>
@@ -57,13 +57,13 @@ export function FeaturedSection() {
                   <h3 className="text-xl font-bold text-white mb-2 group-hover:text-orange-300 transition-colors">
                     {tool.name}
                   </h3>
-                  <p className="text-sm text-gray-400 mb-4 leading-relaxed">
+                  <p className="text-sm text-stone-400 mb-4 leading-relaxed">
                     {tool.description}
                   </p>
 
                   {/* Category + Price */}
                   <div className="flex items-center justify-between">
-                    <span className="text-xs font-medium text-gray-500 bg-white/5 px-3 py-1 rounded-full border border-white/10">
+                    <span className="text-xs font-medium text-stone-500 bg-white/5 px-3 py-1 rounded-full border border-white/10">
                       {tool.category}
                     </span>
                     <span className="text-sm font-semibold text-orange-400">
@@ -74,7 +74,7 @@ export function FeaturedSection() {
                   {/* Arrow */}
                   <div className="absolute top-8 right-8 w-10 h-10 rounded-full bg-white/5 flex items-center justify-center group-hover:bg-orange-500/20 transition-all">
                     <svg
-                      className="w-5 h-5 text-gray-500 group-hover:text-orange-400 transition-colors"
+                      className="w-5 h-5 text-stone-500 group-hover:text-orange-400 transition-colors"
                       fill="none"
                       viewBox="0 0 24 24"
                       stroke="currentColor"

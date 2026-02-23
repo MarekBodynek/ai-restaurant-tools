@@ -15,8 +15,8 @@ export function NewsletterSection() {
                 className="absolute inset-0"
                 style={{
                   backgroundImage: `
-                    radial-gradient(circle at 20% 50%, rgba(249,115,22,0.15) 0%, transparent 50%),
-                    radial-gradient(circle at 80% 50%, rgba(249,115,22,0.1) 0%, transparent 50%)
+                    radial-gradient(circle at 20% 50%, rgba(217,119,6,0.15) 0%, transparent 50%),
+                    radial-gradient(circle at 80% 50%, rgba(217,119,6,0.1) 0%, transparent 50%)
                   `,
                 }}
               />
@@ -30,7 +30,7 @@ export function NewsletterSection() {
               <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
                 Get the Latest AI Restaurant Tools
               </h2>
-              <p className="text-gray-400 max-w-xl mx-auto mb-8">
+              <p className="text-stone-400 max-w-xl mx-auto mb-8">
                 We review and add new tools every week. Subscribe to get
                 the best picks delivered to your inbox — no spam, ever.
               </p>
@@ -43,7 +43,7 @@ export function NewsletterSection() {
                 <input
                   type="email"
                   placeholder="your@email.com"
-                  className="w-full sm:flex-1 px-5 py-4 rounded-xl bg-white/5 border border-white/10 text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-orange-500/30 focus:border-orange-400 text-sm transition-all"
+                  className="w-full sm:flex-1 px-5 py-4 rounded-xl bg-white/5 border border-white/10 text-white placeholder-stone-500 focus:outline-none focus:ring-2 focus:ring-orange-500/30 focus:border-orange-400 text-sm transition-all"
                 />
                 <button
                   type="submit"
@@ -52,7 +52,7 @@ export function NewsletterSection() {
                   Subscribe Free
                 </button>
               </form>
-              <p className="text-xs text-gray-500 mt-4">
+              <p className="text-xs text-stone-500 mt-4">
                 Join 2,000+ restaurant owners. Unsubscribe anytime.
               </p>
             </div>

@@ -28,7 +28,7 @@ const testimonials = [
 
 export function TestimonialsSection() {
   return (
-    <section className="section-padding bg-gray-50/80">
+    <section className="section-padding bg-stone-50/80">
       <div className="container-wide mx-auto">
         {/* Section header */}
         <div className="text-center mb-14">
@@ -38,7 +38,7 @@ export function TestimonialsSection() {
           <h2 className="text-3xl sm:text-4xl font-bold text-navy-800 mt-3 mb-4">
             Trusted by Restaurant Owners
           </h2>
-          <p className="text-gray-500 max-w-2xl mx-auto">
+          <p className="text-stone-500 max-w-2xl mx-auto">
             See how restaurateurs are using our directory to find the
             AI tools that transform their business.
           </p>
@@ -47,7 +47,7 @@ export function TestimonialsSection() {
         <StaggerContainer className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {testimonials.map((t) => (
             <StaggerItem key={t.name}>
-              <div className="h-full p-8 bg-white rounded-2xl border border-gray-100 shadow-sm">
+              <div className="h-full p-8 bg-white rounded-2xl border border-stone-100 shadow-sm">
                 {/* Stars */}
                 <div className="flex gap-1 mb-4">
                   {[...Array(5)].map((_, i) => (
@@ -63,7 +63,7 @@ export function TestimonialsSection() {
                 </div>
 
                 {/* Quote */}
-                <p className="text-gray-600 leading-relaxed mb-6 text-sm italic">
+                <p className="text-stone-600 leading-relaxed mb-6 text-sm italic">
                   &ldquo;{t.quote}&rdquo;
                 </p>
 
@@ -76,7 +76,7 @@ export function TestimonialsSection() {
                     <p className="text-sm font-semibold text-navy-800">
                       {t.name}
                     </p>
-                    <p className="text-xs text-gray-400">{t.role}</p>
+                    <p className="text-xs text-stone-400">{t.role}</p>
                   </div>
                 </div>
               </div>

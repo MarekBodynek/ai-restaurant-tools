@@ -104,7 +104,7 @@ export function ToolDetailClient({ tool, categoryColor }: ToolDetailClientProps)
             {tool.name}
           </h1>
           <div className="flex items-center gap-3">
-            <span className="text-sm font-medium text-gray-500 bg-gray-100 px-3 py-1 rounded-full">
+            <span className="text-sm font-medium text-stone-500 bg-stone-100 px-3 py-1 rounded-full">
               {tool.category}
             </span>
             <span className="text-sm font-semibold text-orange-500">
@@ -117,10 +117,10 @@ export function ToolDetailClient({ tool, categoryColor }: ToolDetailClientProps)
       {/* Description */}
       <div className="mb-10">
         <h2 className="text-lg font-semibold text-navy-800 mb-3">About</h2>
-        <p className="text-gray-600 leading-relaxed text-base">
+        <p className="text-stone-600 leading-relaxed text-base">
           {tool.description}
         </p>
-        <p className="text-gray-500 leading-relaxed text-sm mt-4">
+        <p className="text-stone-500 leading-relaxed text-sm mt-4">
           {tool.name} is a leading AI-powered {tool.category.toLowerCase()} solution designed
           specifically for the restaurant industry. It leverages advanced machine learning
           algorithms to help restaurants streamline operations, improve customer experience,
@@ -140,7 +140,7 @@ export function ToolDetailClient({ tool, categoryColor }: ToolDetailClientProps)
               initial={{ opacity: 0, x: -10 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.3, delay: i * 0.05 }}
-              className="flex items-start gap-3 p-3 rounded-xl bg-gray-50/80"
+              className="flex items-start gap-3 p-3 rounded-xl bg-stone-50/80"
             >
               <svg
                 className="w-5 h-5 text-orange-500 flex-shrink-0 mt-0.5"
@@ -155,7 +155,7 @@ export function ToolDetailClient({ tool, categoryColor }: ToolDetailClientProps)
                   d="M5 13l4 4L19 7"
                 />
               </svg>
-              <span className="text-sm text-gray-600">{feature}</span>
+              <span className="text-sm text-stone-600">{feature}</span>
             </motion.div>
           ))}
         </div>
@@ -165,7 +165,7 @@ export function ToolDetailClient({ tool, categoryColor }: ToolDetailClientProps)
       <div className="p-6 rounded-2xl bg-gradient-to-br from-orange-50 to-orange-100/50 border border-orange-100">
         <h2 className="text-lg font-semibold text-navy-800 mb-2">Pricing</h2>
         <p className="text-2xl font-bold text-orange-500 mb-2">{tool.price}</p>
-        <p className="text-sm text-gray-500">
+        <p className="text-sm text-stone-500">
           Contact {tool.name} directly for detailed pricing information, custom
           plans, and enterprise quotes.
         </p>
