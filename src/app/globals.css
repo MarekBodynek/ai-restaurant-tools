@@ -2,6 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
+
+/* GPU-accelerated animations only */
+.will-change-transform {
+  will-change: transform;
+}
+
+/* Prevent layout shifts from hover animations */
+.hover-lift {
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
+
 :root {
   --background: #fefce8;
   --foreground: #292524;

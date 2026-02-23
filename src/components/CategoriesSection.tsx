@@ -2,28 +2,27 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { motion } from "framer-motion";
 import { getCategories } from "@/lib/tools";
 import { AnimatedSection, StaggerContainer, StaggerItem } from "./AnimatedSection";
 
 const categoryImages: Record<string, string> = {
   Chatbots:
-    "https://images.unsplash.com/photo-1577563908411-5077b6dc7624?w=400&q=80",
+    "https://images.unsplash.com/photo-1596524430615-b46475ddff6e?w=400&q=80", // customer on phone chatting
   Reservations:
-    "https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?w=400&q=80",
+    "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=400&q=80", // restaurant tables set up for reservations
   "Menu AI":
-    "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&q=80",
+    "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&q=80", // beautiful plated dish
   Inventory:
-    "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400&q=80",
+    "https://images.unsplash.com/photo-1606787366850-de6330128bfc?w=400&q=80", // organized food ingredients storage
   Marketing:
-    "https://images.unsplash.com/photo-1432888622747-4eb9a8efeb07?w=400&q=80",
-  POS: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=400&q=80",
+    "https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=400&q=80", // social media on phone
+  POS: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=400&q=80", // POS terminal payment
   Delivery:
-    "https://images.unsplash.com/photo-1526367790999-0150786686a2?w=400&q=80",
+    "https://images.unsplash.com/photo-1526367790999-0150786686a2?w=400&q=80", // food delivery packaging
   Kitchen:
-    "https://images.unsplash.com/photo-1556910103-1c02745aae4d?w=400&q=80",
+    "https://images.unsplash.com/photo-1581299894007-aaa50297cf16?w=400&q=80", // professional kitchen with chef
   Analytics:
-    "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&q=80",
+    "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&q=80", // dashboard with charts on screen
 };
 
 export function CategoriesSection() {
@@ -52,10 +51,10 @@ export function CategoriesSection() {
         <StaggerContainer className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {categories.map((category) => (
             <StaggerItem key={category.name}>
-              <motion.div whileHover={{ y: -6, scale: 1.01 }} transition={{ type: "spring", stiffness: 300, damping: 20 }}>
+              <div className="hover-lift">
                 <Link
                   href="/#tools"
-                  className="group block bg-white rounded-2xl border border-stone-100 hover:border-orange-200 shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden"
+                  className="group block bg-white rounded-2xl border border-stone-100 hover:border-orange-200 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 overflow-hidden"
                 >
                   {/* Image */}
                   {categoryImages[category.name] && (
@@ -92,7 +91,7 @@ export function CategoriesSection() {
                     </p>
                   </div>
                 </Link>
-              </motion.div>
+              </div>
             </StaggerItem>
           ))}
         </StaggerContainer>

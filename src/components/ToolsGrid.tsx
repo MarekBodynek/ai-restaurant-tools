@@ -145,7 +145,7 @@ function ToolCard({ tool }: { tool: Tool }) {
       animate={{ opacity: 1, scale: 1 }}
       exit={{ opacity: 0, scale: 0.95 }}
       transition={{ duration: 0.3 }}
-      whileHover={{ scale: 1.02, y: -4 }}
+      className="hover:-translate-y-1 transition-transform duration-300"
     >
       <Link
         href={`/tools/${tool.slug}`}
@@ -156,12 +156,11 @@ function ToolCard({ tool }: { tool: Tool }) {
 
         <div className="relative">
           <div className="flex items-start gap-4 mb-4">
-            <motion.span
-              whileHover={{ rotate: 10, scale: 1.1 }}
+            <span
               className="flex-shrink-0 w-12 h-12 rounded-xl bg-gradient-to-br from-stone-50 to-stone-100 flex items-center justify-center text-2xl border border-stone-100 group-hover:border-orange-200 group-hover:shadow-md group-hover:shadow-orange-500/10 transition-all"
             >
               {tool.icon}
-            </motion.span>
+            </span>
             <div className="flex-1 min-w-0">
               <h3 className="font-semibold text-navy-800 group-hover:text-orange-500 transition-colors truncate">
                 {tool.name}
