@@ -1,30 +1,22 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 import Link from "next/link";
 
 export function HeroSection() {
   return (
-    <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden bg-hero-gradient">
-      {/* Animated background elements */}
-      <div className="absolute inset-0 overflow-hidden">
-        {/* Gradient orbs */}
-        <div className="absolute top-1/4 -left-20 w-96 h-96 bg-orange-500/10 rounded-full blur-3xl animate-float" />
-        <div className="absolute bottom-1/4 -right-20 w-80 h-80 bg-orange-500/5 rounded-full blur-3xl animate-float" style={{ animationDelay: "3s" }} />
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-orange-500/5 rounded-full blur-3xl" />
-
-        {/* Grid pattern */}
-        <div
-          className="absolute inset-0 opacity-[0.03]"
-          style={{
-            backgroundImage: `
-              linear-gradient(rgba(255,255,255,0.1) 1px, transparent 1px),
-              linear-gradient(90deg, rgba(255,255,255,0.1) 1px, transparent 1px)
-            `,
-            backgroundSize: "60px 60px",
-          }}
-        />
-      </div>
+    <section className="relative min-h-[85vh] flex items-center justify-center overflow-hidden">
+      {/* Background image */}
+      <Image
+        src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1920&q=80"
+        alt="Restaurant"
+        fill
+        className="object-cover"
+        priority
+      />
+      {/* Dark gradient overlay */}
+      <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/40" />
 
       <div className="relative z-10 container-wide mx-auto px-4 sm:px-6 lg:px-8 pt-24 pb-16 text-center">
         {/* Badge */}
@@ -33,7 +25,7 @@ export function HeroSection() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
         >
-          <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 text-sm text-gray-300 backdrop-blur-sm mb-8">
+          <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 text-sm text-stone-300 backdrop-blur-sm mb-8">
             <span className="w-2 h-2 rounded-full bg-green-400 animate-pulse-glow" />
             54+ AI Tools Curated for Restaurants
           </span>
@@ -63,8 +55,8 @@ export function HeroSection() {
               />
               <defs>
                 <linearGradient id="underline-gradient" x1="0" y1="0" x2="300" y2="0">
-                  <stop offset="0%" stopColor="#f97316" />
-                  <stop offset="100%" stopColor="#fb923c" />
+                  <stop offset="0%" stopColor="#d97706" />
+                  <stop offset="100%" stopColor="#f59e0b" />
                 </linearGradient>
               </defs>
             </svg>
@@ -76,7 +68,7 @@ export function HeroSection() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.25 }}
-          className="text-lg sm:text-xl text-gray-400 max-w-2xl mx-auto mb-10 leading-relaxed"
+          className="text-lg sm:text-xl text-stone-300 max-w-2xl mx-auto mb-10 leading-relaxed"
         >
           Discover, compare, and choose from the most comprehensive collection of
           AI-powered tools — from reservations to kitchen robotics.
@@ -111,7 +103,7 @@ export function HeroSection() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.6, delay: 0.6 }}
-          className="mt-16 flex flex-wrap items-center justify-center gap-8 text-sm text-gray-500"
+          className="mt-16 flex flex-wrap items-center justify-center gap-8 text-sm text-stone-400"
         >
           <span className="flex items-center gap-2">
             <svg className="w-4 h-4 text-green-400" fill="currentColor" viewBox="0 0 20 20">
@@ -135,7 +127,7 @@ export function HeroSection() {
       </div>
 
       {/* Bottom fade */}
-      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-white to-transparent" />
+      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-[#fefce8] to-transparent" />
     </section>
   );
 }
