@@ -1,0 +1,80 @@
+import type { Metadata } from "next";
+import { Inter } from "next/font/google";
+import "./globals.css";
+import { Navbar } from "@/components/Navbar";
+import { Footer } from "@/components/Footer";
+
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-inter",
+  display: "swap",
+});
+
+export const metadata: Metadata = {
+  title: {
+    default: "RestaurantAI — The #1 AI Tools Directory for Restaurants",
+    template: "%s | RestaurantAI",
+  },
+  description:
+    "Discover 54+ AI-powered tools to transform your restaurant. From reservations to kitchen robotics — find, compare, and choose the best AI solutions for your business.",
+  keywords: [
+    "restaurant AI tools",
+    "AI for restaurants",
+    "restaurant technology",
+    "restaurant automation",
+    "restaurant software",
+    "AI chatbot restaurant",
+    "restaurant POS",
+    "restaurant analytics",
+  ],
+  metadataBase: new URL("https://restaurantai.tools"),
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    siteName: "RestaurantAI",
+    title: "RestaurantAI — The #1 AI Tools Directory for Restaurants",
+    description:
+      "Discover 54+ AI-powered tools to transform your restaurant. From reservations to kitchen robotics.",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "RestaurantAI Directory",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "RestaurantAI — The #1 AI Tools Directory for Restaurants",
+    description:
+      "Discover 54+ AI-powered tools to transform your restaurant.",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+};
+
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
+  return (
+    <html lang="en" className={inter.variable}>
+      <body className="font-sans antialiased bg-white text-navy-800">
+        <Navbar />
+        <main className="min-h-screen">{children}</main>
+        <Footer />
+      </body>
+    </html>
+  );
+}
