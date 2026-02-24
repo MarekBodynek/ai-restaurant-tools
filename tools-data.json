@@ -4,7 +4,7 @@
     "slug": "tidio",
     "category": "Chatbots",
     "description": "AI chatbot handling reservations, menu questions, and order tracking. Multi-channel: Facebook, WhatsApp, website.",
-    "price": "From",
+    "price": "from",
     "icon": "\ud83d\udcac"
   },
   {
@@ -12,7 +12,7 @@
     "slug": "chatfuel",
     "category": "Chatbots",
     "description": "No-code chatbot builder for automating Facebook and Instagram customer interactions.",
-    "price": "From",
+    "price": "from",
     "icon": "\ud83e\udd16"
   },
   {
@@ -28,7 +28,7 @@
     "slug": "intercom",
     "category": "Chatbots",
     "description": "Customer messaging with AI chatbot Fin that handles restaurant inquiries 24/7.",
-    "price": "From",
+    "price": "from",
     "icon": "\ud83d\udca1"
   },
   {
@@ -52,7 +52,7 @@
     "slug": "landbot",
     "category": "Chatbots",
     "description": "Visual chatbot builder for conversational restaurant experiences on web and WhatsApp.",
-    "price": "From",
+    "price": "from",
     "icon": "\ud83c\udf10"
   },
   {
@@ -60,7 +60,7 @@
     "slug": "opentable",
     "category": "Reservations",
     "description": "Industry-leading AI-powered reservation and guest management. 60,000+ restaurants worldwide.",
-    "price": "From",
+    "price": "from",
     "icon": "\ud83d\udcc5"
   },
   {
@@ -68,7 +68,7 @@
     "slug": "resy",
     "category": "Reservations",
     "description": "Premium reservation platform with AI demand forecasting and dynamic pricing for fine dining.",
-    "price": "From",
+    "price": "from",
     "icon": "\ud83c\udf1f"
   },
   {
@@ -76,7 +76,7 @@
     "slug": "yelp-guest-manager",
     "category": "Reservations",
     "description": "AI-powered front-of-house combining Yelp's review platform with reservation and waitlist tools.",
-    "price": "From",
+    "price": "from",
     "icon": "\u2b50"
   },
   {
@@ -100,7 +100,7 @@
     "slug": "tock",
     "category": "Reservations",
     "description": "Reservation, takeout, and event platform with prepaid dining and dynamic pricing.",
-    "price": "From",
+    "price": "from",
     "icon": "\ud83c\udfab"
   },
   {
@@ -108,7 +108,7 @@
     "slug": "tablein",
     "category": "Reservations",
     "description": "Simple reservation system with AI no-show prediction and automated reminders.",
-    "price": "From",
+    "price": "from",
     "icon": "\ud83d\udccb"
   },
   {
@@ -116,7 +116,7 @@
     "slug": "menudrive",
     "category": "Menu AI",
     "description": "AI-powered online ordering that optimizes menu layout and suggests upsells based on behavior.",
-    "price": "From",
+    "price": "from",
     "icon": "\ud83c\udf7d\ufe0f"
   },
   {
@@ -140,7 +140,7 @@
     "slug": "nutritics",
     "category": "Menu AI",
     "description": "AI nutrition analysis for allergens, calories, and nutritional information.",
-    "price": "From",
+    "price": "from",
     "icon": "\ud83e\udd57"
   },
   {
@@ -156,7 +156,7 @@
     "slug": "cookright",
     "category": "Menu AI",
     "description": "AI recipe scaling and consistency tool ensuring dishes taste the same across all locations.",
-    "price": "From",
+    "price": "from",
     "icon": "\ud83d\udccf"
   },
   {
@@ -164,7 +164,7 @@
     "slug": "menucalc",
     "category": "Menu AI",
     "description": "Recipe costing and nutrition analysis to optimize food costs and menu pricing.",
-    "price": "From",
+    "price": "from",
     "icon": "\ud83e\uddee"
   },
   {
@@ -172,7 +172,7 @@
     "slug": "bluecart",
     "category": "Inventory",
     "description": "AI procurement and inventory predicting ordering needs and reducing waste.",
-    "price": "From",
+    "price": "from",
     "icon": "\ud83d\udce6"
   },
   {
@@ -180,7 +180,7 @@
     "slug": "marketman",
     "category": "Inventory",
     "description": "Restaurant inventory and supply chain with AI-driven purchasing recommendations.",
-    "price": "From",
+    "price": "from",
     "icon": "\ud83d\udcca"
   },
   {
@@ -188,7 +188,7 @@
     "slug": "lightspeed",
     "category": "Inventory",
     "description": "All-in-one POS with AI inventory tracking, menu management, and analytics.",
-    "price": "From",
+    "price": "from",
     "icon": "\u26a1"
   },
   {
@@ -212,7 +212,7 @@
     "slug": "apicbase",
     "category": "Inventory",
     "description": "Food management with AI inventory counts, procurement, and HACCP compliance.",
-    "price": "From",
+    "price": "from",
     "icon": "\ud83d\udccb"
   },
   {
@@ -236,7 +236,7 @@
     "slug": "ovation",
     "category": "Marketing",
     "description": "AI guest feedback turning negative experiences into positive reviews and insights.",
-    "price": "From",
+    "price": "from",
     "icon": "\ud83c\udf1f"
   },
   {
@@ -244,7 +244,7 @@
     "slug": "marqii",
     "category": "Marketing",
     "description": "AI menu and listing management ensuring accuracy across all platforms.",
-    "price": "From",
+    "price": "from",
     "icon": "\ud83d\udccd"
   },
   {
@@ -260,7 +260,7 @@
     "slug": "yext",
     "category": "Marketing",
     "description": "AI digital presence managing listings, reviews, and local SEO across 200+ publishers.",
-    "price": "From",
+    "price": "from",
     "icon": "\ud83d\udd0e"
   },
   {
@@ -300,7 +300,7 @@
     "slug": "clover",
     "category": "POS",
     "description": "Smart POS with AI reporting and restaurant-specific apps for table management.",
-    "price": "From",
+    "price": "from",
     "icon": "\ud83c\udf40"
   },
   {
@@ -316,7 +316,7 @@
     "slug": "lineup-ai",
     "category": "POS",
     "description": "AI sales forecasting predicting daily revenue, guest counts, and ideal staffing.",
-    "price": "From",
+    "price": "from",
     "icon": "\ud83d\udcc8"
   },
   {
@@ -396,7 +396,7 @@
     "slug": "freshcheq",
     "category": "Kitchen",
     "description": "Digital food safety checklists with AI anomaly detection for temperature logs.",
-    "price": "From",
+    "price": "from",
     "icon": "\u2705"
   },
   {
