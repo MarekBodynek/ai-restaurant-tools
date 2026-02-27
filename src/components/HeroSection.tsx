@@ -213,7 +213,7 @@ export function HeroSection() {
       {/* Progress bar indicators */}
       <div
         ref={progressRef}
-        className="absolute bottom-6 md:bottom-8 left-1/2 -translate-x-1/2 z-20 flex items-center gap-1.5 md:gap-2 w-[min(280px,60vw)] md:w-[320px]"
+        className="absolute bottom-6 md:bottom-8 left-1/2 -translate-x-1/2 z-[15] flex items-center gap-1.5 md:gap-2 w-[min(280px,60vw)] md:w-[320px]"
       >
         {slides.map((_, index) => (
           <button
@@ -232,7 +232,7 @@ export function HeroSection() {
       </div>
 
       {/* Bottom gradient fade to page background */}
-      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-[#fefce8] via-[#fefce8]/60 to-transparent z-20 pointer-events-none" />
+      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-[#fefce8] via-[#fefce8]/60 to-transparent z-[5] pointer-events-none" />
     </section>
   );
 }
