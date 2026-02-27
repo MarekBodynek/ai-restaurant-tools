@@ -168,7 +168,7 @@ function ToolCard({ tool }: { tool: Tool }) {
               <span className="text-xs text-stone-400">{tool.category}</span>
             </div>
           </div>
-          <p className="text-sm text-stone-500 leading-relaxed mb-4 line-clamp-2">
+          <p className="text-sm text-stone-500 leading-relaxed mb-4 line-clamp-2 h-10">
             {tool.description}
           </p>
           <div className="flex items-center justify-between pt-3 border-t border-stone-100/80">
