@@ -20,7 +20,7 @@ const slides = [
     description:
       "Smart point-of-sale systems that learn your business patterns and optimize pricing, inventory, and customer experience.",
     cta: "Explore POS Tools",
-    href: "/category/pos-systems",
+    href: "#tools",
     image:
       "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1920&q=80",
   },
@@ -29,7 +29,7 @@ const slides = [
     description:
       "From personalized email campaigns to AI chatbots, engage your customers like never before.",
     cta: "Marketing Tools",
-    href: "/category/marketing",
+    href: "#tools",
     image:
       "https://images.unsplash.com/photo-1552566626-52f8b828add9?w=1920&q=80",
   },
@@ -38,7 +38,7 @@ const slides = [
     description:
       "Reduce waste, optimize staffing, and improve efficiency with intelligent operations tools.",
     cta: "Operations Tools",
-    href: "/category/operations",
+    href: "#tools",
     image:
       "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1920&q=80",
   },
@@ -47,7 +47,7 @@ const slides = [
     description:
       "AI-driven reservation systems and CRM tools that maximize table turnover and build lasting guest relationships.",
     cta: "Reservation Tools",
-    href: "/category/reservations",
+    href: "#tools",
     image:
       "https://images.unsplash.com/photo-1559339352-11d035aa65de?w=1920&q=80",
   },
@@ -56,7 +56,7 @@ const slides = [
     description:
       "Turn your restaurant data into actionable insights — from sales forecasting to menu engineering and labor optimization.",
     cta: "Analytics Tools",
-    href: "/category/analytics",
+    href: "#tools",
     image:
       "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1920&q=80",
   },
