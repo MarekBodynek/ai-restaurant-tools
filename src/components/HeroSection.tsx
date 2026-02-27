@@ -143,7 +143,7 @@ export function HeroSection() {
 
         return (
           <div
-            key={`slide-${index}-${cycle}`}
+            key={index}
             className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${
               isActive ? "opacity-100 z-10" : "opacity-0 z-0"
             }`}
