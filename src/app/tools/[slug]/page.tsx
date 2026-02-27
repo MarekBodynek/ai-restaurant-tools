@@ -133,17 +133,24 @@ export default function ToolPage({ params }: Props) {
               </div>
 
               {/* CTA card */}
-              <div className="bg-gradient-to-br from-navy-800 to-navy-900 rounded-2xl p-6 text-center">
-                <h3 className="font-semibold text-white mb-2">
-                  Ready to try {tool.name}?
-                </h3>
-                <p className="text-sm text-stone-400 mb-4">
-                  Visit their website to learn more and get started.
-                </p>
-                <button className="w-full py-3 bg-orange-500 hover:bg-orange-600 text-white font-semibold rounded-xl transition-all hover:shadow-lg hover:shadow-orange-500/25 text-sm">
-                  Visit Website
-                </button>
-              </div>
+              {tool.url && (
+                <div className="bg-gradient-to-br from-navy-800 to-navy-900 rounded-2xl p-6 text-center">
+                  <h3 className="font-semibold text-white mb-2">
+                    Ready to try {tool.name}?
+                  </h3>
+                  <p className="text-sm text-stone-400 mb-4">
+                    Visit their website to learn more and get started.
+                  </p>
+                  <a
+                    href={tool.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block w-full py-3 bg-orange-500 hover:bg-orange-600 text-white font-semibold rounded-xl transition-all hover:shadow-lg hover:shadow-orange-500/25 text-sm"
+                  >
+                    Visit Website
+                  </a>
+                </div>
+              )}
 
               {/* Related tools */}
               {related.length > 0 && (

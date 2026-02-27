@@ -5,6 +5,7 @@ export interface Tool {
   description: string;
   price: string;
   icon: string;
+  url?: string;
 }
 
 export interface CategoryInfo {

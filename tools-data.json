@@ -5,7 +5,8 @@
     "category": "Chatbots",
     "description": "AI chatbot handling reservations, menu questions, and order tracking. Multi-channel: Facebook, WhatsApp, website.",
     "price": "Free / from $29/mo",
-    "icon": "\ud83d\udcac"
+    "icon": "\ud83d\udcac",
+    "url": "https://www.tidio.com"
   },
   {
     "name": "Chatfuel",
@@ -13,7 +14,8 @@
     "category": "Chatbots",
     "description": "No-code chatbot builder for automating Facebook and Instagram customer interactions.",
     "price": "from $24/mo",
-    "icon": "\ud83e\udd16"
+    "icon": "\ud83e\udd16",
+    "url": "https://chatfuel.com"
   },
   {
     "name": "ManyChat",
@@ -21,7 +23,8 @@
     "category": "Chatbots",
     "description": "Automation platform for restaurant marketing via Instagram, Facebook Messenger, and SMS.",
     "price": "Free / $15/mo",
-    "icon": "\ud83d\udcf1"
+    "icon": "\ud83d\udcf1",
+    "url": "https://manychat.com"
   },
   {
     "name": "Intercom",
@@ -29,7 +32,8 @@
     "category": "Chatbots",
     "description": "Customer messaging with AI chatbot Fin that handles restaurant inquiries 24/7.",
     "price": "from $29/mo",
-    "icon": "\ud83d\udca1"
+    "icon": "\ud83d\udca1",
+    "url": "https://www.intercom.com"
   },
   {
     "name": "Drift",
@@ -37,7 +41,8 @@
     "category": "Chatbots",
     "description": "Conversational AI for restaurant chains and hospitality groups to engage website visitors.",
     "price": "Custom pricing",
-    "icon": "\u26a1"
+    "icon": "\u26a1",
+    "url": "https://www.salesloft.com/platform/drift"
   },
   {
     "name": "Ada",
@@ -45,7 +50,8 @@
     "category": "Chatbots",
     "description": "AI-first customer service automation for restaurant groups handling high volumes of inquiries.",
     "price": "Custom pricing",
-    "icon": "\ud83e\udde0"
+    "icon": "\ud83e\udde0",
+    "url": "https://www.ada.cx"
   },
   {
     "name": "Landbot",
@@ -53,7 +59,8 @@
     "category": "Chatbots",
     "description": "Visual chatbot builder for conversational restaurant experiences on web and WhatsApp.",
     "price": "Free / from $45/mo",
-    "icon": "\ud83c\udf10"
+    "icon": "\ud83c\udf10",
+    "url": "https://landbot.io"
   },
   {
     "name": "OpenTable",
@@ -61,7 +68,8 @@
     "category": "Reservations",
     "description": "Industry-leading AI-powered reservation and guest management. 60,000+ restaurants worldwide.",
     "price": "from $149/mo",
-    "icon": "\ud83d\udcc5"
+    "icon": "\ud83d\udcc5",
+    "url": "https://www.opentable.com"
   },
   {
     "name": "Resy",
@@ -69,7 +77,8 @@
     "category": "Reservations",
     "description": "Premium reservation platform with AI demand forecasting and dynamic pricing for fine dining.",
     "price": "Custom pricing",
-    "icon": "\ud83c\udf1f"
+    "icon": "\ud83c\udf1f",
+    "url": "https://resy.com"
   },
   {
     "name": "Yelp Guest Manager",
@@ -77,7 +86,8 @@
     "category": "Reservations",
     "description": "AI-powered front-of-house combining Yelp's review platform with reservation and waitlist tools.",
     "price": "from $99/mo",
-    "icon": "\u2b50"
+    "icon": "\u2b50",
+    "url": "https://restaurants.yelp.com"
   },
   {
     "name": "SevenRooms",
@@ -85,7 +95,8 @@
     "category": "Reservations",
     "description": "Guest experience platform using AI to personalize dining and maximize revenue.",
     "price": "Custom pricing",
-    "icon": "\ud83c\udfc6"
+    "icon": "\ud83c\udfc6",
+    "url": "https://sevenrooms.com"
   },
   {
     "name": "Eat App",
@@ -93,7 +104,8 @@
     "category": "Reservations",
     "description": "Reservation system with AI table management and guest CRM. Free tier available.",
     "price": "Free / Paid",
-    "icon": "\ud83c\udf74"
+    "icon": "\ud83c\udf74",
+    "url": "https://www.eatapp.co"
   },
   {
     "name": "Tock",
@@ -101,7 +113,8 @@
     "category": "Reservations",
     "description": "Reservation, takeout, and event platform with prepaid dining and dynamic pricing.",
     "price": "from 2% per cover",
-    "icon": "\ud83c\udfab"
+    "icon": "\ud83c\udfab",
+    "url": "https://www.exploretock.com"
   },
   {
     "name": "Tablein",
@@ -109,7 +122,8 @@
     "category": "Reservations",
     "description": "Simple reservation system with AI no-show prediction and automated reminders.",
     "price": "from $47/mo",
-    "icon": "\ud83d\udccb"
+    "icon": "\ud83d\udccb",
+    "url": "https://tablein.com"
   },
   {
     "name": "MenuDrive",
@@ -117,7 +131,8 @@
     "category": "Menu AI",
     "description": "AI-powered online ordering that optimizes menu layout and suggests upsells based on behavior.",
     "price": "from $149/mo",
-    "icon": "\ud83c\udf7d\ufe0f"
+    "icon": "\ud83c\udf7d\ufe0f",
+    "url": "https://www.menudrive.com"
   },
   {
     "name": "Tastewise",
@@ -125,7 +140,8 @@
     "category": "Menu AI",
     "description": "AI food intelligence analyzing billions of data points to identify menu trends and preferences.",
     "price": "Custom pricing",
-    "icon": "\ud83d\udd2e"
+    "icon": "\ud83d\udd2e",
+    "url": "https://www.tastewise.io"
   },
   {
     "name": "Galley Solutions",
@@ -133,7 +149,8 @@
     "category": "Menu AI",
     "description": "AI food operations for recipe management, menu planning, and nutritional analysis.",
     "price": "Custom pricing",
-    "icon": "\ud83d\udc68\u200d\ud83c\udf73"
+    "icon": "\ud83d\udc68\u200d\ud83c\udf73",
+    "url": "https://www.galleysolutions.com"
   },
   {
     "name": "Nutritics",
@@ -141,7 +158,8 @@
     "category": "Menu AI",
     "description": "AI nutrition analysis for allergens, calories, and nutritional information.",
     "price": "from $44/mo",
-    "icon": "\ud83e\udd57"
+    "icon": "\ud83e\udd57",
+    "url": "https://www.nutritics.com"
   },
   {
     "name": "Spoonshot",
@@ -149,7 +167,8 @@
     "category": "Menu AI",
     "description": "AI predicting food trends 12-18 months ahead using NLP analysis of millions of sources.",
     "price": "Custom pricing",
-    "icon": "\ud83d\udd2c"
+    "icon": "\ud83d\udd2c",
+    "url": "https://www.spoonshot.com"
   },
   {
     "name": "CookRight",
@@ -165,7 +184,8 @@
     "category": "Menu AI",
     "description": "Recipe costing and nutrition analysis to optimize food costs and menu pricing.",
     "price": "from $35/mo",
-    "icon": "\ud83e\uddee"
+    "icon": "\ud83e\uddee",
+    "url": "https://www.menucalc.com"
   },
   {
     "name": "BlueCart",
@@ -173,7 +193,8 @@
     "category": "Inventory",
     "description": "AI procurement and inventory predicting ordering needs and reducing waste.",
     "price": "Free / from $99/mo",
-    "icon": "\ud83d\udce6"
+    "icon": "\ud83d\udce6",
+    "url": "https://www.bluecart.com"
   },
   {
     "name": "MarketMan",
@@ -181,7 +202,8 @@
     "category": "Inventory",
     "description": "Restaurant inventory and supply chain with AI-driven purchasing recommendations.",
     "price": "from $199/mo",
-    "icon": "\ud83d\udcca"
+    "icon": "\ud83d\udcca",
+    "url": "https://www.marketman.com"
   },
   {
     "name": "Lightspeed Restaurant",
@@ -189,7 +211,8 @@
     "category": "Inventory",
     "description": "All-in-one POS with AI inventory tracking, menu management, and analytics.",
     "price": "from $189/mo",
-    "icon": "\u26a1"
+    "icon": "\u26a1",
+    "url": "https://www.lightspeedhq.com/pos/restaurant"
   },
   {
     "name": "xtraCHEF",
@@ -197,7 +220,8 @@
     "category": "Inventory",
     "description": "AI invoice processing and food cost management using computer vision.",
     "price": "Custom pricing",
-    "icon": "\ud83e\uddfe"
+    "icon": "\ud83e\uddfe",
+    "url": "https://xtrachef.com"
   },
   {
     "name": "Winnow",
@@ -205,7 +229,8 @@
     "category": "Inventory",
     "description": "AI food waste management using computer vision cameras to identify and track kitchen waste.",
     "price": "Custom pricing",
-    "icon": "\u267b\ufe0f"
+    "icon": "\u267b\ufe0f",
+    "url": "https://www.winnowsolutions.com"
   },
   {
     "name": "Apicbase",
@@ -213,7 +238,8 @@
     "category": "Inventory",
     "description": "Food management with AI inventory counts, procurement, and HACCP compliance.",
     "price": "Custom pricing",
-    "icon": "\ud83d\udccb"
+    "icon": "\ud83d\udccb",
+    "url": "https://www.apicbase.com"
   },
   {
     "name": "Posist",
@@ -221,7 +247,8 @@
     "category": "Inventory",
     "description": "Cloud-based restaurant platform with AI inventory, recipe management, and supply chain.",
     "price": "Custom pricing",
-    "icon": "\u2601\ufe0f"
+    "icon": "\u2601\ufe0f",
+    "url": "https://www.posist.com"
   },
   {
     "name": "Popmenu",
@@ -229,7 +256,8 @@
     "category": "Marketing",
     "description": "AI restaurant marketing with smart website builder, online ordering, and automated campaigns.",
     "price": "Custom pricing",
-    "icon": "\ud83d\udce2"
+    "icon": "\ud83d\udce2",
+    "url": "https://get.popmenu.com"
   },
   {
     "name": "Ovation",
@@ -237,7 +265,8 @@
     "category": "Marketing",
     "description": "AI guest feedback turning negative experiences into positive reviews and insights.",
     "price": "from $149/mo",
-    "icon": "\ud83c\udf1f"
+    "icon": "\ud83c\udf1f",
+    "url": "https://ovationup.com"
   },
   {
     "name": "Marqii",
@@ -245,7 +274,8 @@
     "category": "Marketing",
     "description": "AI menu and listing management ensuring accuracy across all platforms.",
     "price": "from $100/mo",
-    "icon": "\ud83d\udccd"
+    "icon": "\ud83d\udccd",
+    "url": "https://www.marqii.com"
   },
   {
     "name": "Owner.com",
@@ -253,7 +283,8 @@
     "category": "Marketing",
     "description": "AI marketing platform: websites, ordering, and automated email campaigns.",
     "price": "Custom pricing",
-    "icon": "\ud83c\udfe0"
+    "icon": "\ud83c\udfe0",
+    "url": "https://www.owner.com"
   },
   {
     "name": "Yext",
@@ -261,7 +292,8 @@
     "category": "Marketing",
     "description": "AI digital presence managing listings, reviews, and local SEO across 200+ publishers.",
     "price": "from $14/mo",
-    "icon": "\ud83d\udd0e"
+    "icon": "\ud83d\udd0e",
+    "url": "https://www.yext.com"
   },
   {
     "name": "Reputation.com",
@@ -269,7 +301,8 @@
     "category": "Marketing",
     "description": "AI reputation management analyzing reviews, surveys, and social sentiment.",
     "price": "Custom pricing",
-    "icon": "\u2b50"
+    "icon": "\u2b50",
+    "url": "https://www.reputation.com"
   },
   {
     "name": "Mailchimp",
@@ -277,7 +310,8 @@
     "category": "Marketing",
     "description": "AI email marketing with restaurant templates, segmentation, and send-time optimization.",
     "price": "Free / $13/mo",
-    "icon": "\u2709\ufe0f"
+    "icon": "\u2709\ufe0f",
+    "url": "https://mailchimp.com"
   },
   {
     "name": "Toast",
@@ -285,7 +319,8 @@
     "category": "POS",
     "description": "Restaurant-specific POS with AI analytics, online ordering, and workforce management.",
     "price": "Free / Paid",
-    "icon": "\ud83d\udcb3"
+    "icon": "\ud83d\udcb3",
+    "url": "https://pos.toasttab.com"
   },
   {
     "name": "Square for Restaurants",
@@ -293,7 +328,8 @@
     "category": "POS",
     "description": "AI-enhanced POS with restaurant management, online ordering, and loyalty programs.",
     "price": "Free / Paid",
-    "icon": "\u2b1b"
+    "icon": "\u2b1b",
+    "url": "https://squareup.com/us/en/restaurants"
   },
   {
     "name": "Clover",
@@ -301,7 +337,8 @@
     "category": "POS",
     "description": "Smart POS with AI reporting and restaurant-specific apps for table management.",
     "price": "from $14.95/mo",
-    "icon": "\ud83c\udf40"
+    "icon": "\ud83c\udf40",
+    "url": "https://www.clover.com"
   },
   {
     "name": "7shifts",
@@ -309,7 +346,8 @@
     "category": "POS",
     "description": "AI workforce management with demand-based scheduling, tip pooling, and labor compliance.",
     "price": "Free / Paid",
-    "icon": "\ud83d\udcc5"
+    "icon": "\ud83d\udcc5",
+    "url": "https://www.7shifts.com"
   },
   {
     "name": "Lineup.ai",
@@ -317,7 +355,8 @@
     "category": "POS",
     "description": "AI sales forecasting predicting daily revenue, guest counts, and ideal staffing.",
     "price": "from $79/mo",
-    "icon": "\ud83d\udcc8"
+    "icon": "\ud83d\udcc8",
+    "url": "https://www.lineup.ai"
   },
   {
     "name": "CrunchTime",
@@ -325,7 +364,8 @@
     "category": "POS",
     "description": "AI operations platform for inventory, labor, and food safety across multi-unit brands.",
     "price": "Custom pricing",
-    "icon": "\u23f1\ufe0f"
+    "icon": "\u23f1\ufe0f",
+    "url": "https://www.crunchtime.com"
   },
   {
     "name": "Olo",
@@ -333,7 +373,8 @@
     "category": "Delivery",
     "description": "Enterprise online ordering with AI demand forecasting and kitchen display systems.",
     "price": "Custom pricing",
-    "icon": "\ud83d\udef5"
+    "icon": "\ud83d\udef5",
+    "url": "https://www.olo.com"
   },
   {
     "name": "ChowNow",
@@ -341,7 +382,8 @@
     "category": "Delivery",
     "description": "Commission-free online ordering with AI marketing tools to drive direct orders.",
     "price": "Custom pricing",
-    "icon": "\ud83c\udf54"
+    "icon": "\ud83c\udf54",
+    "url": "https://www.chownow.com"
   },
   {
     "name": "Bbot",
@@ -349,7 +391,8 @@
     "category": "Delivery",
     "description": "AI order-and-pay for dine-in, pickup, and delivery with smart upselling.",
     "price": "Custom pricing",
-    "icon": "\ud83d\udcf2"
+    "icon": "\ud83d\udcf2",
+    "url": "https://www.bfrnd.com"
   },
   {
     "name": "Ordermark",
@@ -357,7 +400,8 @@
     "category": "Delivery",
     "description": "AI consolidating all delivery app orders into one tablet with smart routing.",
     "price": "Custom pricing",
-    "icon": "\ud83d\udd04"
+    "icon": "\ud83d\udd04",
+    "url": "https://www.nextbite.io"
   },
   {
     "name": "Flipdish",
@@ -365,7 +409,8 @@
     "category": "Delivery",
     "description": "White-label ordering with AI customer insights and automated loyalty campaigns.",
     "price": "Custom pricing",
-    "icon": "\ud83d\udc1f"
+    "icon": "\ud83d\udc1f",
+    "url": "https://www.flipdish.com"
   },
   {
     "name": "Miso Robotics",
@@ -373,7 +418,8 @@
     "category": "Kitchen",
     "description": "AI kitchen robots \u2014 Flippy for automated frying/grilling with computer vision QC.",
     "price": "Custom pricing",
-    "icon": "\ud83e\udd16"
+    "icon": "\ud83e\udd16",
+    "url": "https://misorobotics.com"
   },
   {
     "name": "Nala Robotics",
@@ -381,7 +427,8 @@
     "category": "Kitchen",
     "description": "AI multi-cuisine robotic chef cooking dishes with consistent quality.",
     "price": "Custom pricing",
-    "icon": "\ud83e\uddbe"
+    "icon": "\ud83e\uddbe",
+    "url": "https://www.nalarobotics.com"
   },
   {
     "name": "ComplianceMate",
@@ -389,7 +436,8 @@
     "category": "Kitchen",
     "description": "AI food safety monitoring with IoT sensors for temperatures and HACCP compliance.",
     "price": "Custom pricing",
-    "icon": "\ud83c\udf21\ufe0f"
+    "icon": "\ud83c\udf21\ufe0f",
+    "url": "https://compliancemate.com"
   },
   {
     "name": "FreshCheq",
@@ -397,7 +445,8 @@
     "category": "Kitchen",
     "description": "Digital food safety checklists with AI anomaly detection for temperature logs.",
     "price": "from $24/mo",
-    "icon": "\u2705"
+    "icon": "\u2705",
+    "url": "https://www.freshcheq.com"
   },
   {
     "name": "Tenzo",
@@ -405,7 +454,8 @@
     "category": "Analytics",
     "description": "AI analytics with demand forecasting, labor optimization, and actionable insights.",
     "price": "Custom pricing",
-    "icon": "\ud83d\udcca"
+    "icon": "\ud83d\udcca",
+    "url": "https://www.gotenzo.com"
   },
   {
     "name": "PeachWorks",
@@ -413,7 +463,8 @@
     "category": "Analytics",
     "description": "Restaurant BI with AI forecasting, labor scheduling, and inventory analytics.",
     "price": "Custom pricing",
-    "icon": "\ud83c\udf51"
+    "icon": "\ud83c\udf51",
+    "url": "https://www.peachworks.com"
   },
   {
     "name": "Avero",
@@ -421,7 +472,8 @@
     "category": "Analytics",
     "description": "AI restaurant intelligence connecting POS data to actionable revenue and labor insights.",
     "price": "Custom pricing",
-    "icon": "\ud83c\udfaf"
+    "icon": "\ud83c\udfaf",
+    "url": "https://www.averoinc.com"
   },
   {
     "name": "Delaget",
@@ -429,6 +481,7 @@
     "category": "Analytics",
     "description": "AI above-store reporting and analytics for QSR and fast-casual chains.",
     "price": "Custom pricing",
-    "icon": "\ud83d\udcc9"
+    "icon": "\ud83d\udcc9",
+    "url": "https://www.delaget.com"
   }
 ]
