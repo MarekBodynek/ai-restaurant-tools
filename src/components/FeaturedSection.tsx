@@ -29,12 +29,12 @@ export function FeaturedSection() {
 
         <StaggerContainer className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {featured.map((tool, i) => (
-            <StaggerItem key={tool.slug}>
-              <div className="transition-transform duration-300 hover:-translate-y-1">
-                <div className="p-[2px] rounded-2xl bg-gradient-to-br from-orange-500/60 via-amber-400/30 to-orange-700/60 hover:from-orange-500 hover:via-amber-400/60 hover:to-orange-700 transition-all duration-500 shadow-lg hover:shadow-2xl hover:shadow-orange-500/20">
+            <StaggerItem key={tool.slug} className="h-full">
+              <div className="transition-transform duration-300 hover:-translate-y-1 h-full">
+                <div className="p-[2px] rounded-2xl bg-gradient-to-br from-orange-500/60 via-amber-400/30 to-orange-700/60 hover:from-orange-500 hover:via-amber-400/60 hover:to-orange-700 transition-all duration-500 shadow-lg hover:shadow-2xl hover:shadow-orange-500/20 h-full">
                   <Link
                     href={`/tools/${tool.slug}`}
-                    className="group relative block rounded-[14px] overflow-hidden"
+                    className="group relative block rounded-[14px] overflow-hidden h-full"
                   >
                     <div className="absolute inset-0 bg-gradient-to-br from-[#1c1917] via-[#292524] to-[#171412]" />
 

@@ -37,22 +37,22 @@ body {
 
 /* Ken Burns effect variants */
 .ken-burns-zoom-in-left {
-  animation: kenBurnsZoomInLeft 25s ease-in-out infinite alternate;
+  animation: kenBurnsZoomInLeft 12s ease-in-out infinite alternate;
   will-change: transform;
 }
 
 .ken-burns-zoom-in-right {
-  animation: kenBurnsZoomInRight 25s ease-in-out infinite alternate;
+  animation: kenBurnsZoomInRight 12s ease-in-out infinite alternate;
   will-change: transform;
 }
 
 .ken-burns-zoom-out-center {
-  animation: kenBurnsZoomOutCenter 25s ease-in-out infinite alternate;
+  animation: kenBurnsZoomOutCenter 12s ease-in-out infinite alternate;
   will-change: transform;
 }
 
 .ken-burns-zoom-in-center {
-  animation: kenBurnsZoomInCenter 25s ease-in-out infinite alternate;
+  animation: kenBurnsZoomInCenter 12s ease-in-out infinite alternate;
   will-change: transform;
 }
 
@@ -61,7 +61,7 @@ body {
     transform: scale(1.0) translate(0, 0);
   }
   to {
-    transform: scale(1.15) translate(-2%, 1%);
+    transform: scale(1.25) translate(-4%, 2%);
   }
 }
 
@@ -70,16 +70,16 @@ body {
     transform: scale(1.0) translate(0, 0);
   }
   to {
-    transform: scale(1.15) translate(2%, -1%);
+    transform: scale(1.25) translate(4%, -2%);
   }
 }
 
 @keyframes kenBurnsZoomOutCenter {
   from {
-    transform: scale(1.15) translate(0, 0);
+    transform: scale(1.25) translate(1%, -1%);
   }
   to {
-    transform: scale(1.0) translate(0, 1%);
+    transform: scale(1.05) translate(-1%, 1%);
   }
 }
 
@@ -88,7 +88,7 @@ body {
     transform: scale(1.0) translate(0, 0);
   }
   to {
-    transform: scale(1.15) translate(0, -1%);
+    transform: scale(1.25) translate(-1%, -2%);
   }
 }
 
