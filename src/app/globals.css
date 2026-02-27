@@ -35,18 +35,70 @@ body {
   background: var(--background);
 }
 
-.hero-parallax-layer {
-  transform: translate3d(0, -2%, 0) scale(1.08);
-  animation: heroParallax 18s ease-in-out infinite alternate;
+/* Ken Burns effect variants */
+.ken-burns-zoom-in-left {
+  animation: kenBurnsZoomInLeft 20s ease-out forwards;
   will-change: transform;
 }
 
-@keyframes heroParallax {
+.ken-burns-zoom-in-right {
+  animation: kenBurnsZoomInRight 20s ease-out forwards;
+  will-change: transform;
+}
+
+.ken-burns-zoom-out-center {
+  animation: kenBurnsZoomOutCenter 20s ease-out forwards;
+  will-change: transform;
+}
+
+.ken-burns-zoom-in-center {
+  animation: kenBurnsZoomInCenter 20s ease-out forwards;
+  will-change: transform;
+}
+
+@keyframes kenBurnsZoomInLeft {
   from {
-    transform: translate3d(0, -3%, 0) scale(1.08);
+    transform: scale(1.0) translate(0, 0);
   }
   to {
-    transform: translate3d(0, 2%, 0) scale(1.1);
+    transform: scale(1.15) translate(-2%, 1%);
+  }
+}
+
+@keyframes kenBurnsZoomInRight {
+  from {
+    transform: scale(1.0) translate(0, 0);
+  }
+  to {
+    transform: scale(1.15) translate(2%, -1%);
+  }
+}
+
+@keyframes kenBurnsZoomOutCenter {
+  from {
+    transform: scale(1.15) translate(0, 0);
+  }
+  to {
+    transform: scale(1.0) translate(0, 1%);
+  }
+}
+
+@keyframes kenBurnsZoomInCenter {
+  from {
+    transform: scale(1.0) translate(0, 0);
+  }
+  to {
+    transform: scale(1.15) translate(0, -1%);
+  }
+}
+
+/* Progress bar fill animation */
+@keyframes progressFill {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
   }
 }
 

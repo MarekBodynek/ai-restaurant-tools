@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect, useCallback, useRef } from "react";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -44,34 +44,59 @@ const slides = [
   },
 ];
 
-const fadeUp = (delay: number = 0) => ({
-  initial: { opacity: 0, y: 30 },
+const kenBurnsVariants = [
+  "ken-burns-zoom-in-left",
+  "ken-burns-zoom-in-right",
+  "ken-burns-zoom-out-center",
+  "ken-burns-zoom-in-center",
+];
+
+const SLIDE_DURATION = 5000;
+
+const textEnter = (delay: number) => ({
+  initial: { opacity: 0, y: 40 },
   animate: { opacity: 1, y: 0 },
-  transition: { duration: 0.7, delay, ease: "easeOut" as const },
+  exit: { opacity: 0, y: -20 },
+  transition: { duration: 0.6, delay, ease: "easeOut" as const },
 });
 
 export function HeroSection() {
   const [current, setCurrent] = useState(0);
-  const [paused, setPaused] = useState(false);
+  const [prevSlide, setPrevSlide] = useState<number | null>(null);
   const touchStartX = useRef<number | null>(null);
+  const progressRef = useRef<HTMLDivElement>(null);
 
-  const goTo = useCallback((index: number) => {
-    setCurrent(index);
-  }, []);
+  const goTo = useCallback(
+    (index: number) => {
+      if (index === current) return;
+      setPrevSlide(current);
+      setCurrent(index);
+    },
+    [current],
+  );
 
   const next = useCallback(() => {
+    setPrevSlide(current);
     setCurrent((prev) => (prev + 1) % slides.length);
-  }, []);
+  }, [current]);
 
   const prev = useCallback(() => {
+    setPrevSlide(current);
     setCurrent((prev) => (prev - 1 + slides.length) % slides.length);
-  }, []);
+  }, [current]);
 
+  // Clear prevSlide after crossfade completes
   useEffect(() => {
-    if (paused) return;
-    const timer = setInterval(next, 5000);
+    if (prevSlide === null) return;
+    const timeout = setTimeout(() => setPrevSlide(null), 1000);
+    return () => clearTimeout(timeout);
+  }, [prevSlide]);
+
+  // Autoplay — no pause on hover
+  useEffect(() => {
+    const timer = setInterval(next, SLIDE_DURATION);
     return () => clearInterval(timer);
-  }, [paused, next]);
+  }, [next]);
 
   const handleTouchStart = (e: React.TouchEvent) => {
     touchStartX.current = e.touches[0].clientX;
@@ -90,108 +115,121 @@ export function HeroSection() {
   return (
     <section
       aria-label="Hero carousel"
-      className="relative h-[60vh] md:h-[75vh] w-full overflow-hidden"
-      onMouseEnter={() => {}}
-      onMouseLeave={() => {}}
+      className="relative h-[70vh] md:h-[85vh] w-full overflow-hidden"
       onTouchStart={handleTouchStart}
       onTouchEnd={handleTouchEnd}
     >
-      {/* Slides */}
-      {slides.map((slide, index) => (
-        <div
-          key={index}
-          className="absolute inset-0 transition-opacity duration-700 ease-in-out"
-          style={{ opacity: current === index ? 1 : 0 }}
-          aria-hidden={current !== index}
-        >
-          <Image
-            src={slide.image}
-            alt={slide.heading}
-            fill
-            className="object-cover object-center"
-            sizes="100vw"
-            priority={index === 0}
-          />
-        </div>
-      ))}
+      {/* Background images layer — crossfade */}
+      {slides.map((slide, index) => {
+        const isActive = current === index;
+        const isPrev = prevSlide === index;
+        const isVisible = isActive || isPrev;
 
-      {/* Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/70" />
-      <div className="absolute inset-0 bg-gradient-to-r from-black/30 via-transparent to-black/30" />
-
-      {/* Content */}
-      <div className="relative z-10 h-full flex items-center justify-center">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          {slides.map((slide, index) => (
+        return (
+          <div
+            key={index}
+            className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${
+              isActive ? "opacity-100 z-[2]" : isPrev ? "opacity-0 z-[1]" : "opacity-0 z-0"
+            }`}
+            aria-hidden={!isActive}
+          >
             <div
-              key={index}
-              className="absolute inset-0 flex items-center justify-center px-4 sm:px-6 lg:px-8 transition-opacity duration-700 ease-in-out"
-              style={{
-                opacity: current === index ? 1 : 0,
-                pointerEvents: current === index ? "auto" : "none",
-              }}
-              aria-hidden={current !== index}
+              className={`absolute inset-0 ${isVisible ? kenBurnsVariants[index % kenBurnsVariants.length] : ""}`}
+              key={`kb-${index}-${isActive ? "active" : "idle"}`}
             >
-              <div className="max-w-4xl mx-auto text-center">
-                <motion.h1
-                  key={`heading-${index}-${current === index}`}
-                  {...(current === index ? fadeUp(0) : {})}
-                  className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-[1.1] tracking-tight mb-6"
-                >
-                  {slide.heading}
-                </motion.h1>
-
-                <motion.p
-                  key={`desc-${index}-${current === index}`}
-                  {...(current === index ? fadeUp(0.15) : {})}
-                  className="text-base sm:text-lg md:text-xl text-stone-200 max-w-2xl mx-auto mb-10 leading-relaxed"
-                >
-                  {slide.description}
-                </motion.p>
-
-                <motion.div
-                  key={`cta-${index}-${current === index}`}
-                  {...(current === index ? fadeUp(0.3) : {})}
-                >
-                  <Link
-                    href={slide.href}
-                    className="group inline-flex items-center gap-2 px-8 py-4 bg-orange-500 hover:bg-orange-600 text-white font-semibold rounded-xl transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-orange-500/25"
-                  >
-                    {slide.cta}
-                    <svg
-                      className="w-5 h-5 group-hover:translate-x-1 transition-transform"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        d="M17 8l4 4m0 0l-4 4m4-4H3"
-                      />
-                    </svg>
-                  </Link>
-                </motion.div>
-              </div>
+              <Image
+                src={slide.image}
+                alt={slide.heading}
+                fill
+                className="object-cover object-center"
+                sizes="100vw"
+                priority={index === 0}
+              />
             </div>
-          ))}
+          </div>
+        );
+      })}
+
+      {/* Gradient overlays */}
+      <div className="absolute inset-0 z-[3] bg-gradient-to-b from-black/60 via-black/30 to-black/50" />
+      <div className="absolute inset-0 z-[3] bg-gradient-to-r from-black/40 via-transparent to-black/30" />
+
+      {/* Content layer — AnimatePresence for text */}
+      <div className="relative z-10 h-full flex items-center justify-center">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <AnimatePresence mode="wait">
+            <motion.div
+              key={current}
+              className="max-w-4xl mx-auto text-center"
+              initial="initial"
+              animate="animate"
+              exit="exit"
+            >
+              <motion.h1
+                {...textEnter(0)}
+                className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-bold text-white leading-[1.1] tracking-tight mb-4 md:mb-6"
+              >
+                {slides[current].heading}
+              </motion.h1>
+
+              <motion.p
+                {...textEnter(0.2)}
+                className="text-sm sm:text-base md:text-xl text-stone-200 max-w-2xl mx-auto mb-6 md:mb-10 leading-relaxed"
+              >
+                {slides[current].description}
+              </motion.p>
+
+              <motion.div {...textEnter(0.4)}>
+                <Link
+                  href={slides[current].href}
+                  className="group inline-flex items-center gap-2 px-6 py-3 md:px-8 md:py-4 bg-orange-500 hover:bg-orange-600 text-white font-semibold rounded-xl transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-orange-500/25 text-sm md:text-base"
+                >
+                  {slides[current].cta}
+                  <svg
+                    className="w-4 h-4 md:w-5 md:h-5 group-hover:translate-x-1 transition-transform"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M17 8l4 4m0 0l-4 4m4-4H3"
+                    />
+                  </svg>
+                </Link>
+              </motion.div>
+            </motion.div>
+          </AnimatePresence>
         </div>
       </div>
 
-      {/* Dot navigation */}
-      <div className="absolute bottom-6 md:bottom-8 left-0 right-0 z-20 flex items-center justify-center gap-3">
+      {/* Progress bar indicator */}
+      <div
+        ref={progressRef}
+        className="absolute bottom-6 md:bottom-8 left-1/2 -translate-x-1/2 z-20 flex items-center gap-1.5 md:gap-2 w-[min(280px,60vw)] md:w-[320px]"
+      >
         {slides.map((_, index) => (
           <button
             key={index}
             onClick={() => goTo(index)}
             aria-label={`Go to slide ${index + 1}`}
-            className={`h-2.5 rounded-full transition-all duration-300 ${
-              current === index
-                ? "w-8 bg-orange-500"
-                : "w-2.5 bg-white/50 hover:bg-white/80"
-            }`}
-          />
+            className="relative flex-1 h-1 rounded-full bg-white/25 overflow-hidden cursor-pointer hover:bg-white/35 transition-colors"
+          >
+            {current === index && (
+              <div
+                key={`progress-${current}`}
+                className="absolute inset-y-0 left-0 bg-orange-500 rounded-full"
+                style={{
+                  animation: `progressFill ${SLIDE_DURATION}ms linear forwards`,
+                }}
+              />
+            )}
+            {current !== index && prevSlide === index && (
+              <div className="absolute inset-y-0 left-0 w-full bg-orange-500/40 rounded-full" />
+            )}
+          </button>
         ))}
       </div>
 
