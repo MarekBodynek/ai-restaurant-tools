@@ -42,7 +42,7 @@ const stats = [
 
 export function StatsSection() {
   return (
-    <section className="relative -mt-16 z-10 px-4 sm:px-6 lg:px-8">
+    <section className="relative -mt-16 z-30 px-4 sm:px-6 lg:px-8">
       <div className="container-wide mx-auto">
         <div className="glass-card rounded-2xl p-6 sm:p-12">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
