@@ -4,9 +4,6 @@ import { useState, useEffect, useCallback, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
-import useEmblaCarousel from "embla-carousel-react";
-import Autoplay from "embla-carousel-autoplay";
-import Fade from "embla-carousel-fade";
 
 const slides = [
   {
@@ -83,71 +80,47 @@ const textEnter = (delay: number) => ({
 
 export function HeroSection() {
   const [selectedIndex, setSelectedIndex] = useState(0);
-  const [kenBurnsKey, setKenBurnsKey] = useState(0);
   const progressRef = useRef<HTMLDivElement>(null);
   const progressAnimations = useRef<Map<number, Animation>>(new Map());
 
-  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [
-    Fade(),
-    Autoplay({
-      delay: SLIDE_DURATION,
-      stopOnInteraction: false,
-      stopOnMouseEnter: false,
-      stopOnFocusIn: false,
-    }),
-  ]);
+  const startProgressAnimation = useCallback((index: number) => {
+    progressAnimations.current.forEach((anim) => anim.cancel());
+    progressAnimations.current.clear();
 
-  const startProgressAnimation = useCallback(
-    (index: number) => {
-      // Cancel all running progress animations
-      progressAnimations.current.forEach((anim) => anim.cancel());
-      progressAnimations.current.clear();
+    const container = progressRef.current;
+    if (!container) return;
 
-      // Find the progress bar element for the active slide
-      const container = progressRef.current;
-      if (!container) return;
+    const bars = container.querySelectorAll<HTMLElement>(
+      "[data-progress-bar]"
+    );
+    const bar = bars[index];
+    if (!bar) return;
 
-      const bars = container.querySelectorAll<HTMLElement>(
-        "[data-progress-bar]"
-      );
-      const bar = bars[index];
-      if (!bar) return;
+    const animation = bar.animate([{ width: "0%" }, { width: "100%" }], {
+      duration: SLIDE_DURATION,
+      easing: "linear",
+      fill: "forwards",
+    });
 
-      const animation = bar.animate([{ width: "0%" }, { width: "100%" }], {
-        duration: SLIDE_DURATION,
-        easing: "linear",
-        fill: "forwards",
-      });
+    progressAnimations.current.set(index, animation);
+  }, []);
 
-      progressAnimations.current.set(index, animation);
-    },
-    []
-  );
-
-  const onSelect = useCallback(() => {
-    if (!emblaApi) return;
-    const index = emblaApi.selectedScrollSnap();
-    setSelectedIndex(index);
-    setKenBurnsKey((k) => k + 1);
-    startProgressAnimation(index);
-  }, [emblaApi, startProgressAnimation]);
-
+  // Auto-advance slides
   useEffect(() => {
-    if (!emblaApi) return;
-    emblaApi.on("select", onSelect);
-    // Initialize on mount
-    onSelect();
-    return () => {
-      emblaApi.off("select", onSelect);
-    };
-  }, [emblaApi, onSelect]);
+    startProgressAnimation(selectedIndex);
+
+    const interval = setInterval(() => {
+      setSelectedIndex((prev) => (prev + 1) % slides.length);
+    }, SLIDE_DURATION);
+
+    return () => clearInterval(interval);
+  }, [selectedIndex, startProgressAnimation]);
 
   const goTo = useCallback(
     (index: number) => {
-      if (!emblaApi) return;
-      emblaApi.scrollTo(index);
+      setSelectedIndex(index);
     },
-    [emblaApi]
+    []
   );
 
   return (
@@ -155,32 +128,35 @@ export function HeroSection() {
       aria-label="Hero carousel"
       className="relative h-[70vh] md:h-[85vh] w-full overflow-hidden"
     >
-      {/* Embla viewport */}
-      <div ref={emblaRef} className="absolute inset-0 overflow-hidden">
-        <div className="embla__container h-full">
-          {slides.map((slide, index) => (
-            <div key={index} className="embla__slide relative h-full">
-              <div
-                key={`kb-${index}-${kenBurnsKey}`}
-                className={`absolute inset-0 ${
-                  selectedIndex === index
-                    ? kenBurnsVariants[index % kenBurnsVariants.length]
-                    : ""
-                }`}
-              >
-                <Image
-                  src={slide.image}
-                  alt={slide.heading}
-                  fill
-                  className="object-cover object-center"
-                  sizes="100vw"
-                  priority={index === 0}
-                />
-              </div>
-            </div>
-          ))}
+      {/* Crossfade slides — all stacked absolutely */}
+      {slides.map((slide, index) => (
+        <div
+          key={index}
+          className="absolute inset-0 transition-opacity duration-1000 ease-in-out"
+          style={{
+            opacity: selectedIndex === index ? 1 : 0,
+            zIndex: selectedIndex === index ? 1 : 0,
+          }}
+        >
+          <div
+            key={`kb-${index}-${selectedIndex}`}
+            className={`absolute inset-0 ${
+              selectedIndex === index
+                ? kenBurnsVariants[index % kenBurnsVariants.length]
+                : ""
+            }`}
+          >
+            <Image
+              src={slide.image}
+              alt={slide.heading}
+              fill
+              className="object-cover object-center"
+              sizes="100vw"
+              priority={index === 0}
+            />
+          </div>
         </div>
-      </div>
+      ))}
 
       {/* Gradient overlays */}
       <div className="absolute inset-0 z-[11] bg-gradient-to-b from-black/60 via-black/30 to-black/50 pointer-events-none" />
@@ -199,7 +175,7 @@ export function HeroSection() {
             >
               <motion.h1
                 {...textEnter(0)}
-                className="font-heading text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-bold text-white leading-[1.1] tracking-tight mb-4 md:mb-6"
+                className="font-heading text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-semibold text-white leading-[1.1] tracking-normal mb-4 md:mb-6"
               >
                 {slides[selectedIndex].heading}
               </motion.h1>
