@@ -22,7 +22,7 @@ const slides = [
     cta: "Explore POS Tools",
     href: "#tools",
     image:
-      "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1920&q=80",
+      "https://images.unsplash.com/photo-1758519289714-519a9d9b96e3?w=1920&q=80",
   },
   {
     heading: "Automate Marketing & Customer Engagement",
