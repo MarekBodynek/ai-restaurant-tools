@@ -132,19 +132,16 @@ export function HeroSection() {
       {slides.map((slide, index) => (
         <div
           key={index}
-          className="absolute inset-0 transition-opacity duration-1000 ease-in-out"
+          className="absolute inset-0"
           style={{
             opacity: selectedIndex === index ? 1 : 0,
             zIndex: selectedIndex === index ? 1 : 0,
+            transition: 'opacity 1.2s ease-in-out',
           }}
         >
           <div
-            key={`kb-${index}-${selectedIndex}`}
-            className={`absolute inset-0 ${
-              selectedIndex === index
-                ? kenBurnsVariants[index % kenBurnsVariants.length]
-                : ""
-            }`}
+            
+            className={`absolute inset-0 ${kenBurnsVariants[index % kenBurnsVariants.length]}`}
           >
             <Image
               src={slide.image}
