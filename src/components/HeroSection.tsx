@@ -105,15 +105,31 @@ export function HeroSection() {
     progressAnimations.current.set(index, animation);
   }, []);
 
-  // Auto-advance slides
+  // Auto-advance slides — resumes when tab regains focus
   useEffect(() => {
     startProgressAnimation(selectedIndex);
 
-    const interval = setInterval(() => {
+    let interval = setInterval(() => {
       setSelectedIndex((prev) => (prev + 1) % slides.length);
     }, SLIDE_DURATION);
 
-    return () => clearInterval(interval);
+    const handleVisibility = () => {
+      clearInterval(interval);
+      if (document.visibilityState === "visible") {
+        // Immediately advance to next slide on return
+        setSelectedIndex((prev) => (prev + 1) % slides.length);
+        interval = setInterval(() => {
+          setSelectedIndex((prev) => (prev + 1) % slides.length);
+        }, SLIDE_DURATION);
+      }
+    };
+
+    document.addEventListener("visibilitychange", handleVisibility);
+
+    return () => {
+      clearInterval(interval);
+      document.removeEventListener("visibilitychange", handleVisibility);
+    };
   }, [selectedIndex, startProgressAnimation]);
 
   const goTo = useCallback(
