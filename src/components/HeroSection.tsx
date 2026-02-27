@@ -84,24 +84,36 @@ export function HeroSection() {
   const touchStartX = useRef<number | null>(null);
   const progressRef = useRef<HTMLDivElement>(null);
 
+  // Stable ref for the next-slide function — never causes interval restart
+  const nextRef = useRef<() => void>(() => {});
+  nextRef.current = () => {
+    setCurrent((prev) => {
+      setPrevSlide(prev);
+      return (prev + 1) % slides.length;
+    });
+  };
+
   const goTo = useCallback(
     (index: number) => {
-      if (index === current) return;
-      setPrevSlide(current);
-      setCurrent(index);
+      setCurrent((prev) => {
+        if (index === prev) return prev;
+        setPrevSlide(prev);
+        return index;
+      });
     },
-    [current],
+    [],
   );
 
   const next = useCallback(() => {
-    setPrevSlide(current);
-    setCurrent((prev) => (prev + 1) % slides.length);
-  }, [current]);
+    nextRef.current();
+  }, []);
 
   const prev = useCallback(() => {
-    setPrevSlide(current);
-    setCurrent((prev) => (prev - 1 + slides.length) % slides.length);
-  }, [current]);
+    setCurrent((prev) => {
+      setPrevSlide(prev);
+      return (prev - 1 + slides.length) % slides.length;
+    });
+  }, []);
 
   // Clear prevSlide after crossfade completes
   useEffect(() => {
@@ -110,11 +122,11 @@ export function HeroSection() {
     return () => clearTimeout(timeout);
   }, [prevSlide]);
 
-  // Autoplay — no pause on hover
+  // Autoplay — stable interval that NEVER restarts or clears on interaction
   useEffect(() => {
-    const timer = setInterval(next, SLIDE_DURATION);
+    const timer = setInterval(() => nextRef.current(), SLIDE_DURATION);
     return () => clearInterval(timer);
-  }, [next]);
+  }, []);
 
   const handleTouchStart = (e: React.TouchEvent) => {
     touchStartX.current = e.touches[0].clientX;
@@ -185,14 +197,14 @@ export function HeroSection() {
             >
               <motion.h1
                 {...textEnter(0)}
-                className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-bold text-white leading-[1.1] tracking-tight mb-4 md:mb-6"
+                className="font-heading text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-bold text-white leading-[1.1] tracking-tight mb-4 md:mb-6"
               >
                 {slides[current].heading}
               </motion.h1>
 
               <motion.p
                 {...textEnter(0.2)}
-                className="text-sm sm:text-base md:text-xl text-stone-200 max-w-2xl mx-auto mb-6 md:mb-10 leading-relaxed"
+                className="font-body text-sm sm:text-base md:text-xl text-stone-200 max-w-2xl mx-auto mb-6 md:mb-10 leading-relaxed"
               >
                 {slides[current].description}
               </motion.p>
