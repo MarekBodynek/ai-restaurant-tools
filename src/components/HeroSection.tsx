@@ -126,7 +126,7 @@ export function HeroSection() {
   return (
     <section
       aria-label="Hero carousel"
-      className="relative h-[70vh] md:h-[85vh] w-full overflow-hidden"
+      className="relative h-[70vh] md:h-[85vh] w-full overflow-hidden z-0"
     >
       {/* Crossfade slides — all stacked absolutely */}
       {slides.map((slide, index) => (
