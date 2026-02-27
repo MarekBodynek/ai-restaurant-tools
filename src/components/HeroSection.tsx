@@ -80,7 +80,7 @@ const textEnter = (delay: number) => ({
 
 export function HeroSection() {
   const [current, setCurrent] = useState(0);
-  const [prevSlide, setPrevSlide] = useState<number | null>(null);
+  const [cycle, setCycle] = useState(0);
   const touchStartX = useRef<number | null>(null);
   const progressRef = useRef<HTMLDivElement>(null);
 
@@ -88,21 +88,15 @@ export function HeroSection() {
   const nextRef = useRef<() => void>(() => {});
   nextRef.current = () => {
     setCurrent((prev) => {
-      setPrevSlide(prev);
-      return (prev + 1) % slides.length;
+      const next = (prev + 1) % slides.length;
+      if (next === 0) setCycle((c) => c + 1);
+      return next;
     });
   };
 
-  const goTo = useCallback(
-    (index: number) => {
-      setCurrent((prev) => {
-        if (index === prev) return prev;
-        setPrevSlide(prev);
-        return index;
-      });
-    },
-    [],
-  );
+  const goTo = useCallback((index: number) => {
+    setCurrent(index);
+  }, []);
 
   const next = useCallback(() => {
     nextRef.current();
@@ -110,17 +104,11 @@ export function HeroSection() {
 
   const prev = useCallback(() => {
     setCurrent((prev) => {
-      setPrevSlide(prev);
-      return (prev - 1 + slides.length) % slides.length;
+      const next = (prev - 1 + slides.length) % slides.length;
+      if (next === slides.length - 1) setCycle((c) => c + 1);
+      return next;
     });
   }, []);
-
-  // Clear prevSlide after crossfade completes
-  useEffect(() => {
-    if (prevSlide === null) return;
-    const timeout = setTimeout(() => setPrevSlide(null), 1000);
-    return () => clearTimeout(timeout);
-  }, [prevSlide]);
 
   // Autoplay — stable interval that NEVER restarts or clears on interaction
   useEffect(() => {
@@ -149,23 +137,21 @@ export function HeroSection() {
       onTouchStart={handleTouchStart}
       onTouchEnd={handleTouchEnd}
     >
-      {/* Background images layer — crossfade */}
+      {/* Background images layer — all slides stacked, pure CSS crossfade */}
       {slides.map((slide, index) => {
         const isActive = current === index;
-        const isPrev = prevSlide === index;
-        const isVisible = isActive || isPrev;
 
         return (
           <div
-            key={index}
+            key={`slide-${index}-${cycle}`}
             className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${
-              isActive ? "opacity-100 z-[2]" : isPrev ? "opacity-0 z-[1]" : "opacity-0 z-0"
+              isActive ? "opacity-100 z-10" : "opacity-0 z-0"
             }`}
             aria-hidden={!isActive}
           >
             <div
-              className={`absolute inset-0 ${isVisible ? kenBurnsVariants[index % kenBurnsVariants.length] : ""}`}
-              key={`kb-${index}-${isActive ? "active" : "idle"}`}
+              key={`kb-${index}-${cycle}`}
+              className={`absolute inset-0 ${isActive ? kenBurnsVariants[index % kenBurnsVariants.length] : ""}`}
             >
               <Image
                 src={slide.image}
@@ -181,11 +167,11 @@ export function HeroSection() {
       })}
 
       {/* Gradient overlays */}
-      <div className="absolute inset-0 z-[3] bg-gradient-to-b from-black/60 via-black/30 to-black/50" />
-      <div className="absolute inset-0 z-[3] bg-gradient-to-r from-black/40 via-transparent to-black/30" />
+      <div className="absolute inset-0 z-[11] bg-gradient-to-b from-black/60 via-black/30 to-black/50" />
+      <div className="absolute inset-0 z-[11] bg-gradient-to-r from-black/40 via-transparent to-black/30" />
 
       {/* Content layer — AnimatePresence for text */}
-      <div className="relative z-10 h-full flex items-center justify-center">
+      <div className="relative z-20 h-full flex items-center justify-center">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <AnimatePresence mode="wait">
             <motion.div
@@ -256,15 +242,12 @@ export function HeroSection() {
                 }}
               />
             )}
-            {current !== index && prevSlide === index && (
-              <div className="absolute inset-y-0 left-0 w-full bg-orange-500/40 rounded-full" />
-            )}
           </button>
         ))}
       </div>
 
       {/* Bottom gradient fade to page background */}
-      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-[#fefce8] via-[#fefce8]/60 to-transparent z-10" />
+      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-[#fefce8] via-[#fefce8]/60 to-transparent z-20" />
     </section>
   );
 }
