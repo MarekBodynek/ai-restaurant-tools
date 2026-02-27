@@ -37,22 +37,22 @@ body {
 
 /* Ken Burns effect variants */
 .ken-burns-zoom-in-left {
-  animation: kenBurnsZoomInLeft 20s ease-out forwards;
+  animation: kenBurnsZoomInLeft 25s ease-in-out infinite alternate;
   will-change: transform;
 }
 
 .ken-burns-zoom-in-right {
-  animation: kenBurnsZoomInRight 20s ease-out forwards;
+  animation: kenBurnsZoomInRight 25s ease-in-out infinite alternate;
   will-change: transform;
 }
 
 .ken-burns-zoom-out-center {
-  animation: kenBurnsZoomOutCenter 20s ease-out forwards;
+  animation: kenBurnsZoomOutCenter 25s ease-in-out infinite alternate;
   will-change: transform;
 }
 
 .ken-burns-zoom-in-center {
-  animation: kenBurnsZoomInCenter 20s ease-out forwards;
+  animation: kenBurnsZoomInCenter 25s ease-in-out infinite alternate;
   will-change: transform;
 }
 
