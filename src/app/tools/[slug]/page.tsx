@@ -142,12 +142,12 @@ export default function ToolPage({ params }: Props) {
                     Visit their website to learn more and get started.
                   </p>
                   <a
-                    href={tool.url}
+                    href={tool.affiliateUrl || tool.url}
                     target="_blank"
-                    rel="noopener noreferrer"
+                    rel={tool.affiliateUrl ? "noopener noreferrer sponsored" : "noopener noreferrer"}
                     className="block w-full py-3 bg-orange-500 hover:bg-orange-600 text-white font-semibold rounded-xl transition-all hover:shadow-lg hover:shadow-orange-500/25 text-sm"
                   >
-                    Visit Website
+                    {tool.affiliateUrl ? "Get Started Free →" : "Visit Website"}
                   </a>
                 </div>
               )}

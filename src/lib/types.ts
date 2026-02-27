@@ -6,6 +6,7 @@ export interface Tool {
   price: string;
   icon: string;
   url?: string;
+  affiliateUrl?: string;
 }
 
 export interface CategoryInfo {
