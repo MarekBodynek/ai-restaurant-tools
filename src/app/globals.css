@@ -92,14 +92,15 @@ body {
   }
 }
 
-/* Progress bar fill animation */
-@keyframes progressFill {
-  from {
-    width: 0%;
-  }
-  to {
-    width: 100%;
-  }
+/* Embla Carousel — fade mode requires stacked slides */
+.embla__container {
+  display: flex;
+  height: 100%;
+}
+
+.embla__slide {
+  flex: 0 0 100%;
+  min-width: 0;
 }
 
 @layer utilities {

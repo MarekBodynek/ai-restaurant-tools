@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, DM_Serif_Display } from "next/font/google";
+import { Inter, Plus_Jakarta_Sans } from "next/font/google";
 import Script from "next/script";
 import "./globals.css";
 import { Navbar } from "@/components/Navbar";
@@ -14,8 +14,8 @@ const inter = Inter({
   display: "swap",
 });
 
-const dmSerif = DM_Serif_Display({
-  weight: "400",
+const plusJakarta = Plus_Jakarta_Sans({
+  weight: ["400", "600", "700", "800"],
   subsets: ["latin"],
   variable: "--font-heading",
   display: "swap",
@@ -80,7 +80,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${inter.variable} ${dmSerif.variable}`}>
+    <html lang="en" className={`${inter.variable} ${plusJakarta.variable}`}>
       <head>
         <Script
           src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}

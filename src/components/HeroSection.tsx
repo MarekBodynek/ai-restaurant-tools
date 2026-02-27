@@ -4,6 +4,9 @@ import { useState, useEffect, useCallback, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
+import useEmblaCarousel from "embla-carousel-react";
+import Autoplay from "embla-carousel-autoplay";
+import Fade from "embla-carousel-fade";
 
 const slides = [
   {
@@ -79,103 +82,116 @@ const textEnter = (delay: number) => ({
 });
 
 export function HeroSection() {
-  const [current, setCurrent] = useState(0);
-  const [cycle, setCycle] = useState(0);
-  const touchStartX = useRef<number | null>(null);
+  const [selectedIndex, setSelectedIndex] = useState(0);
+  const [kenBurnsKey, setKenBurnsKey] = useState(0);
   const progressRef = useRef<HTMLDivElement>(null);
+  const progressAnimations = useRef<Map<number, Animation>>(new Map());
 
-  // Stable ref for the next-slide function — never causes interval restart
-  const nextRef = useRef<() => void>(() => {});
-  nextRef.current = () => {
-    setCurrent((prev) => {
-      const next = (prev + 1) % slides.length;
-      if (next === 0) setCycle((c) => c + 1);
-      return next;
-    });
-  };
+  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [
+    Fade(),
+    Autoplay({
+      delay: SLIDE_DURATION,
+      stopOnInteraction: false,
+      stopOnMouseEnter: false,
+      stopOnFocusIn: false,
+    }),
+  ]);
 
-  const goTo = useCallback((index: number) => {
-    setCurrent(index);
-  }, []);
+  const startProgressAnimation = useCallback(
+    (index: number) => {
+      // Cancel all running progress animations
+      progressAnimations.current.forEach((anim) => anim.cancel());
+      progressAnimations.current.clear();
 
-  const next = useCallback(() => {
-    nextRef.current();
-  }, []);
+      // Find the progress bar element for the active slide
+      const container = progressRef.current;
+      if (!container) return;
 
-  const prev = useCallback(() => {
-    setCurrent((prev) => {
-      const next = (prev - 1 + slides.length) % slides.length;
-      if (next === slides.length - 1) setCycle((c) => c + 1);
-      return next;
-    });
-  }, []);
+      const bars = container.querySelectorAll<HTMLElement>(
+        "[data-progress-bar]"
+      );
+      const bar = bars[index];
+      if (!bar) return;
 
-  // Autoplay — stable interval that NEVER restarts or clears on interaction
+      const animation = bar.animate([{ width: "0%" }, { width: "100%" }], {
+        duration: SLIDE_DURATION,
+        easing: "linear",
+        fill: "forwards",
+      });
+
+      progressAnimations.current.set(index, animation);
+    },
+    []
+  );
+
+  const onSelect = useCallback(() => {
+    if (!emblaApi) return;
+    const index = emblaApi.selectedScrollSnap();
+    setSelectedIndex(index);
+    setKenBurnsKey((k) => k + 1);
+    startProgressAnimation(index);
+  }, [emblaApi, startProgressAnimation]);
+
   useEffect(() => {
-    const timer = setInterval(() => nextRef.current(), SLIDE_DURATION);
-    return () => clearInterval(timer);
-  }, []);
+    if (!emblaApi) return;
+    emblaApi.on("select", onSelect);
+    // Initialize on mount
+    onSelect();
+    return () => {
+      emblaApi.off("select", onSelect);
+    };
+  }, [emblaApi, onSelect]);
 
-  const handleTouchStart = (e: React.TouchEvent) => {
-    touchStartX.current = e.touches[0].clientX;
-  };
-
-  const handleTouchEnd = (e: React.TouchEvent) => {
-    if (touchStartX.current === null) return;
-    const diff = touchStartX.current - e.changedTouches[0].clientX;
-    if (Math.abs(diff) > 50) {
-      if (diff > 0) next();
-      else prev();
-    }
-    touchStartX.current = null;
-  };
+  const goTo = useCallback(
+    (index: number) => {
+      if (!emblaApi) return;
+      emblaApi.scrollTo(index);
+    },
+    [emblaApi]
+  );
 
   return (
     <section
       aria-label="Hero carousel"
       className="relative h-[70vh] md:h-[85vh] w-full overflow-hidden"
-      onTouchStart={handleTouchStart}
-      onTouchEnd={handleTouchEnd}
     >
-      {/* Background images layer — all slides stacked, pure CSS crossfade */}
-      {slides.map((slide, index) => {
-        const isActive = current === index;
-
-        return (
-          <div
-            key={index}
-            className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${
-              isActive ? "opacity-100 z-10" : "opacity-0 z-0"
-            }`}
-            aria-hidden={!isActive}
-          >
-            <div
-              key={`kb-${index}-${cycle}`}
-              className={`absolute inset-0 ${isActive ? kenBurnsVariants[index % kenBurnsVariants.length] : ""}`}
-            >
-              <Image
-                src={slide.image}
-                alt={slide.heading}
-                fill
-                className="object-cover object-center"
-                sizes="100vw"
-                priority={index === 0}
-              />
+      {/* Embla viewport */}
+      <div ref={emblaRef} className="absolute inset-0 overflow-hidden">
+        <div className="embla__container h-full">
+          {slides.map((slide, index) => (
+            <div key={index} className="embla__slide relative h-full">
+              <div
+                key={`kb-${index}-${kenBurnsKey}`}
+                className={`absolute inset-0 ${
+                  selectedIndex === index
+                    ? kenBurnsVariants[index % kenBurnsVariants.length]
+                    : ""
+                }`}
+              >
+                <Image
+                  src={slide.image}
+                  alt={slide.heading}
+                  fill
+                  className="object-cover object-center"
+                  sizes="100vw"
+                  priority={index === 0}
+                />
+              </div>
             </div>
-          </div>
-        );
-      })}
+          ))}
+        </div>
+      </div>
 
       {/* Gradient overlays */}
-      <div className="absolute inset-0 z-[11] bg-gradient-to-b from-black/60 via-black/30 to-black/50" />
-      <div className="absolute inset-0 z-[11] bg-gradient-to-r from-black/40 via-transparent to-black/30" />
+      <div className="absolute inset-0 z-[11] bg-gradient-to-b from-black/60 via-black/30 to-black/50 pointer-events-none" />
+      <div className="absolute inset-0 z-[11] bg-gradient-to-r from-black/40 via-transparent to-black/30 pointer-events-none" />
 
-      {/* Content layer — AnimatePresence for text */}
-      <div className="relative z-20 h-full flex items-center justify-center">
+      {/* Content layer */}
+      <div className="relative z-20 h-full flex items-center justify-center pointer-events-none">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <AnimatePresence mode="wait">
             <motion.div
-              key={current}
+              key={selectedIndex}
               className="max-w-4xl mx-auto text-center"
               initial="initial"
               animate="animate"
@@ -185,22 +201,22 @@ export function HeroSection() {
                 {...textEnter(0)}
                 className="font-heading text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-bold text-white leading-[1.1] tracking-tight mb-4 md:mb-6"
               >
-                {slides[current].heading}
+                {slides[selectedIndex].heading}
               </motion.h1>
 
               <motion.p
                 {...textEnter(0.2)}
                 className="font-body text-sm sm:text-base md:text-xl text-stone-200 max-w-2xl mx-auto mb-6 md:mb-10 leading-relaxed"
               >
-                {slides[current].description}
+                {slides[selectedIndex].description}
               </motion.p>
 
-              <motion.div {...textEnter(0.4)}>
+              <motion.div {...textEnter(0.4)} className="pointer-events-auto">
                 <Link
-                  href={slides[current].href}
+                  href={slides[selectedIndex].href}
                   className="group inline-flex items-center gap-2 px-6 py-3 md:px-8 md:py-4 bg-orange-500 hover:bg-orange-600 text-white font-semibold rounded-xl transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-orange-500/25 text-sm md:text-base"
                 >
-                  {slides[current].cta}
+                  {slides[selectedIndex].cta}
                   <svg
                     className="w-4 h-4 md:w-5 md:h-5 group-hover:translate-x-1 transition-transform"
                     fill="none"
@@ -221,7 +237,7 @@ export function HeroSection() {
         </div>
       </div>
 
-      {/* Progress bar indicator */}
+      {/* Progress bar indicators */}
       <div
         ref={progressRef}
         className="absolute bottom-6 md:bottom-8 left-1/2 -translate-x-1/2 z-20 flex items-center gap-1.5 md:gap-2 w-[min(280px,60vw)] md:w-[320px]"
@@ -233,21 +249,17 @@ export function HeroSection() {
             aria-label={`Go to slide ${index + 1}`}
             className="relative flex-1 h-1 rounded-full bg-white/25 overflow-hidden cursor-pointer hover:bg-white/35 transition-colors"
           >
-            {current === index && (
-              <div
-                key={`progress-${current}`}
-                className="absolute inset-y-0 left-0 bg-orange-500 rounded-full"
-                style={{
-                  animation: `progressFill ${SLIDE_DURATION}ms linear forwards`,
-                }}
-              />
-            )}
+            <div
+              data-progress-bar
+              className="absolute inset-y-0 left-0 bg-orange-500 rounded-full"
+              style={{ width: selectedIndex === index ? undefined : "0%" }}
+            />
           </button>
         ))}
       </div>
 
       {/* Bottom gradient fade to page background */}
-      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-[#fefce8] via-[#fefce8]/60 to-transparent z-20" />
+      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-[#fefce8] via-[#fefce8]/60 to-transparent z-20 pointer-events-none" />
     </section>
   );
 }

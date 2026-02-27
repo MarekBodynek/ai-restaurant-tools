@@ -37,7 +37,7 @@ const config: Config = {
       },
       fontFamily: {
         sans: ["var(--font-inter)", "system-ui", "sans-serif"],
-        heading: ["var(--font-heading)", "Georgia", "serif"],
+        heading: ["var(--font-heading)", "system-ui", "sans-serif"],
         body: ["var(--font-inter)", "system-ui", "sans-serif"],
       },
       backgroundImage: {
