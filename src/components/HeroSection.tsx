@@ -13,7 +13,7 @@ const slides = [
     cta: "Browse Tools",
     href: "#tools",
     image:
-      "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1920&q=80",
+      "https://images.unsplash.com/photo-1559329007-40df8a9345d8?w=1920&q=80",
   },
   {
     heading: "Boost Revenue with AI-Powered POS Systems",
@@ -22,7 +22,7 @@ const slides = [
     cta: "Explore POS Tools",
     href: "#tools",
     image:
-      "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=1920&q=80",
+      "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1920&q=80",
   },
   {
     heading: "Automate Marketing & Customer Engagement",
@@ -31,7 +31,7 @@ const slides = [
     cta: "Marketing Tools",
     href: "#tools",
     image:
-      "https://images.unsplash.com/photo-1552566626-52f8b828add9?w=1920&q=80",
+      "https://images.unsplash.com/photo-1564758596018-3e5b1f2340cc?w=1920&q=80",
   },
   {
     heading: "Streamline Operations from Kitchen to Front of House",
@@ -40,7 +40,7 @@ const slides = [
     cta: "Operations Tools",
     href: "#tools",
     image:
-      "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1920&q=80",
+      "https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf?w=1920&q=80",
   },
   {
     heading: "Smart Reservations & Customer Management",
@@ -49,7 +49,7 @@ const slides = [
     cta: "Reservation Tools",
     href: "#tools",
     image:
-      "https://images.unsplash.com/photo-1559339352-11d035aa65de?w=1920&q=80",
+      "https://images.unsplash.com/photo-1517457373958-b7bdd4587205?w=1920&q=80",
   },
   {
     heading: "AI-Powered Analytics & Business Intelligence",
@@ -58,7 +58,7 @@ const slides = [
     cta: "Analytics Tools",
     href: "#tools",
     image:
-      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1920&q=80",
+      "https://images.unsplash.com/photo-1556742393-d75f468bfcb0?w=1920&q=80",
   },
 ];
 
