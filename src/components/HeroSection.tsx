@@ -91,8 +91,8 @@ export function HeroSection() {
     <section
       aria-label="Hero carousel"
       className="relative h-[60vh] md:h-[75vh] w-full overflow-hidden"
-      onMouseEnter={() => setPaused(true)}
-      onMouseLeave={() => setPaused(false)}
+      onMouseEnter={() => {}}
+      onMouseLeave={() => {}}
       onTouchStart={handleTouchStart}
       onTouchEnd={handleTouchEnd}
     >
