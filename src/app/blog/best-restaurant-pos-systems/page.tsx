@@ -835,16 +835,16 @@ export default function BestRestaurantPosSystems() {
             author: {
               "@type": "Organization",
               name: "RestaurantAI",
-              url: "https://restaurantai.tools",
+              url: "https://restauranttools.ai",
             },
             publisher: {
               "@type": "Organization",
               name: "RestaurantAI",
-              url: "https://restaurantai.tools",
+              url: "https://restauranttools.ai",
             },
             mainEntityOfPage: {
               "@type": "WebPage",
-              "@id": "https://restaurantai.tools/blog/best-restaurant-pos-systems",
+              "@id": "https://restauranttools.ai/blog/best-restaurant-pos-systems",
             },
           }),
         }}

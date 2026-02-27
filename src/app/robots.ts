@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://restaurantai.tools/sitemap.xml",
+    sitemap: "https://restauranttools.ai/sitemap.xml",
   };
 }

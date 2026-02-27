@@ -28,7 +28,7 @@ export function generateMetadata({ params }: Props): Metadata {
       title: `${tool.name} — AI ${tool.category} Tool | RestaurantAI`,
       description: seoDescription,
       type: "article",
-      url: `https://restaurantai.tools/tools/${tool.slug}`,
+      url: `https://restauranttools.ai/tools/${tool.slug}`,
       siteName: "RestaurantAI",
       images: [
         {

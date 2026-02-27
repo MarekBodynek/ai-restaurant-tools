@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     "restaurant POS",
     "restaurant analytics",
   ],
-  metadataBase: new URL("https://restaurantai.tools"),
+  metadataBase: new URL("https://restauranttools.ai"),
   openGraph: {
     type: "website",
     locale: "en_US",
