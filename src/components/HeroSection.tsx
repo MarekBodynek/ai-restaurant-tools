@@ -74,8 +74,8 @@ const SLIDE_DURATION = 5000;
 const textEnter = (delay: number) => ({
   initial: { opacity: 0, y: 40 },
   animate: { opacity: 1, y: 0 },
-  exit: { opacity: 0, y: -20 },
-  transition: { duration: 0.6, delay, ease: "easeOut" as const },
+  exit: { opacity: 0 },
+  transition: { duration: 0.5, delay: delay * 0.5, ease: "easeOut" as const },
 });
 
 export function HeroSection() {
@@ -162,7 +162,7 @@ export function HeroSection() {
       {/* Content layer */}
       <div className="relative z-20 h-full flex items-center justify-center pointer-events-none">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <AnimatePresence mode="wait">
+          <AnimatePresence mode="popLayout">
             <motion.div
               key={selectedIndex}
               className="max-w-4xl mx-auto text-center"
