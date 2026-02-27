@@ -58,7 +58,7 @@ const slides = [
     cta: "Analytics Tools",
     href: "#tools",
     image:
-      "https://images.unsplash.com/photo-1556742393-d75f468bfcb0?w=1920&q=80",
+      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1920&q=80",
   },
 ];
 
