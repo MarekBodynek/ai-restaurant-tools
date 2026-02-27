@@ -5,7 +5,7 @@ import { AnimatedSection, StaggerContainer, StaggerItem } from "./AnimatedSectio
 const testimonials = [
   {
     quote:
-      "RestaurantAI helped us find the perfect reservation system. We switched to Resy and saw a 30% increase in covers within the first month.",
+      "RestaurantTools.ai helped us find the perfect reservation system. We switched to Resy and saw a 30% increase in covers within the first month.",
     name: "Sarah Chen",
     role: "Owner, The Golden Fork",
     avatar: "SC",

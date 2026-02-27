@@ -2,11 +2,11 @@ import { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Blog — Restaurant AI Insights & Guides",
+  title: "Blog — RestaurantTools.ai Insights & Guides",
   description:
     "Actionable insights on AI tools for restaurants. Learn how to reduce no-shows, optimize menus, improve inventory, and scale marketing with AI.",
   openGraph: {
-    title: "RestaurantAI Blog — Practical AI Growth Playbooks",
+    title: "RestaurantTools.ai Blog — Practical AI Growth Playbooks",
     description:
       "Read practical guides on chatbots, menu optimization, inventory AI, and restaurant marketing strategies for 2026.",
     type: "website",

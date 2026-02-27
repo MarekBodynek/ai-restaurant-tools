@@ -23,8 +23,8 @@ const plusJakarta = Plus_Jakarta_Sans({
 
 export const metadata: Metadata = {
   title: {
-    default: "RestaurantAI — The #1 AI Tools Directory for Restaurants",
-    template: "%s | RestaurantAI",
+    default: "RestaurantTools.ai — The #1 AI Tools Directory for Restaurants",
+    template: "%s | RestaurantTools.ai",
   },
   description:
     "Discover 54+ AI-powered tools to transform your restaurant. From reservations to kitchen robotics — find, compare, and choose the best AI solutions for your business.",
@@ -42,8 +42,8 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    siteName: "RestaurantAI",
-    title: "RestaurantAI — The #1 AI Tools Directory for Restaurants",
+    siteName: "RestaurantTools.ai",
+    title: "RestaurantTools.ai — The #1 AI Tools Directory for Restaurants",
     description:
       "Discover 54+ AI-powered tools to transform your restaurant. From reservations to kitchen robotics.",
     images: [
@@ -51,13 +51,13 @@ export const metadata: Metadata = {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "RestaurantAI Directory",
+        alt: "RestaurantTools.ai Directory",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "RestaurantAI — The #1 AI Tools Directory for Restaurants",
+    title: "RestaurantTools.ai — The #1 AI Tools Directory for Restaurants",
     description:
       "Discover 54+ AI-powered tools to transform your restaurant.",
   },

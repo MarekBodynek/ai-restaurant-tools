@@ -59,7 +59,7 @@ export function Footer() {
 
         <div className="mt-12 pt-8 border-t border-stone-800/50 flex flex-col sm:flex-row justify-between items-center gap-4">
           <p className="text-xs text-stone-500">
-            &copy; {new Date().getFullYear()} RestaurantAI. All rights reserved.
+            &copy; {new Date().getFullYear()} RestaurantTools.ai. All rights reserved.
           </p>
           <div className="flex items-center gap-6">
             <a href="#" className="text-stone-500 hover:text-orange-400 transition-colors" aria-label="X (Twitter)">

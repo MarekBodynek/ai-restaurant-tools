@@ -25,11 +25,11 @@ export function generateMetadata({ params }: Props): Metadata {
       canonical: `/tools/${tool.slug}`,
     },
     openGraph: {
-      title: `${tool.name} — AI ${tool.category} Tool | RestaurantAI`,
+      title: `${tool.name} — AI ${tool.category} Tool | RestaurantTools.ai`,
       description: seoDescription,
       type: "article",
       url: `https://restauranttools.ai/tools/${tool.slug}`,
-      siteName: "RestaurantAI",
+      siteName: "RestaurantTools.ai",
       images: [
         {
           url: "/og-image.png",

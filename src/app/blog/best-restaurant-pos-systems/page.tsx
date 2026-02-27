@@ -834,12 +834,12 @@ export default function BestRestaurantPosSystems() {
             dateModified: "2026-02-27",
             author: {
               "@type": "Organization",
-              name: "RestaurantAI",
+              name: "RestaurantTools.ai",
               url: "https://restauranttools.ai",
             },
             publisher: {
               "@type": "Organization",
-              name: "RestaurantAI",
+              name: "RestaurantTools.ai",
               url: "https://restauranttools.ai",
             },
             mainEntityOfPage: {
