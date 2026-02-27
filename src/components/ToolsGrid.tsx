@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect } from "react";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import { tools, getCategories } from "@/lib/tools";
@@ -11,6 +11,28 @@ export function ToolsGrid() {
   const [search, setSearch] = useState("");
   const [activeCategory, setActiveCategory] = useState("All");
   const categories = useMemo(() => getCategories(), []);
+  const categoryNames = useMemo(
+    () => new Set(categories.map((c) => c.name)),
+    [categories]
+  );
+
+  // Read category filter from URL hash (e.g. /#tools?category=POS)
+  useEffect(() => {
+    const parseCategory = () => {
+      const hash = window.location.hash; // e.g. "#tools?category=POS"
+      const qIndex = hash.indexOf("?");
+      if (qIndex === -1) return;
+      const params = new URLSearchParams(hash.slice(qIndex));
+      const cat = params.get("category");
+      if (cat && categoryNames.has(cat)) {
+        setActiveCategory(cat);
+      }
+    };
+
+    parseCategory();
+    window.addEventListener("hashchange", parseCategory);
+    return () => window.removeEventListener("hashchange", parseCategory);
+  }, [categoryNames]);
 
   const filtered = useMemo(() => {
     let result: Tool[] = tools;
