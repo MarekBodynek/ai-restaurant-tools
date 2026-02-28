@@ -188,7 +188,7 @@ export function HeroSection() {
             >
               <motion.h1
                 {...textEnter(0)}
-                className="font-heading text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-light text-white leading-[1.1] tracking-normal mb-4 md:mb-6"
+                className="font-heading text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-extralight text-white leading-[1.1] tracking-normal mb-4 md:mb-6"
               >
                 {slides[selectedIndex].heading}
               </motion.h1>

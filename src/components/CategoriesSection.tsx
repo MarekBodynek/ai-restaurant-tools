@@ -9,7 +9,7 @@ const categoryImages: Record<string, string> = {
   Chatbots:
     "https://images.unsplash.com/photo-1596524430615-b46475ddff6e?w=400&q=80", // customer on phone chatting
   Reservations:
-    "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=400&q=80", // restaurant tables set up for reservations
+    "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=400&q=80", // restaurant with people at counter set up for reservations
   "Menu AI":
     "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&q=80", // beautiful plated dish
   Inventory:
