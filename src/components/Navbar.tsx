@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useState, useEffect } from "react";
 import { Logo } from "./Logo";
 
@@ -11,8 +12,18 @@ const navLinks = [
 ];
 
 export function Navbar() {
+  const pathname = usePathname();
+  const locale = pathname.startsWith("/es") ? "es" : "en";
   const [mobileOpen, setMobileOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+
+  const getLocalizedHref = (newLocale: "en" | "es") => {
+    // Strip existing /es prefix to get the base path
+    const basePath = pathname.startsWith("/es")
+      ? pathname.slice(3) || "/"
+      : pathname;
+    return newLocale === "es" ? `/es${basePath === "/" ? "" : basePath}` : basePath;
+  };
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 20);
@@ -65,6 +76,29 @@ export function Navbar() {
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-orange-500 group-hover:w-full transition-all duration-300" />
               </Link>
             ))}
+            <div className="flex items-center gap-1 text-sm">
+              <Link
+                href={getLocalizedHref("en")}
+                className={`px-2 py-1 rounded transition-colors ${
+                  locale === "en"
+                    ? "text-orange-500 font-semibold"
+                    : "text-stone-400 hover:text-stone-200"
+                }`}
+              >
+                EN
+              </Link>
+              <span className="text-stone-600">/</span>
+              <Link
+                href={getLocalizedHref("es")}
+                className={`px-2 py-1 rounded transition-colors ${
+                  locale === "es"
+                    ? "text-orange-500 font-semibold"
+                    : "text-stone-400 hover:text-stone-200"
+                }`}
+              >
+                ES
+              </Link>
+            </div>
             <Link
               href="/#newsletter"
               className="inline-flex items-center gap-2 px-5 py-2.5 bg-orange-500 hover:bg-orange-700 text-[#fefce8] text-sm font-semibold rounded-lg transition-transform duration-300 hover:-translate-y-0.5"
@@ -125,7 +159,7 @@ export function Navbar() {
         />
 
         <div
-          className={`absolute right-0 top-0 bottom-0 w-full max-w-xs bg-[#171412]/98 backdrop-blur-xl border-l border-stone-700/50 shadow-2xl mobile-menu-panel ${
+          className={`absolute right-0 top-0 bottom-0 w-full max-w-xs bg-[#1c1917] border-l border-stone-700/50 shadow-2xl mobile-menu-panel ${
             mobileOpen ? "open" : ""
           }`}
         >
@@ -162,6 +196,38 @@ export function Navbar() {
                 className="block text-center px-5 py-4 bg-orange-500 hover:bg-orange-700 text-[#fefce8] font-semibold rounded-xl transition-colors min-h-[52px]"
               >
                 Get Started
+              </Link>
+            </div>
+            <div
+              className="mt-2 flex items-center gap-2 px-4"
+              style={{
+                opacity: mobileOpen ? 1 : 0,
+                transform: mobileOpen ? "translateX(0)" : "translateX(20px)",
+                transition: `opacity 0.3s ease ${(navLinks.length + 1) * 0.08}s, transform 0.3s ease ${(navLinks.length + 1) * 0.08}s`,
+              }}
+            >
+              <span className="text-sm text-stone-500">Language:</span>
+              <Link
+                href={getLocalizedHref("en")}
+                onClick={() => setMobileOpen(false)}
+                className={`px-3 py-2 rounded-lg text-sm transition-colors min-h-[44px] flex items-center ${
+                  locale === "en"
+                    ? "text-orange-500 font-semibold bg-white/5"
+                    : "text-stone-400 hover:text-stone-200"
+                }`}
+              >
+                EN
+              </Link>
+              <Link
+                href={getLocalizedHref("es")}
+                onClick={() => setMobileOpen(false)}
+                className={`px-3 py-2 rounded-lg text-sm transition-colors min-h-[44px] flex items-center ${
+                  locale === "es"
+                    ? "text-orange-500 font-semibold bg-white/5"
+                    : "text-stone-400 hover:text-stone-200"
+                }`}
+              >
+                ES
               </Link>
             </div>
           </div>
