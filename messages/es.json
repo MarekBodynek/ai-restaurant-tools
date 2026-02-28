@@ -1,0 +1,356 @@
+{
+  "Metadata": {
+    "title": "RestaurantTools.ai — El Directorio #1 de Herramientas IA para Restaurantes",
+    "titleTemplate": "%s | RestaurantTools.ai",
+    "description": "Descubre más de 54 herramientas de IA para transformar tu restaurante. Desde reservas hasta robótica de cocina — encuentra, compara y elige las mejores soluciones de IA para tu negocio.",
+    "ogDescription": "Descubre más de 54 herramientas de IA para transformar tu restaurante. Desde reservas hasta robótica de cocina.",
+    "twitterDescription": "Descubre más de 54 herramientas de IA para transformar tu restaurante."
+  },
+  "Navbar": {
+    "tools": "Herramientas",
+    "categories": "Categorías",
+    "blog": "Blog",
+    "getStarted": "Comenzar",
+    "toggleMenu": "Abrir menú"
+  },
+  "Hero": {
+    "slides": {
+      "0": {
+        "heading": "Descubre las Mejores Herramientas IA para Restaurantes",
+        "description": "Explora nuestra colección curada de más de 54 herramientas de IA diseñadas para transformar cada aspecto de tu restaurante.",
+        "cta": "Ver Herramientas"
+      },
+      "1": {
+        "heading": "Aumenta tus Ingresos con Sistemas POS Inteligentes",
+        "description": "Sistemas de punto de venta inteligentes que aprenden los patrones de tu negocio y optimizan precios, inventario y experiencia del cliente.",
+        "cta": "Explorar POS"
+      },
+      "2": {
+        "heading": "Automatiza tu Marketing y Fidelización de Clientes",
+        "description": "Desde campañas de email personalizadas hasta chatbots con IA, conecta con tus clientes como nunca antes.",
+        "cta": "Herramientas de Marketing"
+      },
+      "3": {
+        "heading": "Optimiza tus Operaciones de Cocina a Sala",
+        "description": "Reduce el desperdicio, optimiza el personal y mejora la eficiencia con herramientas operativas inteligentes.",
+        "cta": "Herramientas Operativas"
+      },
+      "4": {
+        "heading": "Reservas Inteligentes y Gestión de Clientes",
+        "description": "Sistemas de reservas con IA y herramientas CRM que maximizan la rotación de mesas y construyen relaciones duraderas con tus comensales.",
+        "cta": "Herramientas de Reservas"
+      },
+      "5": {
+        "heading": "Analítica e Inteligencia de Negocio con IA",
+        "description": "Convierte los datos de tu restaurante en información accionable — desde pronósticos de ventas hasta ingeniería de menú y optimización laboral.",
+        "cta": "Herramientas de Analítica"
+      }
+    },
+    "goToSlide": "Ir a diapositiva {number}"
+  },
+  "Stats": {
+    "aiTools": "Herramientas IA",
+    "categories": "Categorías",
+    "restaurantsServed": "Restaurantes Atendidos",
+    "satisfactionRate": "Tasa de Satisfacción"
+  },
+  "Categories": {
+    "badge": "Explorar por Categoría",
+    "title": "Encuentra la IA Ideal para tu Negocio",
+    "description": "Desde la atención al cliente hasta las operaciones de cocina, explora soluciones de IA organizadas por lo que mejor hacen.",
+    "toolsCount": "{count} herramientas",
+    "categoryDescriptions": {
+      "Chatbots": "Chatbots con IA para atención al cliente, reservas y gestión de pedidos",
+      "Reservations": "Sistemas de reservas inteligentes con gestión de mesas y comensales basada en IA",
+      "Menu AI": "Herramientas de IA para optimización de menú, costeo de recetas y análisis de tendencias",
+      "Inventory": "Seguimiento inteligente de inventario, compras y reducción de desperdicios",
+      "Marketing": "Marketing con IA, gestión de reputación y fidelización de clientes",
+      "POS": "Sistemas de punto de venta con analítica IA y gestión de personal",
+      "Delivery": "Pedidos online y gestión de delivery con optimización inteligente",
+      "Kitchen": "Robótica de cocina, monitoreo de seguridad alimentaria y automatización",
+      "Analytics": "Inteligencia de negocio e insights basados en IA para operaciones de restaurante"
+    }
+  },
+  "Featured": {
+    "badge": "Selección del Editor",
+    "title": "Las Mejores Herramientas para tu Restaurante",
+    "description": "Seleccionadas por nuestro equipo — las herramientas de IA que generan mayor impacto para dueños de restaurantes.",
+    "badges": {
+      "0": "Selección del Editor",
+      "1": "Más Popular",
+      "2": "Tendencia"
+    }
+  },
+  "ToolsGrid": {
+    "badge": "Directorio Completo",
+    "title": "Todas las Herramientas IA",
+    "description": "Explora nuestra colección completa de herramientas de IA para restaurantes. Busca por nombre o filtra por categoría.",
+    "searchPlaceholder": "Buscar herramientas por nombre, categoría o descripción...",
+    "allCategory": "Todas ({count})",
+    "showingResults": "Mostrando {count} herramienta(s)",
+    "noResults": "No se encontraron herramientas con tu búsqueda.",
+    "clearFilters": "Limpiar filtros",
+    "viewDetails": "Ver detalles"
+  },
+  "Testimonials": {
+    "badge": "Testimonios",
+    "title": "La Confianza de los Restauranteros",
+    "description": "Descubre cómo los restauranteros usan nuestro directorio para encontrar las herramientas de IA que transforman su negocio.",
+    "items": {
+      "0": {
+        "quote": "RestaurantTools.ai nos ayudó a encontrar el sistema de reservas perfecto. Nos cambiamos a Resy y vimos un aumento del 30% en cubiertos en el primer mes.",
+        "name": "Sarah Chen",
+        "role": "Propietaria, The Golden Fork"
+      },
+      "1": {
+        "quote": "El chatbot con IA que descubrimos en este directorio gestiona el 80% de las consultas de nuestros clientes. Por fin nuestro equipo puede enfocarse en lo que importa — una comida excelente.",
+        "name": "Marcus Johnson",
+        "role": "Director General, Bistro Moderne"
+      },
+      "2": {
+        "quote": "Reducimos el desperdicio de alimentos en un 40% tras implementar la herramienta de inventario con IA que encontramos aquí. La mejor decisión de negocio del año.",
+        "name": "Elena Rodriguez",
+        "role": "Directora de Operaciones, Casa Fresca"
+      }
+    }
+  },
+  "Newsletter": {
+    "badge": "Mantente al Día",
+    "title": "Recibe las Últimas Herramientas IA para Restaurantes",
+    "description": "Revisamos y añadimos nuevas herramientas cada semana. Suscríbete para recibir las mejores selecciones en tu bandeja — sin spam, nunca.",
+    "freeGuide": "Obtén nuestra guía gratuita: Las 10 Mejores Herramientas IA que Todo Restaurante Necesita en 2026",
+    "emailPlaceholder": "tu@email.com",
+    "subscribe": "Suscríbete Gratis",
+    "joinText": "Únete a más de 2,000 dueños de restaurantes. Cancela cuando quieras."
+  },
+  "Footer": {
+    "tagline": "El directorio más completo de herramientas de IA para restaurantes. Encuentra la solución perfecta para transformar tu negocio.",
+    "directory": "Directorio",
+    "allTools": "Todas las Herramientas",
+    "categoriesLink": "Categorías",
+    "featured": "Destacados",
+    "company": "Empresa",
+    "about": "Nosotros",
+    "blog": "Blog",
+    "contact": "Contacto",
+    "legal": "Legal",
+    "privacyPolicy": "Política de Privacidad",
+    "terms": "Términos",
+    "copyright": "© {year} RestaurantTools.ai. Todos los derechos reservados.",
+    "twitter": "X (Twitter)",
+    "linkedin": "LinkedIn",
+    "instagram": "Instagram"
+  },
+  "About": {
+    "metaTitle": "Sobre Nosotros",
+    "metaDescription": "Conoce RestaurantTools.ai — nuestra misión de ayudar a dueños de restaurantes a descubrir y adoptar las mejores herramientas de IA para su negocio.",
+    "title": "Sobre",
+    "titleHighlight": "RestaurantTools.ai",
+    "subtitle": "Nuestra misión es ayudar a los dueños de restaurantes a navegar la revolución de la IA — para que puedan enfocarse en lo que mejor hacen: crear experiencias gastronómicas increíbles.",
+    "storyTitle": "Nuestra Historia",
+    "storyP1": "RestaurantTools.ai fue fundado por un equipo de entusiastas de la tecnología restaurantera que vieron una brecha creciente entre la innovación en IA y la adopción en restaurantes. Mientras todas las industrias se transformaban con inteligencia artificial, la mayoría de los dueños de restaurantes se sentían abrumados — sin saber qué herramientas eran reales, cuáles eran moda pasajera y cuáles realmente funcionarían para su negocio.",
+    "storyP2": "Creamos este directorio para cerrar esa brecha. Un lugar único donde los profesionales de la restauración pueden descubrir, comparar y elegir herramientas de IA con confianza.",
+    "missionTitle": "Nuestra Misión",
+    "missionText": "Ser el recurso más confiable para dueños de restaurantes que buscan adoptar IA. Creemos que la tecnología debe potenciar a los restaurantes — no complicarlos. Cada herramienta en nuestro directorio está investigada, categorizada y presentada pensando en el operador de restaurante.",
+    "valuesTitle": "Nuestros Valores",
+    "curatedTitle": "Calidad Curada",
+    "curatedText": "No listamos todo — listamos lo que importa. Cada herramienta es evaluada por relevancia y calidad.",
+    "honestTitle": "Reseñas Honestas",
+    "honestText": "Sin rankings de pago. Nuestras evaluaciones se basan en capacidades reales, no en presupuestos publicitarios.",
+    "restaurantFirstTitle": "Restaurante Primero",
+    "restaurantFirstText": "Pensamos desde la perspectiva del operador. Si no ayuda a un restaurante real, no pertenece aquí."
+  },
+  "Contact": {
+    "metaTitle": "Contáctanos",
+    "metaDescription": "Ponte en contacto con el equipo de RestaurantTools.ai. Envía una herramienta, explora alianzas o haz una pregunta.",
+    "title": "Ponte en",
+    "titleHighlight": "Contacto",
+    "subtitle": "¿Tienes una pregunta, quieres enviar una herramienta o explorar una alianza? Nos encantaría saber de ti.",
+    "nameLabel": "Nombre",
+    "namePlaceholder": "Tu nombre",
+    "emailLabel": "Email",
+    "emailPlaceholder": "tu@ejemplo.com",
+    "subjectLabel": "Asunto",
+    "subjectDefault": "Selecciona un tema…",
+    "subjectSubmitTool": "Enviar una Herramienta",
+    "subjectPartnership": "Consulta de Alianza",
+    "subjectGeneral": "Pregunta General",
+    "subjectIssue": "Reportar un Problema",
+    "messageLabel": "Mensaje",
+    "messagePlaceholder": "Cuéntanos más…",
+    "sendButton": "Enviar Mensaje",
+    "emailDirect": "O envíanos un email directamente a"
+  },
+  "Privacy": {
+    "metaTitle": "Política de Privacidad",
+    "metaDescription": "Política de privacidad de RestaurantTools.ai — cómo recopilamos, usamos y protegemos tus datos.",
+    "title": "Política de Privacidad",
+    "lastUpdated": "Última actualización: Febrero 2026",
+    "section1Title": "1. Información que Recopilamos",
+    "section1Text": "Recopilamos la información que nos proporcionas directamente, como cuando te suscribes a nuestro boletín o envías un formulario de contacto. También recopilamos datos analíticos básicos (páginas visitadas, fuentes de referencia) a través de Google Analytics para mejorar nuestro servicio.",
+    "section2Title": "2. Cómo Usamos tu Información",
+    "section2Text": "Utilizamos la información recopilada para operar y mejorar RestaurantTools.ai, enviar actualizaciones del boletín (si estás suscrito), responder consultas y analizar el uso del sitio para mejorar la experiencia del usuario.",
+    "section3Title": "3. Compartir Datos",
+    "section3Text": "No vendemos tu información personal. Podemos compartir datos con proveedores de servicios que nos ayudan a operar el sitio (ej., hosting, analítica) bajo acuerdos estrictos de confidencialidad.",
+    "section4Title": "4. Cookies",
+    "section4Text": "Utilizamos cookies y tecnologías similares para analítica y para recordar tus preferencias. Puedes controlar las cookies a través de la configuración de tu navegador.",
+    "section5Title": "5. Tus Derechos",
+    "section5Text": "Puedes solicitar acceso, corrección o eliminación de tus datos personales contactándonos en",
+    "section6Title": "6. Contacto",
+    "section6Text": "Para consultas relacionadas con privacidad, escríbenos a"
+  },
+  "Terms": {
+    "metaTitle": "Términos de Servicio",
+    "metaDescription": "Términos de servicio de RestaurantTools.ai — reglas y directrices para el uso de nuestra plataforma.",
+    "title": "Términos de Servicio",
+    "lastUpdated": "Última actualización: Febrero 2026",
+    "section1Title": "1. Aceptación de Términos",
+    "section1Text": "Al acceder a RestaurantTools.ai, aceptas estos Términos de Servicio. Si no estás de acuerdo, por favor no uses nuestro sitio.",
+    "section2Title": "2. Uso del Directorio",
+    "section2Text": "RestaurantTools.ai proporciona un directorio curado de herramientas de IA para la industria restaurantera. Los listados son solo informativos. No garantizamos la precisión, integridad o confiabilidad de ninguna herramienta de terceros listada.",
+    "section3Title": "3. Propiedad Intelectual",
+    "section3Text": "Todo el contenido de este sitio — incluyendo texto, gráficos, logotipos y diseño — es propiedad de RestaurantTools.ai y está protegido por las leyes de propiedad intelectual aplicables.",
+    "section4Title": "4. Envíos de Usuarios",
+    "section4Text": "Si nos envías una herramienta u otro contenido, otorgas a RestaurantTools.ai una licencia no exclusiva y libre de regalías para usar, mostrar y distribuir ese contenido en nuestra plataforma.",
+    "section5Title": "5. Limitación de Responsabilidad",
+    "section5Text": "RestaurantTools.ai se proporciona \"tal cual\" sin garantías de ningún tipo. No somos responsables de ningún daño que surja del uso del sitio o de la confianza en las herramientas listadas.",
+    "section6Title": "6. Cambios",
+    "section6Text": "Podemos actualizar estos términos en cualquier momento. El uso continuado del sitio constituye la aceptación de los términos revisados.",
+    "section7Title": "7. Contacto",
+    "section7Text": "¿Preguntas sobre estos términos? Contáctanos en"
+  },
+  "Blog": {
+    "metaTitle": "Blog — Insights y Guías de RestaurantTools.ai",
+    "metaDescription": "Insights prácticos sobre herramientas de IA para restaurantes. Aprende a reducir no-shows, optimizar menús, mejorar inventario y escalar marketing con IA.",
+    "badge": "Blog",
+    "title": "Insights de IA para Restaurantes",
+    "description": "Guías estratégicas e informes de tendencias para dueños de restaurantes que usan IA para crecer rentablemente.",
+    "readArticle": "Leer artículo",
+    "backToHome": "Volver al Inicio",
+    "posts": {
+      "0": {
+        "title": "Cómo los Chatbots con IA Reducen las Reservas Perdidas un 40%",
+        "excerpt": "Descubre los flujos exactos de chatbot que los restaurantes usan para confirmar reservas, re-enganchar comensales y recuperar cubiertos perdidos.",
+        "category": "Operaciones",
+        "readTime": "8 min de lectura"
+      },
+      "1": {
+        "title": "Guía Completa de Optimización de Menú con IA",
+        "excerpt": "Un marco práctico para fijación de precios, posicionamiento e ingeniería de platos usando insights de IA sobre comportamiento del comensal y datos de margen.",
+        "category": "Estrategia de Menú",
+        "readTime": "11 min de lectura"
+      },
+      "2": {
+        "title": "Por Qué los Restaurantes Inteligentes Adoptan la Gestión de Inventario con IA",
+        "excerpt": "Descubre cómo los operadores líderes reducen desperdicios, automatizan pedidos y mejoran decisiones con proveedores usando herramientas predictivas de inventario.",
+        "category": "Inventario",
+        "readTime": "9 min de lectura"
+      },
+      "3": {
+        "title": "Marketing para Restaurantes en 2026: Herramientas IA que Realmente Funcionan",
+        "excerpt": "Desde SEO local hasta campañas hiperpersonalizadas — qué herramientas de IA entregan ROI medible y cuáles evitar.",
+        "category": "Marketing",
+        "readTime": "10 min de lectura"
+      }
+    }
+  },
+  "NotFound": {
+    "title": "Página No Encontrada",
+    "description": "Lo sentimos, no pudimos encontrar la página que buscas. Puede que haya sido movida o no exista.",
+    "backToHome": "Volver al Inicio"
+  },
+  "ToolDetail": {
+    "breadcrumbHome": "Inicio",
+    "breadcrumbTools": "Herramientas",
+    "quickInfo": "Información Rápida",
+    "categoryLabel": "Categoría",
+    "pricingLabel": "Precios",
+    "typeLabel": "Tipo",
+    "typeValue": "SaaS / Nube",
+    "readyToTry": "¿Listo para probar {name}?",
+    "visitDescription": "Visita su sitio web para más información y comenzar.",
+    "getStartedFree": "Comenzar Gratis →",
+    "visitWebsite": "Visitar Sitio Web",
+    "relatedTools": "Herramientas Relacionadas",
+    "backToAllTools": "Volver a Todas las Herramientas",
+    "aboutTitle": "Acerca de",
+    "aboutDescription": "{name} es una solución líder de {category} impulsada por IA, diseñada específicamente para la industria restaurantera. Utiliza algoritmos avanzados de aprendizaje automático para ayudar a los restaurantes a optimizar operaciones, mejorar la experiencia del cliente y maximizar ingresos.",
+    "keyFeatures": "Características Principales",
+    "pricingTitle": "Precios",
+    "pricingDescription": "Contacta a {name} directamente para información detallada de precios, planes personalizados y cotizaciones empresariales.",
+    "features": {
+      "Chatbots": {
+        "0": "Atención al cliente automatizada 24/7",
+        "1": "Mensajería multicanal (web, redes sociales, SMS)",
+        "2": "Gestión de reservas y confirmaciones",
+        "3": "Preguntas sobre el menú y seguimiento de pedidos",
+        "4": "Comprensión de lenguaje natural",
+        "5": "Analítica e insights de conversaciones"
+      },
+      "Reservations": {
+        "0": "Gestión de mesas con IA",
+        "1": "CRM de comensales y seguimiento de preferencias",
+        "2": "Predicción y prevención de no-shows",
+        "3": "Precios dinámicos y optimización de ingresos",
+        "4": "Gestión de lista de espera y walk-ins",
+        "5": "Soporte para múltiples ubicaciones"
+      },
+      "Menu AI": {
+        "0": "Optimización y diseño de menú con IA",
+        "1": "Costeo de recetas y análisis de costos de alimentos",
+        "2": "Información nutricional y de alérgenos",
+        "3": "Pronóstico de tendencias de menú",
+        "4": "Sugerencias automatizadas de upselling",
+        "5": "Consistencia entre múltiples ubicaciones"
+      },
+      "Inventory": {
+        "0": "Predicciones de pedidos con IA",
+        "1": "Seguimiento de inventario en tiempo real",
+        "2": "Gestión de proveedores y compras",
+        "3": "Analítica de reducción de desperdicios",
+        "4": "Procesamiento de facturas y seguimiento de costos",
+        "5": "Monitoreo HACCP y cumplimiento normativo"
+      },
+      "Marketing": {
+        "0": "Campañas de email con IA",
+        "1": "Gestión y respuesta de reseñas",
+        "2": "Optimización de SEO local",
+        "3": "Automatización de redes sociales",
+        "4": "Segmentación y targeting de clientes",
+        "5": "Panel de analítica de rendimiento"
+      },
+      "POS": {
+        "0": "Analítica de ventas potenciada por IA",
+        "1": "Programación y optimización de personal",
+        "2": "Integración de pedidos en línea",
+        "3": "Dashboards de rendimiento en tiempo real",
+        "4": "Gestión de programas de fidelidad",
+        "5": "Gestión de múltiples ubicaciones"
+      },
+      "Delivery": {
+        "0": "Consolidación de pedidos multiplataforma",
+        "1": "Pronóstico de demanda con IA",
+        "2": "Enrutamiento inteligente de pedidos",
+        "3": "Pedidos directos sin comisión",
+        "4": "Insights de clientes y marketing",
+        "5": "Integración con pantalla de cocina"
+      },
+      "Kitchen": {
+        "0": "Preparación de alimentos con IA",
+        "1": "Control de calidad con visión artificial",
+        "2": "Monitoreo de temperatura y alertas",
+        "3": "Automatización de cumplimiento HACCP",
+        "4": "Identificación y seguimiento de desperdicios",
+        "5": "Mantenimiento predictivo"
+      },
+      "Analytics": {
+        "0": "Inteligencia de negocio con IA",
+        "1": "Pronóstico de demanda e ingresos",
+        "2": "Insights de optimización laboral",
+        "3": "Análisis de rendimiento del menú",
+        "4": "Benchmarking entre ubicaciones",
+        "5": "Recomendaciones accionables"
+      }
+    }
+  }
+}

@@ -1,0 +1,356 @@
+{
+  "Metadata": {
+    "title": "RestaurantTools.ai — The #1 AI Tools Directory for Restaurants",
+    "titleTemplate": "%s | RestaurantTools.ai",
+    "description": "Discover 54+ AI-powered tools to transform your restaurant. From reservations to kitchen robotics — find, compare, and choose the best AI solutions for your business.",
+    "ogDescription": "Discover 54+ AI-powered tools to transform your restaurant. From reservations to kitchen robotics.",
+    "twitterDescription": "Discover 54+ AI-powered tools to transform your restaurant."
+  },
+  "Navbar": {
+    "tools": "Tools",
+    "categories": "Categories",
+    "blog": "Blog",
+    "getStarted": "Get Started",
+    "toggleMenu": "Toggle menu"
+  },
+  "Hero": {
+    "slides": {
+      "0": {
+        "heading": "Discover the Best AI Tools for Restaurants",
+        "description": "Browse our curated collection of 54+ AI-powered tools designed to transform every aspect of your restaurant business.",
+        "cta": "Browse Tools"
+      },
+      "1": {
+        "heading": "Boost Revenue with AI-Powered POS Systems",
+        "description": "Smart point-of-sale systems that learn your business patterns and optimize pricing, inventory, and customer experience.",
+        "cta": "Explore POS Tools"
+      },
+      "2": {
+        "heading": "Automate Marketing & Customer Engagement",
+        "description": "From personalized email campaigns to AI chatbots, engage your customers like never before.",
+        "cta": "Marketing Tools"
+      },
+      "3": {
+        "heading": "Streamline Operations from Kitchen to Front of House",
+        "description": "Reduce waste, optimize staffing, and improve efficiency with intelligent operations tools.",
+        "cta": "Operations Tools"
+      },
+      "4": {
+        "heading": "Smart Reservations & Customer Management",
+        "description": "AI-driven reservation systems and CRM tools that maximize table turnover and build lasting guest relationships.",
+        "cta": "Reservation Tools"
+      },
+      "5": {
+        "heading": "AI-Powered Analytics & Business Intelligence",
+        "description": "Turn your restaurant data into actionable insights — from sales forecasting to menu engineering and labor optimization.",
+        "cta": "Analytics Tools"
+      }
+    },
+    "goToSlide": "Go to slide {number}"
+  },
+  "Stats": {
+    "aiTools": "AI Tools",
+    "categories": "Categories",
+    "restaurantsServed": "Restaurants Served",
+    "satisfactionRate": "Satisfaction Rate"
+  },
+  "Categories": {
+    "badge": "Browse by Category",
+    "title": "Find the Right AI for Your Needs",
+    "description": "From front-of-house to kitchen operations, explore AI solutions organized by what they do best.",
+    "toolsCount": "{count} tools",
+    "categoryDescriptions": {
+      "Chatbots": "AI chatbots for customer service, reservations, and order management",
+      "Reservations": "Smart booking systems with AI-powered table and guest management",
+      "Menu AI": "AI tools for menu optimization, recipe costing, and trend analysis",
+      "Inventory": "Intelligent inventory tracking, procurement, and waste reduction",
+      "Marketing": "AI-powered marketing, reputation management, and customer engagement",
+      "POS": "Point-of-sale systems with AI analytics and workforce management",
+      "Delivery": "Online ordering and delivery management with smart optimization",
+      "Kitchen": "Kitchen robotics, food safety monitoring, and automation",
+      "Analytics": "Business intelligence and AI-driven insights for restaurant operations"
+    }
+  },
+  "Featured": {
+    "badge": "Editor's Choice",
+    "title": "Top Picks for Your Restaurant",
+    "description": "Hand-picked by our team — the AI tools that deliver the most impact for restaurant owners.",
+    "badges": {
+      "0": "Editor's Pick",
+      "1": "Most Popular",
+      "2": "Trending"
+    }
+  },
+  "ToolsGrid": {
+    "badge": "Complete Directory",
+    "title": "All AI Tools",
+    "description": "Browse our full collection of AI-powered restaurant tools. Search by name or filter by category.",
+    "searchPlaceholder": "Search tools by name, category, or description...",
+    "allCategory": "All ({count})",
+    "showingResults": "Showing {count} tool(s)",
+    "noResults": "No tools found matching your search.",
+    "clearFilters": "Clear filters",
+    "viewDetails": "View details"
+  },
+  "Testimonials": {
+    "badge": "Testimonials",
+    "title": "Trusted by Restaurant Owners",
+    "description": "See how restaurateurs are using our directory to find the AI tools that transform their business.",
+    "items": {
+      "0": {
+        "quote": "RestaurantTools.ai helped us find the perfect reservation system. We switched to Resy and saw a 30% increase in covers within the first month.",
+        "name": "Sarah Chen",
+        "role": "Owner, The Golden Fork"
+      },
+      "1": {
+        "quote": "The AI chatbot we discovered through this directory handles 80% of our customer inquiries. Our team can finally focus on what matters — great food.",
+        "name": "Marcus Johnson",
+        "role": "GM, Bistro Moderne"
+      },
+      "2": {
+        "quote": "We reduced food waste by 40% after implementing the inventory AI tool we found here. Best business decision we've made this year.",
+        "name": "Elena Rodriguez",
+        "role": "Operations Director, Casa Fresca"
+      }
+    }
+  },
+  "Newsletter": {
+    "badge": "Stay Updated",
+    "title": "Get the Latest AI Restaurant Tools",
+    "description": "We review and add new tools every week. Subscribe to get the best picks delivered to your inbox — no spam, ever.",
+    "freeGuide": "Get our free guide: Top 10 AI Tools Every Restaurant Needs in 2026",
+    "emailPlaceholder": "your@email.com",
+    "subscribe": "Subscribe Free",
+    "joinText": "Join 2,000+ restaurant owners. Unsubscribe anytime."
+  },
+  "Footer": {
+    "tagline": "The most comprehensive directory of AI tools for restaurants. Find the perfect solution to transform your business.",
+    "directory": "Directory",
+    "allTools": "All Tools",
+    "categoriesLink": "Categories",
+    "featured": "Featured",
+    "company": "Company",
+    "about": "About",
+    "blog": "Blog",
+    "contact": "Contact",
+    "legal": "Legal",
+    "privacyPolicy": "Privacy Policy",
+    "terms": "Terms",
+    "copyright": "© {year} RestaurantTools.ai. All rights reserved.",
+    "twitter": "X (Twitter)",
+    "linkedin": "LinkedIn",
+    "instagram": "Instagram"
+  },
+  "About": {
+    "metaTitle": "About Us",
+    "metaDescription": "Learn about RestaurantTools.ai — our mission to help restaurant owners discover and adopt the best AI tools for their business.",
+    "title": "About",
+    "titleHighlight": "RestaurantTools.ai",
+    "subtitle": "We're on a mission to help restaurant owners navigate the AI revolution — so they can focus on what they do best: creating incredible dining experiences.",
+    "storyTitle": "Our Story",
+    "storyP1": "RestaurantTools.ai was founded by a team of restaurant tech enthusiasts who saw a growing gap between AI innovation and restaurant adoption. While every industry was being transformed by artificial intelligence, most restaurant owners were left overwhelmed — unsure which tools were real, which were hype, and which would actually work for their business.",
+    "storyP2": "We built this directory to bridge that gap. A single place where restaurant professionals can discover, compare, and choose AI tools with confidence.",
+    "missionTitle": "Our Mission",
+    "missionText": "To be the most trusted resource for restaurant owners looking to adopt AI. We believe technology should empower restaurants — not complicate them. Every tool in our directory is researched, categorized, and presented with the restaurant operator in mind.",
+    "valuesTitle": "Our Values",
+    "curatedTitle": "Curated Quality",
+    "curatedText": "We don't list everything — we list what matters. Every tool is vetted for relevance and quality.",
+    "honestTitle": "Honest Reviews",
+    "honestText": "No pay-to-play rankings. Our evaluations are based on real capabilities, not advertising budgets.",
+    "restaurantFirstTitle": "Restaurant-First",
+    "restaurantFirstText": "We think from the operator's perspective. If it doesn't help a real restaurant, it doesn't belong here."
+  },
+  "Contact": {
+    "metaTitle": "Contact Us",
+    "metaDescription": "Get in touch with the RestaurantTools.ai team. Submit a tool, explore partnerships, or ask a question.",
+    "title": "Get in",
+    "titleHighlight": "Touch",
+    "subtitle": "Have a question, want to submit a tool, or explore a partnership? We'd love to hear from you.",
+    "nameLabel": "Name",
+    "namePlaceholder": "Your name",
+    "emailLabel": "Email",
+    "emailPlaceholder": "you@example.com",
+    "subjectLabel": "Subject",
+    "subjectDefault": "Select a topic…",
+    "subjectSubmitTool": "Submit a Tool",
+    "subjectPartnership": "Partnership Inquiry",
+    "subjectGeneral": "General Question",
+    "subjectIssue": "Report an Issue",
+    "messageLabel": "Message",
+    "messagePlaceholder": "Tell us more…",
+    "sendButton": "Send Message",
+    "emailDirect": "Or email us directly at"
+  },
+  "Privacy": {
+    "metaTitle": "Privacy Policy",
+    "metaDescription": "RestaurantTools.ai privacy policy — how we collect, use, and protect your data.",
+    "title": "Privacy Policy",
+    "lastUpdated": "Last updated: February 2026",
+    "section1Title": "1. Information We Collect",
+    "section1Text": "We collect information you provide directly, such as when you subscribe to our newsletter or submit a contact form. We also collect basic analytics data (page views, referral sources) through Google Analytics to improve our service.",
+    "section2Title": "2. How We Use Your Information",
+    "section2Text": "We use collected information to operate and improve RestaurantTools.ai, send newsletter updates (if subscribed), respond to inquiries, and analyze site usage to enhance user experience.",
+    "section3Title": "3. Data Sharing",
+    "section3Text": "We do not sell your personal information. We may share data with service providers who help us operate the site (e.g., hosting, analytics) under strict confidentiality agreements.",
+    "section4Title": "4. Cookies",
+    "section4Text": "We use cookies and similar technologies for analytics and to remember your preferences. You can control cookies through your browser settings.",
+    "section5Title": "5. Your Rights",
+    "section5Text": "You may request access to, correction of, or deletion of your personal data by contacting us at",
+    "section6Title": "6. Contact",
+    "section6Text": "For privacy-related questions, reach us at"
+  },
+  "Terms": {
+    "metaTitle": "Terms of Service",
+    "metaDescription": "RestaurantTools.ai terms of service — rules and guidelines for using our platform.",
+    "title": "Terms of Service",
+    "lastUpdated": "Last updated: February 2026",
+    "section1Title": "1. Acceptance of Terms",
+    "section1Text": "By accessing RestaurantTools.ai, you agree to these Terms of Service. If you do not agree, please do not use our site.",
+    "section2Title": "2. Use of the Directory",
+    "section2Text": "RestaurantTools.ai provides a curated directory of AI tools for the restaurant industry. Listings are for informational purposes only. We do not guarantee the accuracy, completeness, or reliability of any third-party tool listed.",
+    "section3Title": "3. Intellectual Property",
+    "section3Text": "All content on this site — including text, graphics, logos, and design — is the property of RestaurantTools.ai and protected by applicable intellectual property laws.",
+    "section4Title": "4. User Submissions",
+    "section4Text": "If you submit a tool or other content to us, you grant RestaurantTools.ai a non-exclusive, royalty-free license to use, display, and distribute that content on our platform.",
+    "section5Title": "5. Limitation of Liability",
+    "section5Text": "RestaurantTools.ai is provided \"as is\" without warranties of any kind. We are not liable for any damages arising from your use of the site or reliance on listed tools.",
+    "section6Title": "6. Changes",
+    "section6Text": "We may update these terms at any time. Continued use of the site constitutes acceptance of the revised terms.",
+    "section7Title": "7. Contact",
+    "section7Text": "Questions about these terms? Contact us at"
+  },
+  "Blog": {
+    "metaTitle": "Blog — RestaurantTools.ai Insights & Guides",
+    "metaDescription": "Actionable insights on AI tools for restaurants. Learn how to reduce no-shows, optimize menus, improve inventory, and scale marketing with AI.",
+    "badge": "Blog",
+    "title": "AI Restaurant Insights",
+    "description": "SEO-focused playbooks and trend reports for restaurant owners using AI to grow profitably.",
+    "readArticle": "Read article",
+    "backToHome": "Back to Home",
+    "posts": {
+      "0": {
+        "title": "How AI Chatbots Are Reducing No-Shows by 40%",
+        "excerpt": "See the exact chatbot flows restaurants are using to confirm bookings, re-engage guests, and recover lost covers.",
+        "category": "Operations",
+        "readTime": "8 min read"
+      },
+      "1": {
+        "title": "The Complete Guide to AI-Powered Menu Optimization",
+        "excerpt": "A practical framework for pricing, placement, and item engineering using AI insights from guest behavior and margin data.",
+        "category": "Menu Strategy",
+        "readTime": "11 min read"
+      },
+      "2": {
+        "title": "Why Smart Restaurants Are Switching to AI Inventory Management",
+        "excerpt": "Learn how leading operators cut waste, automate ordering, and improve supplier decisions with predictive inventory tools.",
+        "category": "Inventory",
+        "readTime": "9 min read"
+      },
+      "3": {
+        "title": "Restaurant Marketing in 2026: AI Tools That Actually Work",
+        "excerpt": "From local SEO to hyper-personalized campaigns — which AI tools deliver measurable ROI and which ones to skip.",
+        "category": "Marketing",
+        "readTime": "10 min read"
+      }
+    }
+  },
+  "NotFound": {
+    "title": "Page Not Found",
+    "description": "Sorry, we couldn't find the page you're looking for. It might have been moved or doesn't exist.",
+    "backToHome": "Back to Home"
+  },
+  "ToolDetail": {
+    "breadcrumbHome": "Home",
+    "breadcrumbTools": "Tools",
+    "quickInfo": "Quick Info",
+    "categoryLabel": "Category",
+    "pricingLabel": "Pricing",
+    "typeLabel": "Type",
+    "typeValue": "SaaS / Cloud",
+    "readyToTry": "Ready to try {name}?",
+    "visitDescription": "Visit their website to learn more and get started.",
+    "getStartedFree": "Get Started Free →",
+    "visitWebsite": "Visit Website",
+    "relatedTools": "Related Tools",
+    "backToAllTools": "Back to All Tools",
+    "aboutTitle": "About",
+    "aboutDescription": "{name} is a leading AI-powered {category} solution designed specifically for the restaurant industry. It leverages advanced machine learning algorithms to help restaurants streamline operations, improve customer experience, and maximize revenue.",
+    "keyFeatures": "Key Features",
+    "pricingTitle": "Pricing",
+    "pricingDescription": "Contact {name} directly for detailed pricing information, custom plans, and enterprise quotes.",
+    "features": {
+      "Chatbots": {
+        "0": "24/7 automated customer support",
+        "1": "Multi-channel messaging (web, social, SMS)",
+        "2": "Reservation handling and confirmations",
+        "3": "Menu Q&A and order tracking",
+        "4": "Natural language understanding",
+        "5": "Analytics and conversation insights"
+      },
+      "Reservations": {
+        "0": "AI-powered table management",
+        "1": "Guest CRM and preference tracking",
+        "2": "No-show prediction and prevention",
+        "3": "Dynamic pricing and revenue optimization",
+        "4": "Waitlist and walk-in management",
+        "5": "Multi-location support"
+      },
+      "Menu AI": {
+        "0": "AI menu optimization and layout",
+        "1": "Recipe costing and food cost analysis",
+        "2": "Nutritional and allergen information",
+        "3": "Menu trend forecasting",
+        "4": "Automated upsell suggestions",
+        "5": "Multi-location consistency"
+      },
+      "Inventory": {
+        "0": "AI-driven ordering predictions",
+        "1": "Real-time inventory tracking",
+        "2": "Supplier management and procurement",
+        "3": "Food waste reduction analytics",
+        "4": "Invoice processing and cost tracking",
+        "5": "HACCP and compliance monitoring"
+      },
+      "Marketing": {
+        "0": "AI-powered email campaigns",
+        "1": "Review management and response",
+        "2": "Local SEO optimization",
+        "3": "Social media automation",
+        "4": "Customer segmentation and targeting",
+        "5": "Performance analytics dashboard"
+      },
+      "POS": {
+        "0": "AI-enhanced sales analytics",
+        "1": "Labor scheduling and optimization",
+        "2": "Online ordering integration",
+        "3": "Real-time performance dashboards",
+        "4": "Loyalty program management",
+        "5": "Multi-location management"
+      },
+      "Delivery": {
+        "0": "Multi-platform order consolidation",
+        "1": "AI demand forecasting",
+        "2": "Smart order routing",
+        "3": "Commission-free direct ordering",
+        "4": "Customer insights and marketing",
+        "5": "Kitchen display integration"
+      },
+      "Kitchen": {
+        "0": "AI-powered food preparation",
+        "1": "Computer vision quality control",
+        "2": "Temperature monitoring and alerts",
+        "3": "HACCP compliance automation",
+        "4": "Waste identification and tracking",
+        "5": "Predictive maintenance"
+      },
+      "Analytics": {
+        "0": "AI-driven business intelligence",
+        "1": "Demand and revenue forecasting",
+        "2": "Labor optimization insights",
+        "3": "Menu performance analysis",
+        "4": "Cross-location benchmarking",
+        "5": "Actionable recommendations"
+      }
+    }
+  }
+}
