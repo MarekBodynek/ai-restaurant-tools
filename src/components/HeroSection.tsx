@@ -1,7 +1,6 @@
 "use client";
 
 import { useState, useEffect, useCallback, useRef } from "react";
-import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -11,7 +10,7 @@ const slides = [
     description:
       "Browse our curated collection of 54+ AI-powered tools designed to transform every aspect of your restaurant business.",
     cta: "Browse Tools",
-    href: "/#tools",
+    href: "#tools",
     image:
       "https://images.unsplash.com/photo-1559329007-40df8a9345d8?w=1920&q=80",
   },
@@ -20,7 +19,7 @@ const slides = [
     description:
       "Smart point-of-sale systems that learn your business patterns and optimize pricing, inventory, and customer experience.",
     cta: "Explore POS Tools",
-    href: "/#tools?category=POS",
+    href: "#tools?category=POS",
     image:
       "https://images.unsplash.com/photo-1758519289714-519a9d9b96e3?w=1920&q=80",
   },
@@ -29,7 +28,7 @@ const slides = [
     description:
       "From personalized email campaigns to AI chatbots, engage your customers like never before.",
     cta: "Marketing Tools",
-    href: "/#tools?category=Marketing",
+    href: "#tools?category=Marketing",
     image:
       "https://images.unsplash.com/photo-1564758596018-3e5b1f2340cc?w=1920&q=80",
   },
@@ -38,7 +37,7 @@ const slides = [
     description:
       "Reduce waste, optimize staffing, and improve efficiency with intelligent operations tools.",
     cta: "Operations Tools",
-    href: "/#tools?category=Kitchen",
+    href: "#tools?category=Kitchen",
     image:
       "https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf?w=1920&q=80",
   },
@@ -47,7 +46,7 @@ const slides = [
     description:
       "AI-driven reservation systems and CRM tools that maximize table turnover and build lasting guest relationships.",
     cta: "Reservation Tools",
-    href: "/#tools?category=Reservations",
+    href: "#tools?category=Reservations",
     image:
       "https://images.unsplash.com/photo-1517457373958-b7bdd4587205?w=1920&q=80",
   },
@@ -56,7 +55,7 @@ const slides = [
     description:
       "Turn your restaurant data into actionable insights — from sales forecasting to menu engineering and labor optimization.",
     cta: "Analytics Tools",
-    href: "/#tools?category=Analytics",
+    href: "#tools?category=Analytics",
     image:
       "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1920&q=80",
   },
@@ -71,15 +70,9 @@ const kenBurnsVariants = [
 
 const SLIDE_DURATION = 5000;
 
-const textEnter = (delay: number) => ({
-  initial: { opacity: 0, y: 40 },
-  animate: { opacity: 1, y: 0 },
-  exit: { opacity: 0 },
-  transition: { duration: 0.5, delay: delay * 0.5, ease: "easeOut" as const },
-});
-
 export function HeroSection() {
   const [selectedIndex, setSelectedIndex] = useState(0);
+  const [textVisible, setTextVisible] = useState(true);
   const progressRef = useRef<HTMLDivElement>(null);
   const progressAnimations = useRef<Map<number, Animation>>(new Map());
 
@@ -105,21 +98,28 @@ export function HeroSection() {
     progressAnimations.current.set(index, animation);
   }, []);
 
+  const advanceTo = useCallback((newIndex: number) => {
+    setTextVisible(false);
+    setTimeout(() => {
+      setSelectedIndex(newIndex);
+      requestAnimationFrame(() => setTextVisible(true));
+    }, 200);
+  }, []);
+
   // Auto-advance slides — resumes when tab regains focus
   useEffect(() => {
     startProgressAnimation(selectedIndex);
 
     let interval = setInterval(() => {
-      setSelectedIndex((prev) => (prev + 1) % slides.length);
+      advanceTo((selectedIndex + 1) % slides.length);
     }, SLIDE_DURATION);
 
     const handleVisibility = () => {
       clearInterval(interval);
       if (document.visibilityState === "visible") {
-        // Immediately advance to next slide on return
-        setSelectedIndex((prev) => (prev + 1) % slides.length);
+        advanceTo((selectedIndex + 1) % slides.length);
         interval = setInterval(() => {
-          setSelectedIndex((prev) => (prev + 1) % slides.length);
+          advanceTo((selectedIndex + 1) % slides.length);
         }, SLIDE_DURATION);
       }
     };
@@ -130,13 +130,13 @@ export function HeroSection() {
       clearInterval(interval);
       document.removeEventListener("visibilitychange", handleVisibility);
     };
-  }, [selectedIndex, startProgressAnimation]);
+  }, [selectedIndex, startProgressAnimation, advanceTo]);
 
   const goTo = useCallback(
     (index: number) => {
-      setSelectedIndex(index);
+      advanceTo(index);
     },
-    []
+    [advanceTo]
   );
 
   return (
@@ -156,7 +156,6 @@ export function HeroSection() {
           }}
         >
           <div
-            
             className={`absolute inset-0 ${kenBurnsVariants[index % kenBurnsVariants.length]}`}
           >
             <Image
@@ -166,6 +165,7 @@ export function HeroSection() {
               className="object-cover object-center"
               sizes="100vw"
               priority={index === 0}
+              loading={index === 0 ? "eager" : "lazy"}
             />
           </div>
         </div>
@@ -178,51 +178,51 @@ export function HeroSection() {
       {/* Content layer */}
       <div className="relative z-20 h-full flex items-center justify-center pointer-events-none">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <AnimatePresence mode="popLayout">
-            <motion.div
-              key={selectedIndex}
-              className="max-w-4xl mx-auto text-center"
-              initial="initial"
-              animate="animate"
-              exit="exit"
+          <div className="max-w-4xl mx-auto text-center">
+            <h1
+              className={`font-heading text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-extralight text-white leading-[1.1] tracking-normal mb-4 md:mb-6 ${
+                textVisible ? "hero-text-active" : "hero-text-enter"
+              }`}
             >
-              <motion.h1
-                {...textEnter(0)}
-                className="font-heading text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-extralight text-white leading-[1.1] tracking-normal mb-4 md:mb-6"
-              >
-                {slides[selectedIndex].heading}
-              </motion.h1>
+              {slides[selectedIndex].heading}
+            </h1>
 
-              <motion.p
-                {...textEnter(0.2)}
-                className="font-body text-sm sm:text-base md:text-xl text-stone-200 max-w-2xl mx-auto mb-6 md:mb-10 leading-relaxed"
-              >
-                {slides[selectedIndex].description}
-              </motion.p>
+            <p
+              className={`font-body text-sm sm:text-base md:text-xl text-stone-200 max-w-2xl mx-auto mb-6 md:mb-10 leading-relaxed ${
+                textVisible ? "hero-text-active" : "hero-text-enter"
+              }`}
+              style={{ transitionDelay: textVisible ? "0.1s" : "0s" }}
+            >
+              {slides[selectedIndex].description}
+            </p>
 
-              <motion.div {...textEnter(0.4)} className="pointer-events-auto">
-                <Link
-                  href={slides[selectedIndex].href}
-                  className="group inline-flex items-center gap-2 px-6 py-3 md:px-8 md:py-4 bg-orange-500 hover:bg-orange-600 text-white font-semibold rounded-xl transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-orange-500/25 text-sm md:text-base"
+            <div
+              className={`pointer-events-auto ${
+                textVisible ? "hero-text-active" : "hero-text-enter"
+              }`}
+              style={{ transitionDelay: textVisible ? "0.2s" : "0s" }}
+            >
+              <Link
+                href={slides[selectedIndex].href}
+                className="group inline-flex items-center gap-2 px-6 py-3 md:px-8 md:py-4 bg-orange-500 hover:bg-orange-600 text-white font-semibold rounded-xl transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-orange-500/25 text-sm md:text-base"
+              >
+                {slides[selectedIndex].cta}
+                <svg
+                  className="w-4 h-4 md:w-5 md:h-5 group-hover:translate-x-1 transition-transform"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  strokeWidth="2"
                 >
-                  {slides[selectedIndex].cta}
-                  <svg
-                    className="w-4 h-4 md:w-5 md:h-5 group-hover:translate-x-1 transition-transform"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M17 8l4 4m0 0l-4 4m4-4H3"
-                    />
-                  </svg>
-                </Link>
-              </motion.div>
-            </motion.div>
-          </AnimatePresence>
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M17 8l4 4m0 0l-4 4m4-4H3"
+                  />
+                </svg>
+              </Link>
+            </div>
+          </div>
         </div>
       </div>
 

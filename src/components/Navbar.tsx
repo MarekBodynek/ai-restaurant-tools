@@ -2,7 +2,6 @@
 
 import Link from "next/link";
 import { useState, useEffect } from "react";
-import { motion, AnimatePresence } from "framer-motion";
 import { Logo } from "./Logo";
 
 const navLinks = [
@@ -82,89 +81,92 @@ export function Navbar() {
             aria-controls="mobile-menu"
           >
             <div className="w-6 h-5 flex flex-col justify-between">
-              <motion.span
-                animate={
-                  mobileOpen ? { rotate: 45, y: 8 } : { rotate: 0, y: 0 }
-                }
-                className="block h-0.5 w-6 bg-current origin-center transition-colors"
-              />
-              <motion.span
-                animate={
+              <span
+                className="block h-0.5 w-6 bg-current origin-center hamburger-line"
+                style={
                   mobileOpen
-                    ? { opacity: 0, x: -10 }
-                    : { opacity: 1, x: 0 }
+                    ? { transform: "rotate(45deg) translate(6px, 6px)" }
+                    : undefined
                 }
-                className="block h-0.5 w-6 bg-current transition-colors"
               />
-              <motion.span
-                animate={
-                  mobileOpen ? { rotate: -45, y: -8 } : { rotate: 0, y: 0 }
+              <span
+                className="block h-0.5 w-6 bg-current hamburger-line"
+                style={
+                  mobileOpen
+                    ? { opacity: 0, transform: "translateX(-10px)" }
+                    : undefined
                 }
-                className="block h-0.5 w-6 bg-current origin-center transition-colors"
+              />
+              <span
+                className="block h-0.5 w-6 bg-current origin-center hamburger-line"
+                style={
+                  mobileOpen
+                    ? { transform: "rotate(-45deg) translate(6px, -6px)" }
+                    : undefined
+                }
               />
             </div>
           </button>
         </div>
       </div>
 
-      <AnimatePresence>
-        {mobileOpen && (
-          <motion.div
-            id="mobile-menu"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            transition={{ duration: 0.2 }}
-            className="fixed inset-0 top-16 z-40 md:hidden"
-          >
-            <div
-              className="absolute inset-0 bg-black/60 backdrop-blur-sm"
-              onClick={() => setMobileOpen(false)}
-            />
+      {/* Mobile menu */}
+      <div
+        id="mobile-menu"
+        className={`fixed inset-0 top-16 z-40 md:hidden ${
+          mobileOpen ? "pointer-events-auto" : "pointer-events-none"
+        }`}
+      >
+        <div
+          className={`absolute inset-0 bg-black/60 backdrop-blur-sm mobile-menu-overlay ${
+            mobileOpen ? "open" : ""
+          }`}
+          onClick={() => setMobileOpen(false)}
+        />
 
-            <motion.div
-              initial={{ x: "100%" }}
-              animate={{ x: 0 }}
-              exit={{ x: "100%" }}
-              transition={{ type: "spring", damping: 25, stiffness: 200 }}
-              className="absolute right-0 top-0 bottom-0 w-full max-w-xs bg-[#171412]/98 backdrop-blur-xl border-l border-stone-700/50 shadow-2xl"
-            >
-              <div className="flex flex-col gap-3 p-6 pt-8">
-                {navLinks.map((link, i) => (
-                  <motion.div
-                    key={link.href}
-                    initial={{ opacity: 0, x: 20 }}
-                    animate={{ opacity: 1, x: 0 }}
-                    transition={{ delay: i * 0.08 }}
-                  >
-                    <Link
-                      href={link.href}
-                      onClick={() => setMobileOpen(false)}
-                      className="block text-lg text-stone-200 hover:text-[#fefce8] py-4 px-4 rounded-lg hover:bg-white/5 transition-colors min-h-[52px]"
-                    >
-                      {link.label}
-                    </Link>
-                  </motion.div>
-                ))}
-                <motion.div
-                  initial={{ opacity: 0, x: 20 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  transition={{ delay: navLinks.length * 0.08 }}
-                  className="mt-4"
+        <div
+          className={`absolute right-0 top-0 bottom-0 w-full max-w-xs bg-[#171412]/98 backdrop-blur-xl border-l border-stone-700/50 shadow-2xl mobile-menu-panel ${
+            mobileOpen ? "open" : ""
+          }`}
+        >
+          <div className="flex flex-col gap-3 p-6 pt-8">
+            {navLinks.map((link, i) => (
+              <div
+                key={link.href}
+                style={{
+                  opacity: mobileOpen ? 1 : 0,
+                  transform: mobileOpen ? "translateX(0)" : "translateX(20px)",
+                  transition: `opacity 0.3s ease ${i * 0.08}s, transform 0.3s ease ${i * 0.08}s`,
+                }}
+              >
+                <Link
+                  href={link.href}
+                  onClick={() => setMobileOpen(false)}
+                  className="block text-lg text-stone-200 hover:text-[#fefce8] py-4 px-4 rounded-lg hover:bg-white/5 transition-colors min-h-[52px]"
                 >
-                  <Link
-                    href="/#newsletter"
-                    onClick={() => setMobileOpen(false)}
-                    className="block text-center px-5 py-4 bg-orange-500 hover:bg-orange-700 text-[#fefce8] font-semibold rounded-xl transition-colors min-h-[52px]"
-                  >
-                    Get Started
-                  </Link>
-                </motion.div>
+                  {link.label}
+                </Link>
               </div>
-            </motion.div>
-          </motion.div>
-        )}
-      </AnimatePresence>
+            ))}
+            <div
+              className="mt-4"
+              style={{
+                opacity: mobileOpen ? 1 : 0,
+                transform: mobileOpen ? "translateX(0)" : "translateX(20px)",
+                transition: `opacity 0.3s ease ${navLinks.length * 0.08}s, transform 0.3s ease ${navLinks.length * 0.08}s`,
+              }}
+            >
+              <Link
+                href="/#newsletter"
+                onClick={() => setMobileOpen(false)}
+                className="block text-center px-5 py-4 bg-orange-500 hover:bg-orange-700 text-[#fefce8] font-semibold rounded-xl transition-colors min-h-[52px]"
+              >
+                Get Started
+              </Link>
+            </div>
+          </div>
+        </div>
+      </div>
     </nav>
   );
 }

@@ -30,7 +30,20 @@ export function ToolsGrid() {
     };
 
     parseCategory();
-    window.addEventListener("hashchange", parseCategory);
+    // Scroll to tools section when hash contains #tools
+    if (window.location.hash.startsWith("#tools")) {
+      setTimeout(() => {
+        document.getElementById("tools")?.scrollIntoView({ behavior: "smooth" });
+      }, 100);
+    }
+    window.addEventListener("hashchange", () => {
+      parseCategory();
+      if (window.location.hash.startsWith("#tools")) {
+        setTimeout(() => {
+          document.getElementById("tools")?.scrollIntoView({ behavior: "smooth" });
+        }, 100);
+      }
+    });
     return () => window.removeEventListener("hashchange", parseCategory);
   }, [categoryNames]);
 

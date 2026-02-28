@@ -2,21 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-html {
-  scroll-behavior: smooth;
-}
-
-/* GPU-accelerated animations only */
-.will-change-transform {
-  will-change: transform;
-}
-
-/* Prevent layout shifts from hover animations */
-.hover-lift {
-  transform: translateZ(0);
-  backface-visibility: hidden;
-}
-
 :root {
   --background: #fefce8;
   --foreground: #292524;
@@ -33,6 +18,151 @@ html {
 body {
   color: var(--foreground);
   background: var(--background);
+}
+
+/* GPU-accelerated animations only */
+.will-change-transform {
+  will-change: transform;
+}
+
+/* Prevent layout shifts from hover animations */
+.hover-lift {
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
+
+/* Scroll-triggered animations (replace framer-motion whileInView) */
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.animate-on-scroll.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Stagger container + items */
+.stagger-container .stagger-item {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.stagger-container.in-view .stagger-item:nth-child(1) { transition-delay: 0s; }
+.stagger-container.in-view .stagger-item:nth-child(2) { transition-delay: 0.08s; }
+.stagger-container.in-view .stagger-item:nth-child(3) { transition-delay: 0.16s; }
+.stagger-container.in-view .stagger-item:nth-child(4) { transition-delay: 0.24s; }
+.stagger-container.in-view .stagger-item:nth-child(5) { transition-delay: 0.32s; }
+.stagger-container.in-view .stagger-item:nth-child(6) { transition-delay: 0.4s; }
+.stagger-container.in-view .stagger-item:nth-child(7) { transition-delay: 0.48s; }
+.stagger-container.in-view .stagger-item:nth-child(8) { transition-delay: 0.56s; }
+.stagger-container.in-view .stagger-item:nth-child(9) { transition-delay: 0.64s; }
+
+.stagger-container.in-view .stagger-item {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Scroll progress bar */
+.scroll-progress-bar {
+  transform-origin: left;
+  transform: scaleX(0);
+}
+
+/* Back to top button */
+.back-to-top-enter {
+  opacity: 0;
+  transform: scale(0.8);
+}
+
+.back-to-top-visible {
+  opacity: 1;
+  transform: scale(1);
+  transition: opacity 0.2s ease-out, transform 0.2s ease-out;
+}
+
+.back-to-top-hidden {
+  opacity: 0;
+  transform: scale(0.8);
+  transition: opacity 0.2s ease-out, transform 0.2s ease-out;
+  pointer-events: none;
+}
+
+/* Hero text crossfade */
+.hero-text-enter {
+  opacity: 0;
+  transform: translateY(40px);
+}
+
+.hero-text-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+/* Navbar hamburger lines */
+.hamburger-line {
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Mobile menu */
+.mobile-menu-overlay {
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.mobile-menu-overlay.open {
+  opacity: 1;
+}
+
+.mobile-menu-panel {
+  transform: translateX(100%);
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mobile-menu-panel.open {
+  transform: translateX(0);
+}
+
+/* Tool card animation in grid */
+.tool-card-enter {
+  opacity: 0;
+  transform: scale(0.95);
+}
+
+.tool-card-visible {
+  opacity: 1;
+  transform: scale(1);
+  transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+}
+
+/* Tool detail page fade-in */
+.tool-detail-enter {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: toolDetailFadeIn 0.5s ease-out forwards;
+}
+
+@keyframes toolDetailFadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.tool-feature-item {
+  opacity: 0;
+  transform: translateX(-10px);
+  animation: toolFeatureFadeIn 0.3s ease-out forwards;
+}
+
+@keyframes toolFeatureFadeIn {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 /* Ken Burns effect variants */

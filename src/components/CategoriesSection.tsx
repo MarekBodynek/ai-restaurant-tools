@@ -53,7 +53,7 @@ export function CategoriesSection() {
             <StaggerItem key={category.name}>
               <div className="hover-lift">
                 <Link
-                  href={`/#tools?category=${category.name}`}
+                  href={`#tools?category=${category.name}`}
                   className="group block bg-white rounded-2xl border border-stone-100 hover:border-orange-200 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 overflow-hidden"
                 >
                   {/* Image */}
