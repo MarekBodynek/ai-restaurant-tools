@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
+
 import { getCategories } from "@/lib/tools";
 import { AnimatedSection, StaggerContainer, StaggerItem } from "./AnimatedSection";
 
@@ -52,8 +52,17 @@ export function CategoriesSection() {
           {categories.map((category) => (
             <StaggerItem key={category.name}>
               <div className="hover-lift">
-                <Link
+                <a
                   href={`#tools?category=${category.name}`}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    const newHash = `#tools?category=${category.name}`;
+                    if (window.location.hash === newHash) {
+                      window.dispatchEvent(new HashChangeEvent('hashchange'));
+                    } else {
+                      window.location.hash = newHash.slice(1);
+                    }
+                  }}
                   className="group block bg-white rounded-2xl border border-stone-100 hover:border-orange-200 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 overflow-hidden"
                 >
                   {/* Image */}
@@ -90,7 +99,7 @@ export function CategoriesSection() {
                       {category.description}
                     </p>
                   </div>
-                </Link>
+                </a>
               </div>
             </StaggerItem>
           ))}
