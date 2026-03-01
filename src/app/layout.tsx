@@ -59,7 +59,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "RestaurantTools.ai — The #1 AI Tools Directory for Restaurants",
     description:
-      "Discover 54+ AI-powered tools to transform your restaurant.",
+      "Discover 50+ AI-powered tools to transform your restaurant.",
   },
   robots: {
     index: true,

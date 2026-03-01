@@ -34,7 +34,7 @@ function useCountUp(end: number, duration: number = 2000) {
 }
 
 const stats = [
-  { value: 54, suffix: "+", label: "AI Tools", icon: "🛠️" },
+  { value: 52, suffix: "+", label: "AI Tools", icon: "🛠️" },
   { value: 10, suffix: "", label: "Categories", icon: "📂" },
   { value: 60, suffix: "K+", label: "Restaurants Served", icon: "🍽️" },
   { value: 98, suffix: "%", label: "Satisfaction Rate", icon: "⭐" },

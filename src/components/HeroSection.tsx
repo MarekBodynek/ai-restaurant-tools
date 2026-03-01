@@ -8,7 +8,7 @@ const slides = [
   {
     heading: "Discover the Best AI Tools for Restaurants",
     description:
-      "Browse our curated collection of 54+ AI-powered tools designed to transform every aspect of your restaurant business.",
+      "Browse our curated collection of 50+ AI-powered tools designed to transform every aspect of your restaurant business.",
     cta: "Browse Tools",
     href: "#tools",
     image:
