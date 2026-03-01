@@ -5,9 +5,9 @@
     "category": "Chatbots",
     "description": "AI chatbot handling reservations, menu questions, and order tracking. Multi-channel: Facebook, WhatsApp, website.",
     "price": "Free / from $29/mo",
-    "icon": "💬",
+    "icon": "\ud83d\udcac",
     "url": "https://www.tidio.com",
-    "affiliateUrl": "https://www.tidio.com/?utm_source=restauranttools.ai&utm_medium=referral"
+    "affiliateUrl": "https://www.tidio.com/partners/?utm_source=restauranttools.ai&utm_medium=referral"
   },
   {
     "name": "Chatfuel",
@@ -15,7 +15,7 @@
     "category": "Chatbots",
     "description": "No-code chatbot builder for automating Facebook and Instagram customer interactions.",
     "price": "from $24/mo",
-    "icon": "🤖",
+    "icon": "\ud83e\udd16",
     "url": "https://chatfuel.com",
     "affiliateUrl": "https://chatfuel.com/?utm_source=restauranttools.ai&utm_medium=referral"
   },
@@ -25,7 +25,7 @@
     "category": "Chatbots",
     "description": "Automation platform for restaurant marketing via Instagram, Facebook Messenger, and SMS.",
     "price": "Free / $15/mo",
-    "icon": "📱",
+    "icon": "\ud83d\udcf1",
     "url": "https://manychat.com",
     "affiliateUrl": "https://manychat.com/?utm_source=restauranttools.ai&utm_medium=referral"
   },
@@ -35,7 +35,7 @@
     "category": "Chatbots",
     "description": "Customer messaging with AI chatbot Fin that handles restaurant inquiries 24/7.",
     "price": "from $29/mo",
-    "icon": "💡",
+    "icon": "\ud83d\udca1",
     "url": "https://www.intercom.com",
     "affiliateUrl": "https://www.intercom.com/?utm_source=restauranttools.ai&utm_medium=referral"
   },
@@ -45,7 +45,7 @@
     "category": "Chatbots",
     "description": "Conversational AI for restaurant chains and hospitality groups to engage website visitors.",
     "price": "Custom pricing",
-    "icon": "⚡",
+    "icon": "\u26a1",
     "url": "https://www.salesloft.com/platform/drift",
     "affiliateUrl": "https://www.salesloft.com/platform/drift?utm_source=restauranttools.ai&utm_medium=referral"
   },
@@ -55,7 +55,7 @@
     "category": "Chatbots",
     "description": "AI-first customer service automation for restaurant groups handling high volumes of inquiries.",
     "price": "Custom pricing",
-    "icon": "🧠",
+    "icon": "\ud83e\udde0",
     "url": "https://www.ada.cx",
     "affiliateUrl": "https://www.ada.cx/?utm_source=restauranttools.ai&utm_medium=referral"
   },
@@ -65,7 +65,7 @@
     "category": "Chatbots",
     "description": "Visual chatbot builder for conversational restaurant experiences on web and WhatsApp.",
     "price": "Free / from $45/mo",
-    "icon": "🌐",
+    "icon": "\ud83c\udf10",
     "url": "https://landbot.io",
     "affiliateUrl": "https://landbot.io/?utm_source=restauranttools.ai&utm_medium=referral"
   },
@@ -75,9 +75,9 @@
     "category": "Reservations",
     "description": "Industry-leading AI-powered reservation and guest management. 60,000+ restaurants worldwide.",
     "price": "from $149/mo",
-    "icon": "📅",
+    "icon": "\ud83d\udcc5",
     "url": "https://www.opentable.com",
-    "affiliateUrl": "https://restaurant.opentable.com/get-started"
+    "affiliateUrl": "https://restaurant.opentable.com/get-started/?utm_source=restauranttools.ai&utm_medium=referral"
   },
   {
     "name": "Resy",
@@ -85,7 +85,7 @@
     "category": "Reservations",
     "description": "Premium reservation platform with AI demand forecasting and dynamic pricing for fine dining.",
     "price": "Custom pricing",
-    "icon": "🌟",
+    "icon": "\ud83c\udf1f",
     "url": "https://resy.com",
     "affiliateUrl": "https://resy.com/os"
   },
@@ -95,7 +95,7 @@
     "category": "Reservations",
     "description": "AI-powered front-of-house combining Yelp's review platform with reservation and waitlist tools.",
     "price": "from $99/mo",
-    "icon": "⭐",
+    "icon": "\u2b50",
     "url": "https://restaurants.yelp.com",
     "affiliateUrl": "https://business.yelp.com/"
   },
@@ -105,7 +105,7 @@
     "category": "Reservations",
     "description": "Guest experience platform using AI to personalize dining and maximize revenue.",
     "price": "Custom pricing",
-    "icon": "🏆",
+    "icon": "\ud83c\udfc6",
     "url": "https://sevenrooms.com",
     "affiliateUrl": "https://sevenrooms.com/?utm_source=restauranttools.ai&utm_medium=referral"
   },
@@ -115,7 +115,7 @@
     "category": "Reservations",
     "description": "Reservation system with AI table management and guest CRM. Free tier available.",
     "price": "Free / Paid",
-    "icon": "🍴",
+    "icon": "\ud83c\udf74",
     "url": "https://www.eatapp.co",
     "affiliateUrl": "https://www.eatapp.co/?utm_source=restauranttools.ai&utm_medium=referral"
   },
@@ -125,7 +125,7 @@
     "category": "Reservations",
     "description": "Reservation, takeout, and event platform with prepaid dining and dynamic pricing.",
     "price": "from 2% per cover",
-    "icon": "🎫",
+    "icon": "\ud83c\udfab",
     "url": "https://www.exploretock.com",
     "affiliateUrl": "https://www.exploretock.com/?utm_source=restauranttools.ai&utm_medium=referral"
   },
@@ -135,7 +135,7 @@
     "category": "Reservations",
     "description": "Simple reservation system with AI no-show prediction and automated reminders.",
     "price": "from $47/mo",
-    "icon": "📋",
+    "icon": "\ud83d\udccb",
     "url": "https://tablein.com",
     "affiliateUrl": "https://tablein.com/?utm_source=restauranttools.ai&utm_medium=referral"
   },
@@ -145,7 +145,7 @@
     "category": "Menu AI",
     "description": "AI-powered online ordering that optimizes menu layout and suggests upsells based on behavior.",
     "price": "from $149/mo",
-    "icon": "🍽️",
+    "icon": "\ud83c\udf7d\ufe0f",
     "url": "https://www.menudrive.com",
     "affiliateUrl": "https://www.menudrive.com/?utm_source=restauranttools.ai&utm_medium=referral"
   },
@@ -155,7 +155,7 @@
     "category": "Menu AI",
     "description": "AI food intelligence analyzing billions of data points to identify menu trends and preferences.",
     "price": "Custom pricing",
-    "icon": "🔮",
+    "icon": "\ud83d\udd2e",
     "url": "https://www.tastewise.io",
     "affiliateUrl": "https://www.tastewise.io/?utm_source=restauranttools.ai&utm_medium=referral"
   },
@@ -165,7 +165,7 @@
     "category": "Menu AI",
     "description": "AI food operations for recipe management, menu planning, and nutritional analysis.",
     "price": "Custom pricing",
-    "icon": "👨‍🍳",
+    "icon": "\ud83d\udc68\u200d\ud83c\udf73",
     "url": "https://www.galleysolutions.com",
     "affiliateUrl": "https://www.galleysolutions.com/?utm_source=restauranttools.ai&utm_medium=referral"
   },
@@ -175,7 +175,7 @@
     "category": "Menu AI",
     "description": "AI nutrition analysis for allergens, calories, and nutritional information.",
     "price": "from $44/mo",
-    "icon": "🥗",
+    "icon": "\ud83e\udd57",
     "url": "https://www.nutritics.com",
     "affiliateUrl": "https://www.nutritics.com/?utm_source=restauranttools.ai&utm_medium=referral"
   },
@@ -185,7 +185,7 @@
     "category": "Menu AI",
     "description": "AI predicting food trends 12-18 months ahead using NLP analysis of millions of sources.",
     "price": "Custom pricing",
-    "icon": "🔬",
+    "icon": "\ud83d\udd2c",
     "url": "https://www.spoonshot.com",
     "affiliateUrl": "https://www.spoonshot.com/?utm_source=restauranttools.ai&utm_medium=referral"
   },
@@ -195,7 +195,7 @@
     "category": "Menu AI",
     "description": "Recipe costing and nutrition analysis to optimize food costs and menu pricing.",
     "price": "from $35/mo",
-    "icon": "🧮",
+    "icon": "\ud83e\uddee",
     "url": "https://menucalc.com",
     "affiliateUrl": "https://menucalc.com/?utm_source=restauranttools.ai&utm_medium=referral"
   },
@@ -205,7 +205,7 @@
     "category": "Inventory",
     "description": "AI procurement and inventory predicting ordering needs and reducing waste.",
     "price": "Free / from $99/mo",
-    "icon": "📦",
+    "icon": "\ud83d\udce6",
     "url": "https://www.bluecart.com",
     "affiliateUrl": "https://www.bluecart.com/?utm_source=restauranttools.ai&utm_medium=referral"
   },
@@ -215,9 +215,9 @@
     "category": "Inventory",
     "description": "Restaurant inventory and supply chain with AI-driven purchasing recommendations.",
     "price": "from $199/mo",
-    "icon": "📊",
+    "icon": "\ud83d\udcca",
     "url": "https://www.marketman.com",
-    "affiliateUrl": "https://www.marketman.com/demo"
+    "affiliateUrl": "https://www.marketman.com/partners?utm_source=restauranttools.ai&utm_medium=referral"
   },
   {
     "name": "Lightspeed Restaurant",
@@ -225,9 +225,9 @@
     "category": "Inventory",
     "description": "All-in-one POS with AI inventory tracking, menu management, and analytics.",
     "price": "from $189/mo",
-    "icon": "⚡",
+    "icon": "\u26a1",
     "url": "https://www.lightspeedhq.com/pos/restaurant",
-    "affiliateUrl": "https://www.lightspeedhq.com/pos/restaurant/"
+    "affiliateUrl": "https://www.lightspeedhq.com/partners/?utm_source=restauranttools.ai&utm_medium=referral"
   },
   {
     "name": "xtraCHEF",
@@ -235,7 +235,7 @@
     "category": "Inventory",
     "description": "AI invoice processing and food cost management using computer vision.",
     "price": "Custom pricing",
-    "icon": "🧾",
+    "icon": "\ud83e\uddfe",
     "url": "https://xtrachef.com",
     "affiliateUrl": "https://xtrachef.com/?utm_source=restauranttools.ai&utm_medium=referral"
   },
@@ -245,7 +245,7 @@
     "category": "Inventory",
     "description": "AI food waste management using computer vision cameras to identify and track kitchen waste.",
     "price": "Custom pricing",
-    "icon": "♻️",
+    "icon": "\u267b\ufe0f",
     "url": "https://www.winnowsolutions.com",
     "affiliateUrl": "https://www.winnowsolutions.com/?utm_source=restauranttools.ai&utm_medium=referral"
   },
@@ -255,7 +255,7 @@
     "category": "Inventory",
     "description": "Food management with AI inventory counts, procurement, and HACCP compliance.",
     "price": "Custom pricing",
-    "icon": "📋",
+    "icon": "\ud83d\udccb",
     "url": "https://www.apicbase.com",
     "affiliateUrl": "https://www.apicbase.com/?utm_source=restauranttools.ai&utm_medium=referral"
   },
@@ -265,7 +265,7 @@
     "category": "Inventory",
     "description": "Cloud-based restaurant platform with AI inventory, recipe management, and supply chain.",
     "price": "Custom pricing",
-    "icon": "☁️",
+    "icon": "\u2601\ufe0f",
     "url": "https://www.posist.com",
     "affiliateUrl": "https://www.posist.com/?utm_source=restauranttools.ai&utm_medium=referral"
   },
@@ -275,7 +275,7 @@
     "category": "Marketing",
     "description": "AI restaurant marketing with smart website builder, online ordering, and automated campaigns.",
     "price": "Custom pricing",
-    "icon": "📢",
+    "icon": "\ud83d\udce2",
     "url": "https://get.popmenu.com",
     "affiliateUrl": "https://get.popmenu.com/?utm_source=restauranttools.ai&utm_medium=referral"
   },
@@ -285,7 +285,7 @@
     "category": "Marketing",
     "description": "AI guest feedback turning negative experiences into positive reviews and insights.",
     "price": "from $149/mo",
-    "icon": "🌟",
+    "icon": "\ud83c\udf1f",
     "url": "https://ovationup.com",
     "affiliateUrl": "https://ovationup.com/?utm_source=restauranttools.ai&utm_medium=referral"
   },
@@ -295,7 +295,7 @@
     "category": "Marketing",
     "description": "AI menu and listing management ensuring accuracy across all platforms.",
     "price": "from $100/mo",
-    "icon": "📍",
+    "icon": "\ud83d\udccd",
     "url": "https://www.marqii.com",
     "affiliateUrl": "https://www.marqii.com/?utm_source=restauranttools.ai&utm_medium=referral"
   },
@@ -305,7 +305,7 @@
     "category": "Marketing",
     "description": "AI marketing platform: websites, ordering, and automated email campaigns.",
     "price": "Custom pricing",
-    "icon": "🏠",
+    "icon": "\ud83c\udfe0",
     "url": "https://www.owner.com",
     "affiliateUrl": "https://www.owner.com/?utm_source=restauranttools.ai&utm_medium=referral"
   },
@@ -315,9 +315,9 @@
     "category": "Marketing",
     "description": "AI digital presence managing listings, reviews, and local SEO across 200+ publishers.",
     "price": "from $14/mo",
-    "icon": "🔎",
+    "icon": "\ud83d\udd0e",
     "url": "https://www.yext.com",
-    "affiliateUrl": "https://www.yext.com/?utm_source=restauranttools.ai&utm_medium=referral"
+    "affiliateUrl": "https://www.yext.com/partners?utm_source=restauranttools.ai&utm_medium=referral"
   },
   {
     "name": "Reputation.com",
@@ -325,7 +325,7 @@
     "category": "Marketing",
     "description": "AI reputation management analyzing reviews, surveys, and social sentiment.",
     "price": "Custom pricing",
-    "icon": "⭐",
+    "icon": "\u2b50",
     "url": "https://www.reputation.com",
     "affiliateUrl": "https://www.reputation.com/?utm_source=restauranttools.ai&utm_medium=referral"
   },
@@ -335,9 +335,9 @@
     "category": "Marketing",
     "description": "AI email marketing with restaurant templates, segmentation, and send-time optimization.",
     "price": "Free / $13/mo",
-    "icon": "✉️",
+    "icon": "\u2709\ufe0f",
     "url": "https://mailchimp.com",
-    "affiliateUrl": "https://mailchimp.com/?utm_source=restauranttools.ai&utm_medium=referral"
+    "affiliateUrl": "https://mailchimp.com/partner-program/?utm_source=restauranttools.ai&utm_medium=referral"
   },
   {
     "name": "Toast",
@@ -345,7 +345,7 @@
     "category": "POS",
     "description": "Restaurant-specific POS with AI analytics, online ordering, and workforce management.",
     "price": "Free / Paid",
-    "icon": "💳",
+    "icon": "\ud83d\udcb3",
     "url": "http://refer.toasttab.com/referred-by/RestaurantToolsAI/",
     "affiliateUrl": "http://refer.toasttab.com/referred-by/RestaurantToolsAI/"
   },
@@ -355,9 +355,9 @@
     "category": "POS",
     "description": "AI-enhanced POS with restaurant management, online ordering, and loyalty programs.",
     "price": "Free / Paid",
-    "icon": "⬛",
+    "icon": "\u2b1b",
     "url": "https://squareup.com/us/en/restaurants",
-    "affiliateUrl": "https://square.com/us/en/l/restaurant"
+    "affiliateUrl": "https://squareup.com/us/en/partnerships?utm_source=restauranttools.ai&utm_medium=referral"
   },
   {
     "name": "Clover",
@@ -365,9 +365,9 @@
     "category": "POS",
     "description": "Smart POS with AI reporting and restaurant-specific apps for table management.",
     "price": "from $14.95/mo",
-    "icon": "🍀",
+    "icon": "\ud83c\udf40",
     "url": "https://www.clover.com",
-    "affiliateUrl": "https://www.clover.com/get-started"
+    "affiliateUrl": "https://www.clover.com/get-started?utm_source=restauranttools.ai&utm_medium=referral"
   },
   {
     "name": "7shifts",
@@ -375,9 +375,9 @@
     "category": "POS",
     "description": "AI workforce management with demand-based scheduling, tip pooling, and labor compliance.",
     "price": "Free / Paid",
-    "icon": "📅",
+    "icon": "\ud83d\udcc5",
     "url": "https://www.7shifts.com",
-    "affiliateUrl": "https://www.7shifts.com/signup"
+    "affiliateUrl": "https://www.7shifts.com/partners?utm_source=restauranttools.ai&utm_medium=referral"
   },
   {
     "name": "Lineup.ai",
@@ -385,7 +385,7 @@
     "category": "POS",
     "description": "AI sales forecasting predicting daily revenue, guest counts, and ideal staffing.",
     "price": "from $79/mo",
-    "icon": "📈",
+    "icon": "\ud83d\udcc8",
     "url": "https://www.lineup.ai",
     "affiliateUrl": "https://www.lineup.ai/?utm_source=restauranttools.ai&utm_medium=referral"
   },
@@ -395,7 +395,7 @@
     "category": "POS",
     "description": "AI operations platform for inventory, labor, and food safety across multi-unit brands.",
     "price": "Custom pricing",
-    "icon": "⏱️",
+    "icon": "\u23f1\ufe0f",
     "url": "https://www.crunchtime.com",
     "affiliateUrl": "https://www.crunchtime.com/?utm_source=restauranttools.ai&utm_medium=referral"
   },
@@ -405,9 +405,9 @@
     "category": "Delivery",
     "description": "Enterprise online ordering with AI demand forecasting and kitchen display systems.",
     "price": "Custom pricing",
-    "icon": "🛵",
+    "icon": "\ud83d\udef5",
     "url": "https://www.olo.com",
-    "affiliateUrl": "https://www.olo.com/?utm_source=restauranttools.ai&utm_medium=referral"
+    "affiliateUrl": "https://www.olo.com/about/partners?utm_source=restauranttools.ai&utm_medium=referral"
   },
   {
     "name": "ChowNow",
@@ -415,9 +415,9 @@
     "category": "Delivery",
     "description": "Commission-free online ordering with AI marketing tools to drive direct orders.",
     "price": "Custom pricing",
-    "icon": "🍔",
+    "icon": "\ud83c\udf54",
     "url": "https://www.chownow.com",
-    "affiliateUrl": "https://get.chownow.com/"
+    "affiliateUrl": "https://get.chownow.com/?utm_source=restauranttools.ai&utm_medium=referral"
   },
   {
     "name": "Ordermark (Nextbite)",
@@ -425,9 +425,9 @@
     "category": "Delivery",
     "description": "AI consolidating all delivery app orders into one tablet with smart routing.",
     "price": "Custom pricing",
-    "icon": "🔄",
+    "icon": "\ud83d\udd04",
     "url": "https://www.nextbite.io",
-    "affiliateUrl": "https://www.nextbite.io/?utm_source=restauranttools.ai&utm_medium=referral"
+    "affiliateUrl": "https://www.nextbite.io/partner?utm_source=restauranttools.ai&utm_medium=referral"
   },
   {
     "name": "Flipdish",
@@ -435,7 +435,7 @@
     "category": "Delivery",
     "description": "White-label ordering with AI customer insights and automated loyalty campaigns.",
     "price": "Custom pricing",
-    "icon": "🐟",
+    "icon": "\ud83d\udc1f",
     "url": "https://www.flipdish.com",
     "affiliateUrl": "https://www.flipdish.com/?utm_source=restauranttools.ai&utm_medium=referral"
   },
@@ -443,9 +443,9 @@
     "name": "Miso Robotics",
     "slug": "miso-robotics",
     "category": "Kitchen",
-    "description": "AI kitchen robots — Flippy for automated frying/grilling with computer vision QC.",
+    "description": "AI kitchen robots \u2014 Flippy for automated frying/grilling with computer vision QC.",
     "price": "Custom pricing",
-    "icon": "🤖",
+    "icon": "\ud83e\udd16",
     "url": "https://misorobotics.com",
     "affiliateUrl": "https://misorobotics.com/?utm_source=restauranttools.ai&utm_medium=referral"
   },
@@ -455,7 +455,7 @@
     "category": "Kitchen",
     "description": "AI multi-cuisine robotic chef cooking dishes with consistent quality.",
     "price": "Custom pricing",
-    "icon": "🦾",
+    "icon": "\ud83e\uddbe",
     "url": "https://nalarobotics.com",
     "affiliateUrl": "https://nalarobotics.com/?utm_source=restauranttools.ai&utm_medium=referral"
   },
@@ -465,7 +465,7 @@
     "category": "Kitchen",
     "description": "AI food safety monitoring with IoT sensors for temperatures and HACCP compliance.",
     "price": "Custom pricing",
-    "icon": "🌡️",
+    "icon": "\ud83c\udf21\ufe0f",
     "url": "https://ladle.com",
     "affiliateUrl": "https://ladle.com/?utm_source=restauranttools.ai&utm_medium=referral"
   },
@@ -475,7 +475,7 @@
     "category": "Kitchen",
     "description": "Digital food safety checklists with AI anomaly detection for temperature logs.",
     "price": "from $24/mo",
-    "icon": "✅",
+    "icon": "\u2705",
     "url": "https://www.freshcheq.com",
     "affiliateUrl": "https://www.freshcheq.com/?utm_source=restauranttools.ai&utm_medium=referral"
   },
@@ -485,7 +485,7 @@
     "category": "Analytics",
     "description": "AI analytics with demand forecasting, labor optimization, and actionable insights.",
     "price": "Custom pricing",
-    "icon": "📊",
+    "icon": "\ud83d\udcca",
     "url": "https://www.gotenzo.com",
     "affiliateUrl": "https://www.gotenzo.com/?utm_source=restauranttools.ai&utm_medium=referral"
   },
@@ -495,9 +495,9 @@
     "category": "Analytics",
     "description": "Restaurant BI with AI forecasting, labor scheduling, and inventory analytics.",
     "price": "Custom pricing",
-    "icon": "🍑",
+    "icon": "\ud83c\udf51",
     "url": "https://www.touchbistro.com/restaurant-back-of-house-solutions/",
-    "affiliateUrl": "https://www.touchbistro.com/get-a-quote/"
+    "affiliateUrl": "https://www.touchbistro.com/get-a-quote/?utm_source=restauranttools.ai&utm_medium=referral"
   },
   {
     "name": "Avero",
@@ -505,7 +505,7 @@
     "category": "Analytics",
     "description": "AI restaurant intelligence connecting POS data to actionable revenue and labor insights.",
     "price": "Custom pricing",
-    "icon": "🎯",
+    "icon": "\ud83c\udfaf",
     "url": "https://averoinc.com",
     "affiliateUrl": "https://averoinc.com/?utm_source=restauranttools.ai&utm_medium=referral"
   },
@@ -515,7 +515,7 @@
     "category": "Analytics",
     "description": "AI above-store reporting and analytics for QSR and fast-casual chains.",
     "price": "Custom pricing",
-    "icon": "📉",
+    "icon": "\ud83d\udcc9",
     "url": "https://www.delaget.com",
     "affiliateUrl": "https://www.delaget.com/?utm_source=restauranttools.ai&utm_medium=referral"
   }
