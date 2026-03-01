@@ -18,33 +18,26 @@ export function ToolsGrid() {
 
   // Read category filter from URL hash (e.g. /#tools?category=POS)
   useEffect(() => {
-    const parseCategory = () => {
+    const handleHash = () => {
       const hash = window.location.hash; // e.g. "#tools?category=POS"
       const qIndex = hash.indexOf("?");
-      if (qIndex === -1) return;
-      const params = new URLSearchParams(hash.slice(qIndex));
-      const cat = params.get("category");
-      if (cat && categoryNames.has(cat)) {
-        setActiveCategory(cat);
+      if (qIndex !== -1) {
+        const params = new URLSearchParams(hash.slice(qIndex));
+        const cat = params.get("category");
+        if (cat && categoryNames.has(cat)) {
+          setActiveCategory(cat);
+        }
       }
-    };
-
-    parseCategory();
-    // Scroll to tools section when hash contains #tools
-    if (window.location.hash.startsWith("#tools")) {
-      setTimeout(() => {
-        document.getElementById("tools")?.scrollIntoView({ behavior: "smooth" });
-      }, 100);
-    }
-    window.addEventListener("hashchange", () => {
-      parseCategory();
-      if (window.location.hash.startsWith("#tools")) {
+      if (hash.startsWith("#tools")) {
         setTimeout(() => {
           document.getElementById("tools")?.scrollIntoView({ behavior: "smooth" });
         }, 100);
       }
-    });
-    return () => window.removeEventListener("hashchange", parseCategory);
+    };
+
+    handleHash();
+    window.addEventListener("hashchange", handleHash);
+    return () => window.removeEventListener("hashchange", handleHash);
   }, [categoryNames]);
 
   const filtered = useMemo(() => {

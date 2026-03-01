@@ -2,7 +2,6 @@
 
 import { useState, useEffect, useCallback, useRef } from "react";
 import Image from "next/image";
-import Link from "next/link";
 
 const slides = [
   {
@@ -202,8 +201,18 @@ export function HeroSection() {
               }`}
               style={{ transitionDelay: textVisible ? "0.2s" : "0s" }}
             >
-              <Link
+              <a
                 href={slides[selectedIndex].href}
+                onClick={(e) => {
+                  e.preventDefault();
+                  const href = slides[selectedIndex].href;
+                  const newHash = href.startsWith('#') ? href : '#' + href;
+                  if (window.location.hash === newHash) {
+                    window.dispatchEvent(new HashChangeEvent('hashchange'));
+                  } else {
+                    window.location.hash = newHash.slice(1);
+                  }
+                }}
                 className="group inline-flex items-center gap-2 px-6 py-3 md:px-8 md:py-4 bg-orange-500 hover:bg-orange-600 text-white font-semibold rounded-xl transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-orange-500/25 text-sm md:text-base"
               >
                 {slides[selectedIndex].cta}
@@ -220,7 +229,7 @@ export function HeroSection() {
                     d="M17 8l4 4m0 0l-4 4m4-4H3"
                   />
                 </svg>
-              </Link>
+              </a>
             </div>
           </div>
         </div>
