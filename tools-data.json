@@ -217,7 +217,9 @@
     "price": "from $199/mo",
     "icon": "\ud83d\udcca",
     "url": "https://www.marketman.com",
-    "affiliateUrl": "https://www.marketman.com/partners?utm_source=restauranttools.ai&utm_medium=referral"
+    "affiliateUrl": "https://www.marketman.com/partners/",
+    "affiliateCommission": "Revenue share per referral",
+    "affiliateRel": "sponsored"
   },
   {
     "name": "Lightspeed Restaurant",
@@ -227,7 +229,9 @@
     "price": "from $189/mo",
     "icon": "\u26a1",
     "url": "https://www.lightspeedhq.com/pos/restaurant",
-    "affiliateUrl": "https://www.lightspeedhq.com/partners/?utm_source=restauranttools.ai&utm_medium=referral"
+    "affiliateUrl": "https://www.lightspeedhq.com/partners/",
+    "affiliateCommission": "Revenue share per referral",
+    "affiliateRel": "sponsored"
   },
   {
     "name": "xtraCHEF",
@@ -346,8 +350,10 @@
     "description": "Restaurant-specific POS with AI analytics, online ordering, and workforce management.",
     "price": "Free / Paid",
     "icon": "\ud83d\udcb3",
-    "url": "http://refer.toasttab.com/referred-by/RestaurantToolsAI/",
-    "affiliateUrl": "http://refer.toasttab.com/referred-by/RestaurantToolsAI/"
+    "url": "https://pos.toasttab.com",
+    "affiliateUrl": "https://pos.toasttab.com/partners",
+    "affiliateCommission": "$500 per restaurant referral",
+    "affiliateRel": "sponsored"
   },
   {
     "name": "Square for Restaurants",
@@ -357,7 +363,9 @@
     "price": "Free / Paid",
     "icon": "\u2b1b",
     "url": "https://squareup.com/us/en/restaurants",
-    "affiliateUrl": "https://squareup.com/us/en/partnerships?utm_source=restauranttools.ai&utm_medium=referral"
+    "affiliateUrl": "https://squareup.com/us/en/partnerships",
+    "affiliateCommission": "$120 per referral",
+    "affiliateRel": "sponsored"
   },
   {
     "name": "Clover",
@@ -367,7 +375,9 @@
     "price": "from $14.95/mo",
     "icon": "\ud83c\udf40",
     "url": "https://www.clover.com",
-    "affiliateUrl": "https://www.clover.com/get-started?utm_source=restauranttools.ai&utm_medium=referral"
+    "affiliateUrl": "https://www.clover.com/partnerships",
+    "affiliateCommission": "Revenue share per referral",
+    "affiliateRel": "sponsored"
   },
   {
     "name": "7shifts",
@@ -377,7 +387,9 @@
     "price": "Free / Paid",
     "icon": "\ud83d\udcc5",
     "url": "https://www.7shifts.com",
-    "affiliateUrl": "https://www.7shifts.com/partners?utm_source=restauranttools.ai&utm_medium=referral"
+    "affiliateUrl": "https://www.7shifts.com/partners/",
+    "affiliateCommission": "Revenue share per referral",
+    "affiliateRel": "sponsored"
   },
   {
     "name": "Lineup.ai",
@@ -417,7 +429,9 @@
     "price": "Custom pricing",
     "icon": "\ud83c\udf54",
     "url": "https://www.chownow.com",
-    "affiliateUrl": "https://get.chownow.com/?utm_source=restauranttools.ai&utm_medium=referral"
+    "affiliateUrl": "https://get.chownow.com/partners",
+    "affiliateCommission": "Revenue share per referral",
+    "affiliateRel": "sponsored"
   },
   {
     "name": "Ordermark (Nextbite)",
@@ -497,7 +511,9 @@
     "price": "Custom pricing",
     "icon": "\ud83c\udf51",
     "url": "https://www.touchbistro.com/restaurant-back-of-house-solutions/",
-    "affiliateUrl": "https://www.touchbistro.com/get-a-quote/?utm_source=restauranttools.ai&utm_medium=referral"
+    "affiliateUrl": "https://www.touchbistro.com/partners/",
+    "affiliateCommission": "Revenue share per referral",
+    "affiliateRel": "sponsored"
   },
   {
     "name": "Avero",

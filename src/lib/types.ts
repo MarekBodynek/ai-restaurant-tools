@@ -7,6 +7,8 @@ export interface Tool {
   icon: string;
   url?: string;
   affiliateUrl?: string;
+  affiliateCommission?: string;
+  affiliateRel?: string;
 }
 
 export interface CategoryInfo {
