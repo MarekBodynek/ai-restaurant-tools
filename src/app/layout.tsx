@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     template: "%s | RestaurantTools.ai",
   },
   description:
-    "Discover 54+ AI-powered tools to transform your restaurant. From reservations to kitchen robotics — find, compare, and choose the best AI solutions for your business.",
+    "Discover 50+ AI-powered tools to transform your restaurant. From reservations to kitchen robotics — find, compare, and choose the best AI solutions for your business.",
   keywords: [
     "restaurant AI tools",
     "AI for restaurants",
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     siteName: "RestaurantTools.ai",
     title: "RestaurantTools.ai — The #1 AI Tools Directory for Restaurants",
     description:
-      "Discover 54+ AI-powered tools to transform your restaurant. From reservations to kitchen robotics.",
+      "Discover 50+ AI-powered tools to transform your restaurant. From reservations to kitchen robotics.",
     images: [
       {
         url: "/og-image.png",

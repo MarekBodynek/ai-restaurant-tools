@@ -59,7 +59,7 @@ const posSystems: PosSystem[] = [
     monthlyPrice: "$0–$165+",
     hardwareFrom: "$0 (pay-as-you-go)",
     bestFor: "Full-service restaurants, multi-location groups, high-volume operations",
-    website: "[TOAST_AFFILIATE_LINK]",
+    website: "http://refer.toasttab.com/referred-by/RestaurantToolsAI/",
     pros: [
       "Built exclusively for restaurants — every feature is food-service specific",
       "Free starter plan with hardware included (pay-as-you-go processing)",
@@ -102,7 +102,7 @@ Hardware costs range from $0 (pay-as-you-go Starter Kit) to $799+ for full count
     monthlyPrice: "$0–$165",
     hardwareFrom: "$0 (use your own iPad)",
     bestFor: "Cafés, quick-service, food trucks, small restaurants, pop-ups",
-    website: "[SQUARE_AFFILIATE_LINK]",
+    website: "https://squareup.com/us/en/restaurants",
     pros: [
       "Genuinely free plan that's usable for small operations",
       "Works on your existing iPad — no proprietary hardware required",
@@ -478,7 +478,7 @@ export default function BestRestaurantPosSystems() {
             </ul>
             <p className="text-stone-600 leading-relaxed">
               We also cross-referenced each system with our{" "}
-              <Link href="/tools" className="text-orange-700 hover:text-orange-800 underline decoration-orange-200 underline-offset-2 transition-colors">
+              <Link href="/#tools" className="text-orange-700 hover:text-orange-800 underline decoration-orange-200 underline-offset-2 transition-colors">
                 AI restaurant tools directory
               </Link>{" "}
               to evaluate how well each POS integrates with the broader AI tooling ecosystem
@@ -590,7 +590,7 @@ export default function BestRestaurantPosSystems() {
                   <a
                     href={pos.website}
                     target="_blank"
-                    rel="noopener noreferrer"
+                    rel={pos.slug === "toast" ? "noopener noreferrer sponsored" : "noopener noreferrer"}
                     className={`inline-flex items-center gap-2 px-6 py-3 rounded-xl font-semibold text-sm transition-all duration-200 ${
                       pos.slug === "toast"
                         ? "bg-orange-600 text-white hover:bg-orange-700 shadow-lg shadow-orange-200"
@@ -707,15 +707,15 @@ export default function BestRestaurantPosSystems() {
 
             <p className="text-stone-600 leading-relaxed mb-4">
               For a deeper look at how AI is transforming restaurant operations beyond POS, explore our{" "}
-              <Link href="/tools" className="text-orange-700 hover:text-orange-800 underline decoration-orange-200 underline-offset-2 transition-colors">
+              <Link href="/#tools" className="text-orange-700 hover:text-orange-800 underline decoration-orange-200 underline-offset-2 transition-colors">
                 complete directory of AI restaurant tools
               </Link>
               , covering everything from{" "}
-              <Link href="/tools" className="text-orange-700 hover:text-orange-800 underline decoration-orange-200 underline-offset-2 transition-colors">
+              <Link href="/#tools" className="text-orange-700 hover:text-orange-800 underline decoration-orange-200 underline-offset-2 transition-colors">
                 AI-powered reservation systems
               </Link>{" "}
               to{" "}
-              <Link href="/tools" className="text-orange-700 hover:text-orange-800 underline decoration-orange-200 underline-offset-2 transition-colors">
+              <Link href="/#tools" className="text-orange-700 hover:text-orange-800 underline decoration-orange-200 underline-offset-2 transition-colors">
                 kitchen robotics and automation
               </Link>.
             </p>
@@ -770,9 +770,9 @@ export default function BestRestaurantPosSystems() {
               Try it risk-free and see why it&apos;s the #1 choice for restaurants in 2026.
             </p>
             <a
-              href="[TOAST_AFFILIATE_LINK]"
+              href="http://refer.toasttab.com/referred-by/RestaurantToolsAI/"
               target="_blank"
-              rel="noopener noreferrer"
+              rel="noopener noreferrer sponsored"
               className="inline-flex items-center gap-2 px-8 py-3.5 bg-orange-600 text-white rounded-xl font-semibold text-sm hover:bg-orange-700 transition-all duration-200 shadow-lg shadow-orange-200"
             >
               Get Toast Free Starter Kit
@@ -811,7 +811,7 @@ export default function BestRestaurantPosSystems() {
               Back to Blog
             </Link>
             <Link
-              href="/tools"
+              href="/#tools"
               className="inline-flex items-center gap-2 text-sm text-stone-600 hover:text-orange-700 transition-colors font-medium"
             >
               Browse AI Restaurant Tools →
