@@ -4,6 +4,20 @@ export const metadata: Metadata = {
   title: "Contact Us",
   description:
     "Get in touch with the RestaurantTools.ai team. Submit a tool, explore partnerships, or ask a question.",
+  alternates: { canonical: "/contact" },
+  openGraph: {
+    title: "Contact RestaurantTools.ai",
+    description: "Submit a tool, explore partnerships, or ask a question.",
+    url: "https://restauranttools.ai/contact",
+    siteName: "RestaurantTools.ai",
+    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Contact RestaurantTools.ai" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Contact RestaurantTools.ai",
+    description: "Submit a tool, explore partnerships, or ask a question.",
+    images: ["/og-image.png"],
+  },
 };
 
 export default function ContactPage() {

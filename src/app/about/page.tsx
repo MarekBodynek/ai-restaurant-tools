@@ -4,6 +4,22 @@ export const metadata: Metadata = {
   title: "About Us",
   description:
     "Learn about RestaurantTools.ai — our mission to help restaurant owners discover and adopt the best AI tools for their business.",
+  alternates: { canonical: "/about" },
+  openGraph: {
+    title: "About RestaurantTools.ai",
+    description:
+      "Our mission: help restaurant owners discover and adopt the best AI tools for their business.",
+    url: "https://restauranttools.ai/about",
+    siteName: "RestaurantTools.ai",
+    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "About RestaurantTools.ai" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "About RestaurantTools.ai",
+    description:
+      "Our mission: help restaurant owners discover and adopt the best AI tools for their business.",
+    images: ["/og-image.png"],
+  },
 };
 
 export default function AboutPage() {

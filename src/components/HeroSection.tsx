@@ -10,8 +10,7 @@ const slides = [
       "Browse our curated collection of 50+ AI-powered tools designed to transform every aspect of your restaurant business.",
     cta: "Browse Tools",
     href: "#tools",
-    image:
-      "https://images.unsplash.com/photo-1559329007-40df8a9345d8?w=1920&q=80",
+    image: "/hero/discover-tools.jpg",
   },
   {
     heading: "Boost Revenue with AI-Powered POS Systems",
@@ -19,8 +18,7 @@ const slides = [
       "Smart point-of-sale systems that learn your business patterns and optimize pricing, inventory, and customer experience.",
     cta: "Explore POS Tools",
     href: "#tools?category=POS",
-    image:
-      "https://images.unsplash.com/photo-1758519289714-519a9d9b96e3?w=1920&q=80",
+    image: "/hero/pos-systems.jpg",
   },
   {
     heading: "Automate Marketing & Customer Engagement",
@@ -28,8 +26,7 @@ const slides = [
       "From personalized email campaigns to AI chatbots, engage your customers like never before.",
     cta: "Marketing Tools",
     href: "#tools?category=Marketing",
-    image:
-      "https://images.unsplash.com/photo-1564758596018-3e5b1f2340cc?w=1920&q=80",
+    image: "/hero/marketing.jpg",
   },
   {
     heading: "Streamline Operations from Kitchen to Front of House",
@@ -37,8 +34,7 @@ const slides = [
       "Reduce waste, optimize staffing, and improve efficiency with intelligent operations tools.",
     cta: "Operations Tools",
     href: "#tools?category=Kitchen",
-    image:
-      "https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf?w=1920&q=80",
+    image: "/hero/operations.jpg",
   },
   {
     heading: "Smart Reservations & Customer Management",
@@ -46,8 +42,7 @@ const slides = [
       "AI-driven reservation systems and CRM tools that maximize table turnover and build lasting guest relationships.",
     cta: "Reservation Tools",
     href: "#tools?category=Reservations",
-    image:
-      "https://images.unsplash.com/photo-1517457373958-b7bdd4587205?w=1920&q=80",
+    image: "/hero/reservations.jpg",
   },
   {
     heading: "AI-Powered Analytics & Business Intelligence",
@@ -55,8 +50,7 @@ const slides = [
       "Turn your restaurant data into actionable insights — from sales forecasting to menu engineering and labor optimization.",
     cta: "Analytics Tools",
     href: "#tools?category=Analytics",
-    image:
-      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1920&q=80",
+    image: "/hero/analytics.jpg",
   },
 ];
 

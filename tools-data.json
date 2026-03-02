@@ -412,6 +412,18 @@
     "affiliateUrl": "https://www.crunchtime.com/?utm_source=restauranttools.ai&utm_medium=referral"
   },
   {
+    "name": "TouchBistro",
+    "slug": "touchbistro",
+    "category": "POS",
+    "description": "All-in-one restaurant POS designed specifically for restaurants. iPad-based with tableside ordering, menu management, and detailed reporting.",
+    "price": "From $69/month",
+    "icon": "📱",
+    "url": "https://www.touchbistro.com",
+    "affiliateUrl": "https://www.touchbistro.com/partners/",
+    "affiliateCommission": "$100-$1000 per referral",
+    "affiliateRel": "sponsored"
+  },
+  {
     "name": "Olo",
     "slug": "olo",
     "category": "Delivery",

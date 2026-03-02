@@ -13,6 +13,8 @@ export const metadata: Metadata = {
     description:
       "In-depth comparison of Toast, Square, TouchBistro, Clover, and Lightspeed POS. Find the perfect system for your restaurant.",
     type: "article",
+    url: "https://restauranttools.ai/blog/best-restaurant-pos-systems",
+    siteName: "RestaurantTools.ai",
     images: [
       {
         url: "/og-image.png",
@@ -27,6 +29,7 @@ export const metadata: Metadata = {
     title: "Best Restaurant POS Systems 2026 — Complete Comparison Guide",
     description:
       "In-depth comparison of the top 5 restaurant POS systems. Toast, Square, TouchBistro, Clover, Lightspeed.",
+    images: ["/og-image.png"],
   },
 };
 
@@ -59,7 +62,7 @@ const posSystems: PosSystem[] = [
     monthlyPrice: "$0–$165+",
     hardwareFrom: "$0 (pay-as-you-go)",
     bestFor: "Full-service restaurants, multi-location groups, high-volume operations",
-    website: "http://refer.toasttab.com/referred-by/RestaurantToolsAI/",
+    website: "https://refer.toasttab.com/referred-by/RestaurantToolsAI/",
     pros: [
       "Built exclusively for restaurants — every feature is food-service specific",
       "Free starter plan with hardware included (pay-as-you-go processing)",
@@ -102,7 +105,7 @@ Hardware costs range from $0 (pay-as-you-go Starter Kit) to $799+ for full count
     monthlyPrice: "$0–$165",
     hardwareFrom: "$0 (use your own iPad)",
     bestFor: "Cafés, quick-service, food trucks, small restaurants, pop-ups",
-    website: "https://squareup.com/us/en/restaurants",
+    website: "https://squareup.com/us/en/restaurant",
     pros: [
       "Genuinely free plan that's usable for small operations",
       "Works on your existing iPad — no proprietary hardware required",
@@ -590,7 +593,7 @@ export default function BestRestaurantPosSystems() {
                   <a
                     href={pos.website}
                     target="_blank"
-                    rel={pos.slug === "toast" ? "noopener noreferrer sponsored" : "noopener noreferrer"}
+                    rel="sponsored noopener noreferrer"
                     className={`inline-flex items-center gap-2 px-6 py-3 rounded-xl font-semibold text-sm transition-all duration-200 ${
                       pos.slug === "toast"
                         ? "bg-orange-600 text-white hover:bg-orange-700 shadow-lg shadow-orange-200"
@@ -770,7 +773,7 @@ export default function BestRestaurantPosSystems() {
               Try it risk-free and see why it&apos;s the #1 choice for restaurants in 2026.
             </p>
             <a
-              href="http://refer.toasttab.com/referred-by/RestaurantToolsAI/"
+              href="https://refer.toasttab.com/referred-by/RestaurantToolsAI/"
               target="_blank"
               rel="noopener noreferrer sponsored"
               className="inline-flex items-center gap-2 px-8 py-3.5 bg-orange-600 text-white rounded-xl font-semibold text-sm hover:bg-orange-700 transition-all duration-200 shadow-lg shadow-orange-200"

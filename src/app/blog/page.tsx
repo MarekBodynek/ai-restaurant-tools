@@ -5,11 +5,22 @@ export const metadata: Metadata = {
   title: "Blog — RestaurantTools.ai Insights & Guides",
   description:
     "Actionable insights on AI tools for restaurants. Learn how to reduce no-shows, optimize menus, improve inventory, and scale marketing with AI.",
+  alternates: { canonical: "/blog" },
   openGraph: {
     title: "RestaurantTools.ai Blog — Practical AI Growth Playbooks",
     description:
       "Read practical guides on chatbots, menu optimization, inventory AI, and restaurant marketing strategies for 2026.",
     type: "website",
+    url: "https://restauranttools.ai/blog",
+    siteName: "RestaurantTools.ai",
+    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "RestaurantTools.ai Blog" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "RestaurantTools.ai Blog — Practical AI Growth Playbooks",
+    description:
+      "Read practical guides on chatbots, menu optimization, inventory AI, and restaurant marketing strategies for 2026.",
+    images: ["/og-image.png"],
   },
 };
 

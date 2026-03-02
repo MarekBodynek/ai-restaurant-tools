@@ -60,6 +60,7 @@ export const metadata: Metadata = {
     title: "RestaurantTools.ai — The #1 AI Tools Directory for Restaurants",
     description:
       "Discover 50+ AI-powered tools to transform your restaurant.",
+    images: ["/og-image.png"],
   },
   robots: {
     index: true,

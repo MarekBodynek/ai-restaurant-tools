@@ -3,6 +3,18 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Terms of Service",
   description: "RestaurantTools.ai terms of service — rules and guidelines for using our platform.",
+  alternates: { canonical: "/terms" },
+  openGraph: {
+    title: "Terms of Service — RestaurantTools.ai",
+    description: "Rules and guidelines for using our platform.",
+    url: "https://restauranttools.ai/terms",
+    siteName: "RestaurantTools.ai",
+  },
+  twitter: {
+    card: "summary",
+    title: "Terms of Service — RestaurantTools.ai",
+    description: "Rules and guidelines for using our platform.",
+  },
 };
 
 export default function TermsPage() {
