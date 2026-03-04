@@ -27,7 +27,7 @@ export function Footer() {
             <Link href="/" className="flex items-center gap-2.5 mb-4">
               <Logo size={32} />
               <span className="text-lg font-bold text-[#fefce8] tracking-tight">
-                Restaurant<span className="text-orange-500">AI</span>
+                Restaurant<span className="text-[#E53935]">Tools</span><span className="text-stone-400">.AI</span>
               </span>
             </Link>
             <p className="text-sm text-stone-400 leading-relaxed mb-6">

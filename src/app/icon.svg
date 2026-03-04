@@ -1,10 +1,42 @@
-<svg width="32" height="32" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect width="48" height="48" rx="10" fill="#0f172a"/>
-  <rect x="22" y="24" width="4" height="16" rx="2" fill="#f97316"/>
-  <path d="M14 8 L14 18 Q14 22 18 22 L22 22" stroke="#f97316" strokeWidth="3" strokeLinecap="round" fill="none"/>
-  <path d="M24 8 L24 22" stroke="#f97316" strokeWidth="3" strokeLinecap="round" fill="none"/>
-  <path d="M34 8 L34 18 Q34 22 30 22 L26 22" stroke="#f97316" strokeWidth="3" strokeLinecap="round" fill="none"/>
-  <circle cx="14" cy="7" r="2.5" fill="#f97316"/>
-  <circle cx="24" cy="7" r="2.5" fill="#f97316"/>
-  <circle cx="34" cy="7" r="2.5" fill="#f97316"/>
+<svg width="32" height="32" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Simplified favicon — gear + fork + knife, no neural network -->
+  <rect width="512" height="512" rx="80" fill="#1B2B5E"/>
+  
+  <!-- Gear ring (simplified, white) -->
+  <g transform="translate(256,256)">
+    <g fill="white">
+      <polygon points="-12,-200 12,-200 15,-155 -15,-155" transform="rotate(0)"/>
+      <polygon points="-12,-200 12,-200 15,-155 -15,-155" transform="rotate(30)"/>
+      <polygon points="-12,-200 12,-200 15,-155 -15,-155" transform="rotate(60)"/>
+      <polygon points="-12,-200 12,-200 15,-155 -15,-155" transform="rotate(90)"/>
+      <polygon points="-12,-200 12,-200 15,-155 -15,-155" transform="rotate(120)"/>
+      <polygon points="-12,-200 12,-200 15,-155 -15,-155" transform="rotate(150)"/>
+      <polygon points="-12,-200 12,-200 15,-155 -15,-155" transform="rotate(180)"/>
+      <polygon points="-12,-200 12,-200 15,-155 -15,-155" transform="rotate(210)"/>
+      <polygon points="-12,-200 12,-200 15,-155 -15,-155" transform="rotate(240)"/>
+      <polygon points="-12,-200 12,-200 15,-155 -15,-155" transform="rotate(270)"/>
+      <polygon points="-12,-200 12,-200 15,-155 -15,-155" transform="rotate(300)"/>
+      <polygon points="-12,-200 12,-200 15,-155 -15,-155" transform="rotate(330)"/>
+    </g>
+    <circle cx="0" cy="0" r="163" fill="white" opacity="0.2"/>
+    <circle cx="0" cy="0" r="133" fill="#1B2B5E"/>
+  </g>
+
+  <!-- Fork (white, left) -->
+  <g fill="white">
+    <rect x="225" y="292" width="14" height="70" rx="7"/>
+    <rect x="226" y="257" width="12" height="40" rx="6"/>
+    <rect x="208" y="165" width="8" height="72" rx="4"/>
+    <rect x="221" y="165" width="8" height="72" rx="4"/>
+    <rect x="234" y="165" width="8" height="72" rx="4"/>
+    <rect x="247" y="165" width="8" height="72" rx="4"/>
+    <rect x="208" y="233" width="47" height="11" rx="5.5"/>
+  </g>
+
+  <!-- Knife (red, right) -->
+  <g fill="#E53935">
+    <rect x="273" y="292" width="14" height="70" rx="7"/>
+    <rect x="270" y="278" width="20" height="20" rx="5"/>
+    <path d="M272,170 C272,163 288,163 288,170 L290,278 L270,278 Z"/>
+  </g>
 </svg>

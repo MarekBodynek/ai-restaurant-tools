@@ -61,7 +61,7 @@ export function Navbar() {
               <Logo size={36} />
             </div>
             <span className="text-xl font-bold text-[#fefce8] tracking-tight">
-              Restaurant<span className="text-orange-500">AI</span>
+              Restaurant<span className="text-[#E53935]">Tools</span><span className="text-stone-400">.AI</span>
             </span>
           </Link>
 
