@@ -73,6 +73,9 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
+  other: {
+    "impact-site-verification": "67de4d38-0210-4f86-b4ab-4a24007026c8",
+  },
 };
 
 export default function RootLayout({
