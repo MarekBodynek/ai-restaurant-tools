@@ -1,0 +1,86 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="512" height="512" fill="white"/>
+
+  <!-- Neural network background (very subtle) -->
+  <g opacity="0.08">
+    <circle cx="90" cy="100" r="5" fill="#1B2B5E"/>
+    <circle cx="420" cy="95" r="5" fill="#E53935"/>
+    <circle cx="75" cy="400" r="4" fill="#E53935"/>
+    <circle cx="430" cy="410" r="4" fill="#1B2B5E"/>
+    <circle cx="256" cy="55" r="4" fill="#1B2B5E"/>
+    <circle cx="55" cy="256" r="4" fill="#E53935"/>
+    <circle cx="457" cy="256" r="4" fill="#1B2B5E"/>
+    <circle cx="256" cy="457" r="4" fill="#E53935"/>
+    <line x1="90" y1="100" x2="256" y2="55" stroke="#1B2B5E" stroke-width="1.5"/>
+    <line x1="256" y1="55" x2="420" y2="95" stroke="#E53935" stroke-width="1.5"/>
+    <line x1="90" y1="100" x2="55" y2="256" stroke="#1B2B5E" stroke-width="1.5"/>
+    <line x1="55" y1="256" x2="75" y2="400" stroke="#E53935" stroke-width="1.5"/>
+    <line x1="420" y1="95" x2="457" y2="256" stroke="#1B2B5E" stroke-width="1.5"/>
+    <line x1="457" y1="256" x2="430" y2="410" stroke="#1B2B5E" stroke-width="1.5"/>
+    <line x1="75" y1="400" x2="256" y2="457" stroke="#E53935" stroke-width="1.5"/>
+    <line x1="256" y1="457" x2="430" y2="410" stroke="#1B2B5E" stroke-width="1.5"/>
+  </g>
+
+  <!-- Gear/cog centered at 256,256 -->
+  <g transform="translate(256,256)">
+    <!-- 12 tapered gear teeth -->
+    <g fill="#1B2B5E">
+      <polygon points="-12,-200 12,-200 15,-153 -15,-153" transform="rotate(0)"/>
+      <polygon points="-12,-200 12,-200 15,-153 -15,-153" transform="rotate(30)"/>
+      <polygon points="-12,-200 12,-200 15,-153 -15,-153" transform="rotate(60)"/>
+      <polygon points="-12,-200 12,-200 15,-153 -15,-153" transform="rotate(90)"/>
+      <polygon points="-12,-200 12,-200 15,-153 -15,-153" transform="rotate(120)"/>
+      <polygon points="-12,-200 12,-200 15,-153 -15,-153" transform="rotate(150)"/>
+      <polygon points="-12,-200 12,-200 15,-153 -15,-153" transform="rotate(180)"/>
+      <polygon points="-12,-200 12,-200 15,-153 -15,-153" transform="rotate(210)"/>
+      <polygon points="-12,-200 12,-200 15,-153 -15,-153" transform="rotate(240)"/>
+      <polygon points="-12,-200 12,-200 15,-153 -15,-153" transform="rotate(270)"/>
+      <polygon points="-12,-200 12,-200 15,-153 -15,-153" transform="rotate(300)"/>
+      <polygon points="-12,-200 12,-200 15,-153 -15,-153" transform="rotate(330)"/>
+    </g>
+    <!-- Gear body ring -->
+    <circle cx="0" cy="0" r="162" fill="#1B2B5E"/>
+    <circle cx="0" cy="0" r="133" fill="white"/>
+  </g>
+
+  <!-- Utensils group — centered as pair at x=256 (fork center=232, knife center=280, midpoint=256) -->
+  
+  <!-- Fork (navy, left) — visual center x=232 -->
+  <g fill="#1B2B5E">
+    <!-- Handle -->
+    <rect x="225" y="292" width="14" height="70" rx="7"/>
+    <!-- Neck -->
+    <rect x="226" y="257" width="12" height="40" rx="6"/>
+    <!-- Four tines (evenly spaced, 13px apart) -->
+    <rect x="208" y="165" width="8" height="72" rx="4"/>
+    <rect x="221" y="165" width="8" height="72" rx="4"/>
+    <rect x="234" y="165" width="8" height="72" rx="4"/>
+    <rect x="247" y="165" width="8" height="72" rx="4"/>
+    <!-- Bridge connecting tines -->
+    <rect x="208" y="233" width="47" height="11" rx="5.5"/>
+  </g>
+
+  <!-- Knife (red, right) — visual center x=280 -->
+  <g fill="#E53935">
+    <!-- Handle -->
+    <rect x="273" y="292" width="14" height="70" rx="7"/>
+    <!-- Bolster -->
+    <rect x="270" y="278" width="20" height="20" rx="5"/>
+    <!-- Blade (clean, consistent width with fork) -->
+    <path d="M272,170 C272,163 288,163 288,170 L290,278 L270,278 Z"/>
+    <!-- Subtle edge highlight -->
+    <line x1="274" y1="175" x2="273" y2="273" stroke="white" stroke-width="1.2" opacity="0.2" stroke-linecap="round"/>
+  </g>
+
+  <!-- Inner decorative neural nodes (very subtle, inside gear) -->
+  <g opacity="0.13">
+    <circle cx="175" cy="218" r="3" fill="#E53935"/>
+    <circle cx="337" cy="218" r="3" fill="#1B2B5E"/>
+    <circle cx="175" cy="302" r="3" fill="#1B2B5E"/>
+    <circle cx="337" cy="302" r="3" fill="#E53935"/>
+    <line x1="175" y1="218" x2="210" y2="240" stroke="#E53935" stroke-width="1"/>
+    <line x1="337" y1="218" x2="302" y2="240" stroke="#1B2B5E" stroke-width="1"/>
+    <line x1="175" y1="302" x2="210" y2="280" stroke="#1B2B5E" stroke-width="1"/>
+    <line x1="337" y1="302" x2="302" y2="280" stroke="#E53935" stroke-width="1"/>
+  </g>
+</svg>
